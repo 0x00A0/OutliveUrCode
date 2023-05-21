@@ -11,3 +11,16 @@ E:\Codes\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.csproj.GenerateResour
 E:\Codes\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.csproj.CoreCompileInputs.cache
 E:\Codes\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.dll
 E:\Codes\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.pdb
+E:\proj_wxr\OutliveUrCode\WaveProgress\bin\Debug\WaveProgress.dll
+E:\proj_wxr\OutliveUrCode\WaveProgress\bin\Debug\WaveProgress.pdb
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.csproj.AssemblyReference.cache
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.g.cs
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress_MarkupCompile.cache
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress_MarkupCompile.lref
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.baml
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.g.resources
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.Properties.Resources.resources
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.csproj.GenerateResource.cache
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.csproj.CoreCompileInputs.cache
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.dll
+E:\proj_wxr\OutliveUrCode\WaveProgress\obj\Debug\WaveProgress.pdb

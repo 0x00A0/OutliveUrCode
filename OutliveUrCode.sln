@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveProgress", "WaveProgress\WaveProgress.csproj", "{E9A289FC-1EBF-470E-B231-8C2F184AB912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutliveUrCode", "OutliveUrCode\OutliveUrCode.csproj", "{E3986F1C-52E5-4846-BAD6-83C3A822711F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9A289FC-1EBF-470E-B231-8C2F184AB912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A289FC-1EBF-470E-B231-8C2F184AB912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A289FC-1EBF-470E-B231-8C2F184AB912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A289FC-1EBF-470E-B231-8C2F184AB912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3986F1C-52E5-4846-BAD6-83C3A822711F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3986F1C-52E5-4846-BAD6-83C3A822711F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3986F1C-52E5-4846-BAD6-83C3A822711F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3986F1C-52E5-4846-BAD6-83C3A822711F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B52796E-5FC5-4B93-9C12-E4ABFB13080D}
+	EndGlobalSection
+EndGlobal

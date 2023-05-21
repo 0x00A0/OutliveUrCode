@@ -32,9 +32,9 @@
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.uiStyleManager1 = new Sunny.UI.UIStyleManager(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.uiStyleManager1 = new Sunny.UI.UIStyleManager(this.components);
             this.uiTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,57 +55,55 @@
             this.uiTabControl1.MainPage = "";
             this.uiTabControl1.Multiline = true;
             this.uiTabControl1.Name = "uiTabControl1";
-            this.uiTabControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.uiTabControl1.RightToLeftLayout = true;
+            this.uiTabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiTabControl1.SelectedIndex = 0;
             this.uiTabControl1.Size = new System.Drawing.Size(1016, 554);
             this.uiTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.uiTabControl1.Style = Sunny.UI.UIStyle.LayuiGreen;
             this.uiTabControl1.TabIndex = 0;
-            this.uiTabControl1.TabPosition = Sunny.UI.UITabControl.UITabPosition.Right;
             this.uiTabControl1.TabSelectedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.uiTabControl1.TabSelectedHighColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.uiTabControl1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.tabPage1.Location = new System.Drawing.Point(0, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(1016, 514);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "喝水";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(1016, 514);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "久坐";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // uiStyleManager1
-            // 
-            this.uiStyleManager1.Style = Sunny.UI.UIStyle.LayuiGreen;
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.tabPage3.Location = new System.Drawing.Point(0, 40);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1016, 514);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "设置";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.tabPage4.Location = new System.Drawing.Point(0, 40);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1016, 514);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "关于";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // uiStyleManager1
+            // 
+            this.uiStyleManager1.Style = Sunny.UI.UIStyle.LayuiGreen;
             // 
             // FrmMain
             // 

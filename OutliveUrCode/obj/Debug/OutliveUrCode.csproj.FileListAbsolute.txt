@@ -25,7 +25,6 @@ E:\proj_wxr\OutliveUrCode\OutliveUrCode\bin\Debug\WaveProgress.pdb
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.csproj.AssemblyReference.cache
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.csproj.SuggestedBindingRedirects.cache
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.FrmMain.resources
-E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.Pages.PageDrinking.resources
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.Properties.Resources.resources
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.csproj.GenerateResource.cache
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.csproj.CoreCompileInputs.cache

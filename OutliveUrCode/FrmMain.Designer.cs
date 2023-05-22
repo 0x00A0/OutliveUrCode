@@ -37,21 +37,29 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDrink50 = new MaterialSkin.Controls.MaterialButton();
             this.btnDrink250 = new MaterialSkin.Controls.MaterialButton();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.progrsWater = new OutliveYourCode.UserControls.WaveProgress();
             this.btnDrink500 = new MaterialSkin.Controls.MaterialButton();
             this.btnDrink150 = new MaterialSkin.Controls.MaterialButton();
+            this.lblDrinkingStatus = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tbPgSedentary = new System.Windows.Forms.TabPage();
-            this.tbpgSetting = new System.Windows.Forms.TabPage();
-            this.tbpgAbout = new System.Windows.Forms.TabPage();
-            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.MaterialIcons = new System.Windows.Forms.ImageList(this.components);
-            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
-            this.waveProgress1 = new OutliveYourCode.UserControls.WaveProgress();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.txtDrinkingTarget = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.txtDrinkingToday = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtDrinkingTimerInterval = new MaterialSkin.Controls.MaterialTextBox2();
+            this.chkDrinkingAlarm = new MaterialSkin.Controls.MaterialCheckbox();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.tbPgSedentary = new System.Windows.Forms.TabPage();
+            this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
+            this.tbpgSetting = new System.Windows.Forms.TabPage();
+            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.tbpgAbout = new System.Windows.Forms.TabPage();
+            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.MaterialIcons = new System.Windows.Forms.ImageList(this.components);
+            this.tmrDrink = new System.Windows.Forms.Timer(this.components);
             this.materialTabControl1.SuspendLayout();
             this.tbPgDrinking.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -59,6 +67,8 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.materialCard4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.tbPgSedentary.SuspendLayout();
+            this.tbpgSetting.SuspendLayout();
             this.tbpgAbout.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,11 +117,12 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.btnDrink50, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnDrink250, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.elementHost1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnDrink500, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnDrink150, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnDrink50, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnDrink250, 5, 4);
+            this.tableLayoutPanel1.Controls.Add(this.elementHost1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnDrink500, 6, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnDrink150, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblDrinkingStatus, 1, 0);
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
@@ -119,7 +130,8 @@
             // 
             resources.ApplyResources(this.btnDrink50, "btnDrink50");
             this.btnDrink50.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.btnDrink50.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.tableLayoutPanel1.SetColumnSpan(this.btnDrink50, 3);
+            this.btnDrink50.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnDrink50.Depth = 0;
             this.btnDrink50.HighEmphasis = true;
             this.btnDrink50.Icon = ((System.Drawing.Image)(resources.GetObject("btnDrink50.Icon")));
@@ -129,12 +141,14 @@
             this.btnDrink50.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnDrink50.UseAccentColor = false;
             this.btnDrink50.UseVisualStyleBackColor = true;
+            this.btnDrink50.Click += new System.EventHandler(this.btnDrink50_Click);
             // 
             // btnDrink250
             // 
             resources.ApplyResources(this.btnDrink250, "btnDrink250");
             this.btnDrink250.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.btnDrink250.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.tableLayoutPanel1.SetColumnSpan(this.btnDrink250, 3);
+            this.btnDrink250.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnDrink250.Depth = 0;
             this.btnDrink250.HighEmphasis = true;
             this.btnDrink250.Icon = ((System.Drawing.Image)(resources.GetObject("btnDrink250.Icon")));
@@ -144,12 +158,22 @@
             this.btnDrink250.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnDrink250.UseAccentColor = false;
             this.btnDrink250.UseVisualStyleBackColor = true;
+            this.btnDrink250.Click += new System.EventHandler(this.btnDrink250_Click);
+            // 
+            // elementHost1
+            // 
+            resources.ApplyResources(this.elementHost1, "elementHost1");
+            this.tableLayoutPanel1.SetColumnSpan(this.elementHost1, 7);
+            this.elementHost1.Name = "elementHost1";
+            this.tableLayoutPanel1.SetRowSpan(this.elementHost1, 2);
+            this.elementHost1.Child = this.progrsWater;
             // 
             // btnDrink500
             // 
             resources.ApplyResources(this.btnDrink500, "btnDrink500");
             this.btnDrink500.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.btnDrink500.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.tableLayoutPanel1.SetColumnSpan(this.btnDrink500, 3);
+            this.btnDrink500.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnDrink500.Depth = 0;
             this.btnDrink500.HighEmphasis = true;
             this.btnDrink500.Icon = ((System.Drawing.Image)(resources.GetObject("btnDrink500.Icon")));
@@ -159,12 +183,14 @@
             this.btnDrink500.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnDrink500.UseAccentColor = false;
             this.btnDrink500.UseVisualStyleBackColor = true;
+            this.btnDrink500.Click += new System.EventHandler(this.btnDrink500_Click);
             // 
             // btnDrink150
             // 
             resources.ApplyResources(this.btnDrink150, "btnDrink150");
             this.btnDrink150.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.btnDrink150.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.tableLayoutPanel1.SetColumnSpan(this.btnDrink150, 3);
+            this.btnDrink150.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnDrink150.Depth = 0;
             this.btnDrink150.HighEmphasis = true;
             this.btnDrink150.Icon = ((System.Drawing.Image)(resources.GetObject("btnDrink150.Icon")));
@@ -174,12 +200,22 @@
             this.btnDrink150.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnDrink150.UseAccentColor = false;
             this.btnDrink150.UseVisualStyleBackColor = true;
+            this.btnDrink150.Click += new System.EventHandler(this.btnDrink150_Click);
+            // 
+            // lblDrinkingStatus
+            // 
+            resources.ApplyResources(this.lblDrinkingStatus, "lblDrinkingStatus");
+            this.tableLayoutPanel1.SetColumnSpan(this.lblDrinkingStatus, 7);
+            this.lblDrinkingStatus.Depth = 0;
+            this.lblDrinkingStatus.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblDrinkingStatus.Name = "lblDrinkingStatus";
             // 
             // materialCard4
             // 
             resources.ApplyResources(this.materialCard4, "materialCard4");
             this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard4.Controls.Add(this.flowLayoutPanel1);
+            this.materialCard4.Controls.Add(this.materialButton1);
             this.materialCard4.Depth = 0;
             this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -191,20 +227,180 @@
             this.flowLayoutPanel1.Controls.Add(this.txtDrinkingTarget);
             this.flowLayoutPanel1.Controls.Add(this.materialLabel2);
             this.flowLayoutPanel1.Controls.Add(this.txtDrinkingToday);
+            this.flowLayoutPanel1.Controls.Add(this.materialLabel3);
+            this.flowLayoutPanel1.Controls.Add(this.txtDrinkingTimerInterval);
+            this.flowLayoutPanel1.Controls.Add(this.chkDrinkingAlarm);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // materialLabel1
+            // 
+            resources.ApplyResources(this.materialLabel1, "materialLabel1");
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel1.HighEmphasis = true;
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            // 
+            // txtDrinkingTarget
+            // 
+            this.txtDrinkingTarget.AnimateReadOnly = false;
+            this.txtDrinkingTarget.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtDrinkingTarget.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            resources.ApplyResources(this.txtDrinkingTarget, "txtDrinkingTarget");
+            this.txtDrinkingTarget.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDrinkingTarget.Depth = 0;
+            this.txtDrinkingTarget.HideSelection = true;
+            this.txtDrinkingTarget.LeadingIcon = null;
+            this.txtDrinkingTarget.LeaveOnEnterKey = true;
+            this.txtDrinkingTarget.MaxLength = 32767;
+            this.txtDrinkingTarget.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDrinkingTarget.Name = "txtDrinkingTarget";
+            this.txtDrinkingTarget.PasswordChar = '\0';
+            this.txtDrinkingTarget.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Suffix;
+            this.txtDrinkingTarget.ReadOnly = false;
+            this.txtDrinkingTarget.SelectedText = "";
+            this.txtDrinkingTarget.SelectionLength = 0;
+            this.txtDrinkingTarget.SelectionStart = 0;
+            this.txtDrinkingTarget.ShortcutsEnabled = true;
+            this.txtDrinkingTarget.TabStop = false;
+            this.txtDrinkingTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDrinkingTarget.TrailingIcon = null;
+            this.txtDrinkingTarget.UseSystemPasswordChar = false;
+            this.txtDrinkingTarget.UseTallSize = false;
+            this.txtDrinkingTarget.TextChanged += new System.EventHandler(this.txtDrinkingTarget_TextChanged);
+            // 
+            // materialLabel2
+            // 
+            resources.ApplyResources(this.materialLabel2, "materialLabel2");
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel2.HighEmphasis = true;
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            // 
+            // txtDrinkingToday
+            // 
+            this.txtDrinkingToday.AnimateReadOnly = false;
+            this.txtDrinkingToday.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtDrinkingToday.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            resources.ApplyResources(this.txtDrinkingToday, "txtDrinkingToday");
+            this.txtDrinkingToday.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDrinkingToday.Depth = 0;
+            this.txtDrinkingToday.HideSelection = true;
+            this.txtDrinkingToday.LeadingIcon = null;
+            this.txtDrinkingToday.LeaveOnEnterKey = true;
+            this.txtDrinkingToday.MaxLength = 32767;
+            this.txtDrinkingToday.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDrinkingToday.Name = "txtDrinkingToday";
+            this.txtDrinkingToday.PasswordChar = '\0';
+            this.txtDrinkingToday.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Suffix;
+            this.txtDrinkingToday.ReadOnly = false;
+            this.txtDrinkingToday.SelectedText = "";
+            this.txtDrinkingToday.SelectionLength = 0;
+            this.txtDrinkingToday.SelectionStart = 0;
+            this.txtDrinkingToday.ShortcutsEnabled = true;
+            this.txtDrinkingToday.TabStop = false;
+            this.txtDrinkingToday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDrinkingToday.TrailingIcon = null;
+            this.txtDrinkingToday.UseSystemPasswordChar = false;
+            this.txtDrinkingToday.UseTallSize = false;
+            this.txtDrinkingToday.TextChanged += new System.EventHandler(this.txtDrinkingToday_TextChanged);
+            // 
+            // materialLabel3
+            // 
+            resources.ApplyResources(this.materialLabel3, "materialLabel3");
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel3.HighEmphasis = true;
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            // 
+            // txtDrinkingTimerInterval
+            // 
+            this.txtDrinkingTimerInterval.AnimateReadOnly = false;
+            this.txtDrinkingTimerInterval.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtDrinkingTimerInterval.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            resources.ApplyResources(this.txtDrinkingTimerInterval, "txtDrinkingTimerInterval");
+            this.txtDrinkingTimerInterval.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDrinkingTimerInterval.Depth = 0;
+            this.txtDrinkingTimerInterval.HideSelection = true;
+            this.txtDrinkingTimerInterval.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtDrinkingTimerInterval.LeadingIcon")));
+            this.txtDrinkingTimerInterval.LeaveOnEnterKey = true;
+            this.txtDrinkingTimerInterval.MaxLength = 32767;
+            this.txtDrinkingTimerInterval.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDrinkingTimerInterval.Name = "txtDrinkingTimerInterval";
+            this.txtDrinkingTimerInterval.PasswordChar = '\0';
+            this.txtDrinkingTimerInterval.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Suffix;
+            this.txtDrinkingTimerInterval.ReadOnly = false;
+            this.txtDrinkingTimerInterval.SelectedText = "";
+            this.txtDrinkingTimerInterval.SelectionLength = 0;
+            this.txtDrinkingTimerInterval.SelectionStart = 0;
+            this.txtDrinkingTimerInterval.ShortcutsEnabled = true;
+            this.txtDrinkingTimerInterval.TabStop = false;
+            this.txtDrinkingTimerInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDrinkingTimerInterval.TrailingIcon = null;
+            this.txtDrinkingTimerInterval.UseSystemPasswordChar = false;
+            this.txtDrinkingTimerInterval.UseTallSize = false;
+            // 
+            // chkDrinkingAlarm
+            // 
+            resources.ApplyResources(this.chkDrinkingAlarm, "chkDrinkingAlarm");
+            this.chkDrinkingAlarm.Checked = true;
+            this.chkDrinkingAlarm.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkDrinkingAlarm.Depth = 0;
+            this.chkDrinkingAlarm.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkDrinkingAlarm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkDrinkingAlarm.Name = "chkDrinkingAlarm";
+            this.chkDrinkingAlarm.ReadOnly = false;
+            this.chkDrinkingAlarm.Ripple = true;
+            this.chkDrinkingAlarm.UseVisualStyleBackColor = true;
+            // 
+            // materialButton1
+            // 
+            resources.ApplyResources(this.materialButton1, "materialButton1");
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
             // 
             // tbPgSedentary
             // 
             this.tbPgSedentary.BackColor = System.Drawing.Color.White;
+            this.tbPgSedentary.Controls.Add(this.materialCard6);
             resources.ApplyResources(this.tbPgSedentary, "tbPgSedentary");
             this.tbPgSedentary.Name = "tbPgSedentary";
+            // 
+            // materialCard6
+            // 
+            this.materialCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard6.Depth = 0;
+            resources.ApplyResources(this.materialCard6, "materialCard6");
+            this.materialCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard6.Name = "materialCard6";
             // 
             // tbpgSetting
             // 
             this.tbpgSetting.BackColor = System.Drawing.Color.White;
+            this.tbpgSetting.Controls.Add(this.materialCard5);
             resources.ApplyResources(this.tbpgSetting, "tbpgSetting");
             this.tbpgSetting.Name = "tbpgSetting";
+            // 
+            // materialCard5
+            // 
+            this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Depth = 0;
+            resources.ApplyResources(this.materialCard5, "materialCard5");
+            this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard5.Name = "materialCard5";
             // 
             // tbpgAbout
             // 
@@ -290,83 +486,11 @@
             this.MaterialIcons.Images.SetKeyName(61, "water.png");
             this.MaterialIcons.Images.SetKeyName(62, "wheelchair-accessibility.png");
             // 
-            // elementHost1
+            // tmrDrink
             // 
-            resources.ApplyResources(this.elementHost1, "elementHost1");
-            this.tableLayoutPanel1.SetColumnSpan(this.elementHost1, 4);
-            this.elementHost1.Name = "elementHost1";
-            this.tableLayoutPanel1.SetRowSpan(this.elementHost1, 2);
-            this.elementHost1.Child = this.waveProgress1;
-            // 
-            // materialLabel1
-            // 
-            resources.ApplyResources(this.materialLabel1, "materialLabel1");
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel1.HighEmphasis = true;
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            // 
-            // txtDrinkingTarget
-            // 
-            this.txtDrinkingTarget.AnimateReadOnly = false;
-            this.txtDrinkingTarget.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtDrinkingTarget.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            resources.ApplyResources(this.txtDrinkingTarget, "txtDrinkingTarget");
-            this.txtDrinkingTarget.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtDrinkingTarget.Depth = 0;
-            this.txtDrinkingTarget.HideSelection = true;
-            this.txtDrinkingTarget.LeadingIcon = null;
-            this.txtDrinkingTarget.MaxLength = 32767;
-            this.txtDrinkingTarget.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtDrinkingTarget.Name = "txtDrinkingTarget";
-            this.txtDrinkingTarget.PasswordChar = '\0';
-            this.txtDrinkingTarget.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Suffix;
-            this.txtDrinkingTarget.ReadOnly = false;
-            this.txtDrinkingTarget.SelectedText = "";
-            this.txtDrinkingTarget.SelectionLength = 0;
-            this.txtDrinkingTarget.SelectionStart = 0;
-            this.txtDrinkingTarget.ShortcutsEnabled = true;
-            this.txtDrinkingTarget.TabStop = false;
-            this.txtDrinkingTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtDrinkingTarget.TrailingIcon = null;
-            this.txtDrinkingTarget.UseSystemPasswordChar = false;
-            this.txtDrinkingTarget.UseTallSize = false;
-            // 
-            // materialLabel2
-            // 
-            resources.ApplyResources(this.materialLabel2, "materialLabel2");
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel2.HighEmphasis = true;
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            // 
-            // txtDrinkingToday
-            // 
-            this.txtDrinkingToday.AnimateReadOnly = false;
-            this.txtDrinkingToday.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtDrinkingToday.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            resources.ApplyResources(this.txtDrinkingToday, "txtDrinkingToday");
-            this.txtDrinkingToday.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtDrinkingToday.Depth = 0;
-            this.txtDrinkingToday.HideSelection = true;
-            this.txtDrinkingToday.LeadingIcon = null;
-            this.txtDrinkingToday.MaxLength = 32767;
-            this.txtDrinkingToday.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtDrinkingToday.Name = "txtDrinkingToday";
-            this.txtDrinkingToday.PasswordChar = '\0';
-            this.txtDrinkingToday.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Suffix;
-            this.txtDrinkingToday.ReadOnly = true;
-            this.txtDrinkingToday.SelectedText = "";
-            this.txtDrinkingToday.SelectionLength = 0;
-            this.txtDrinkingToday.SelectionStart = 0;
-            this.txtDrinkingToday.ShortcutsEnabled = true;
-            this.txtDrinkingToday.TabStop = false;
-            this.txtDrinkingToday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtDrinkingToday.TrailingIcon = null;
-            this.txtDrinkingToday.UseSystemPasswordChar = false;
-            this.txtDrinkingToday.UseTallSize = false;
+            this.tmrDrink.Enabled = true;
+            this.tmrDrink.Interval = 60000;
+            this.tmrDrink.Tick += new System.EventHandler(this.tmrDrink_Tick);
             // 
             // FrmMain
             // 
@@ -382,6 +506,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmMain";
             this.Sizable = false;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.materialTabControl1.ResumeLayout(false);
             this.tbPgDrinking.ResumeLayout(false);
             this.materialCard2.ResumeLayout(false);
@@ -390,8 +515,11 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.materialCard4.ResumeLayout(false);
+            this.materialCard4.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            this.tbPgSedentary.ResumeLayout(false);
+            this.tbpgSetting.ResumeLayout(false);
             this.tbpgAbout.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -408,7 +536,7 @@
         private MaterialSkin.Controls.MaterialCard materialCard2;
         private MaterialSkin.Controls.MaterialCard materialCard3;
         private System.Windows.Forms.Integration.ElementHost elementHost1;
-        private OutliveYourCode.UserControls.WaveProgress waveProgress1;
+        private OutliveYourCode.UserControls.WaveProgress progrsWater;
         private MaterialSkin.Controls.MaterialCard materialCard4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private MaterialSkin.Controls.MaterialButton btnDrink250;
@@ -420,6 +548,14 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtDrinkingTarget;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialTextBox2 txtDrinkingToday;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialTextBox2 txtDrinkingTimerInterval;
+        private MaterialSkin.Controls.MaterialCheckbox chkDrinkingAlarm;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private System.Windows.Forms.Timer tmrDrink;
+        private MaterialSkin.Controls.MaterialCard materialCard6;
+        private MaterialSkin.Controls.MaterialCard materialCard5;
+        private MaterialSkin.Controls.MaterialLabel lblDrinkingStatus;
     }
 }
 

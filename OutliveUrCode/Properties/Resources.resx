@@ -114,4 +114,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="FrmMain_DrinkingStatus100" xml:space="preserve">
+	  <value>今天的喝水目标完成了哦！</value>
+  </data>
+  <data name="FrmMain_DrinkingStatus0" xml:space="preserve">
+	  <value>今天还没有喝水呢，快去喝水吧！</value>
+  </data>
+  <data name="FrmMain_DrinkingStatusNormal" xml:space="preserve">
+	  <value />
+  </data>
 </root>

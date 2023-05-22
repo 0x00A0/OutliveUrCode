@@ -74,12 +74,12 @@ namespace OutliveUrCode.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("05/22/2023 15:42:00")]
-        public global::System.DateTime SaveTime {
+        public global::System.DateTime lastDrinkingTime {
             get {
-                return ((global::System.DateTime)(this["SaveTime"]));
+                return ((global::System.DateTime)(this["lastDrinkingTime"]));
             }
             set {
-                this["SaveTime"] = value;
+                this["lastDrinkingTime"] = value;
             }
         }
     }

@@ -14,7 +14,7 @@
     <Setting Name="DrinkToday" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="SaveTime" Type="System.DateTime" Scope="User">
+    <Setting Name="lastDrinkingTime" Type="System.DateTime" Scope="User">
       <Value Profile="(Default)">05/22/2023 15:42:00</Value>
     </Setting>
   </Settings>

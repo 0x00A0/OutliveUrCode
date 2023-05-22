@@ -18,7 +18,7 @@ namespace OutliveUrCode
     public partial class FrmMain : MaterialForm
     {
         private readonly MaterialSkinManager materialSkinManager;
-        private DateTime lastAlarm;
+        private DateTime lastDrinkingAlarm;
 
         /// <summary>
         /// 加载设置
@@ -39,15 +39,15 @@ namespace OutliveUrCode
                 tmrMain.Enabled = false;
             }
 
-            if (Properties.Settings.Default.SaveTime.Date == DateTime.Today)
+            if (Properties.Settings.Default.lastDrinkingTime.Date == DateTime.Today)
             {
                 txtDrinkingToday.Text = Properties.Settings.Default.DrinkToday.ToString();
-                lastAlarm= Properties.Settings.Default.SaveTime;
+                lastDrinkingAlarm= Properties.Settings.Default.lastDrinkingTime;
             }
             else
             {
                 txtDrinkingToday.Text = "0";    // 重置每日饮水
-                lastAlarm=DateTime.Now;
+                lastDrinkingAlarm=DateTime.Now;
             }
 
             RefreshWater();
@@ -65,7 +65,7 @@ namespace OutliveUrCode
             Properties.Settings.Default.DrinkingAlarmInterval = int.Parse(txtDrinkingTimerInterval.Text);
             Properties.Settings.Default.isDrinkingAlarmActive = chkDrinkingAlarm.Checked;
             Properties.Settings.Default.DrinkToday = int.Parse(txtDrinkingToday.Text);
-            Properties.Settings.Default.SaveTime = lastAlarm;
+            Properties.Settings.Default.lastDrinkingTime = lastDrinkingAlarm;
             Properties.Settings.Default.Save();
             #endregion
         }
@@ -176,11 +176,11 @@ namespace OutliveUrCode
         private void CheckDrinkingAlarm()
         {
             //TODO 喝水提醒
-            if (chkDrinkingAlarm.Checked && (DateTime.Now-lastAlarm).TotalMinutes>=int.Parse(txtDrinkingTimerInterval.Text))
+            if (chkDrinkingAlarm.Checked && (DateTime.Now-lastDrinkingAlarm).TotalMinutes>=int.Parse(txtDrinkingTimerInterval.Text))
             {
                 MessageBox.Show("喝水提醒");
-                lastAlarm = DateTime.Now;
-                Properties.Settings.Default.SaveTime = lastAlarm;
+                lastDrinkingAlarm = DateTime.Now;
+                Properties.Settings.Default.lastDrinkingTime = lastDrinkingAlarm;
                 Properties.Settings.Default.Save();
             }
         }

@@ -37,8 +37,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDrink50 = new MaterialSkin.Controls.MaterialButton();
             this.btnDrink250 = new MaterialSkin.Controls.MaterialButton();
-            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
-            this.progrsWater = new OutliveYourCode.UserControls.WaveProgress();
             this.btnDrink500 = new MaterialSkin.Controls.MaterialButton();
             this.btnDrink150 = new MaterialSkin.Controls.MaterialButton();
             this.lblDrinkingStatus = new MaterialSkin.Controls.MaterialLabel();
@@ -60,6 +58,13 @@
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.MaterialIcons = new System.Windows.Forms.ImageList(this.components);
             this.tmrMain = new System.Windows.Forms.Timer(this.components);
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.progrsWater = new OutliveYourCode.UserControls.WaveProgress();
+            this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
+            this.materialCard8 = new MaterialSkin.Controls.MaterialCard();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.materialTabControl1.SuspendLayout();
             this.tbPgDrinking.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -68,8 +73,13 @@
             this.materialCard4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tbPgSedentary.SuspendLayout();
+            this.materialCard6.SuspendLayout();
             this.tbpgSetting.SuspendLayout();
+            this.materialCard5.SuspendLayout();
             this.tbpgAbout.SuspendLayout();
+            this.materialCard1.SuspendLayout();
+            this.materialCard7.SuspendLayout();
+            this.materialCard8.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -159,14 +169,6 @@
             this.btnDrink250.UseAccentColor = false;
             this.btnDrink250.UseVisualStyleBackColor = true;
             this.btnDrink250.Click += new System.EventHandler(this.btnDrink250_Click);
-            // 
-            // elementHost1
-            // 
-            resources.ApplyResources(this.elementHost1, "elementHost1");
-            this.tableLayoutPanel1.SetColumnSpan(this.elementHost1, 7);
-            this.elementHost1.Name = "elementHost1";
-            this.tableLayoutPanel1.SetRowSpan(this.elementHost1, 2);
-            this.elementHost1.Child = this.progrsWater;
             // 
             // btnDrink500
             // 
@@ -380,6 +382,7 @@
             // materialCard6
             // 
             this.materialCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard6.Controls.Add(this.tableLayoutPanel2);
             this.materialCard6.Depth = 0;
             resources.ApplyResources(this.materialCard6, "materialCard6");
             this.materialCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -396,6 +399,7 @@
             // materialCard5
             // 
             this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialCard7);
             this.materialCard5.Depth = 0;
             resources.ApplyResources(this.materialCard5, "materialCard5");
             this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -412,6 +416,7 @@
             // materialCard1
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.Controls.Add(this.materialCard8);
             this.materialCard1.Depth = 0;
             resources.ApplyResources(this.materialCard1, "materialCard1");
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -492,6 +497,49 @@
             this.tmrMain.Interval = 60000;
             this.tmrMain.Tick += new System.EventHandler(this.tmrMain_Tick);
             // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // flowLayoutPanel2
+            // 
+            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            // 
+            // elementHost1
+            // 
+            resources.ApplyResources(this.elementHost1, "elementHost1");
+            this.tableLayoutPanel1.SetColumnSpan(this.elementHost1, 7);
+            this.elementHost1.Name = "elementHost1";
+            this.tableLayoutPanel1.SetRowSpan(this.elementHost1, 2);
+            this.elementHost1.Child = this.progrsWater;
+            // 
+            // materialCard7
+            // 
+            resources.ApplyResources(this.materialCard7, "materialCard7");
+            this.materialCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard7.Controls.Add(this.flowLayoutPanel2);
+            this.materialCard7.Depth = 0;
+            this.materialCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard7.Name = "materialCard7";
+            // 
+            // materialCard8
+            // 
+            resources.ApplyResources(this.materialCard8, "materialCard8");
+            this.materialCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard8.Controls.Add(this.flowLayoutPanel3);
+            this.materialCard8.Depth = 0;
+            this.materialCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard8.Name = "materialCard8";
+            // 
+            // flowLayoutPanel3
+            // 
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            // 
             // FrmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -519,8 +567,13 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.tbPgSedentary.ResumeLayout(false);
+            this.materialCard6.ResumeLayout(false);
             this.tbpgSetting.ResumeLayout(false);
+            this.materialCard5.ResumeLayout(false);
             this.tbpgAbout.ResumeLayout(false);
+            this.materialCard1.ResumeLayout(false);
+            this.materialCard7.ResumeLayout(false);
+            this.materialCard8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -556,6 +609,11 @@
         private MaterialSkin.Controls.MaterialCard materialCard6;
         private MaterialSkin.Controls.MaterialCard materialCard5;
         private MaterialSkin.Controls.MaterialLabel lblDrinkingStatus;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private MaterialSkin.Controls.MaterialCard materialCard7;
+        private MaterialSkin.Controls.MaterialCard materialCard8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
     }
 }
 

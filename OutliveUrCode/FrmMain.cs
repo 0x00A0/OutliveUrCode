@@ -19,7 +19,7 @@ namespace OutliveUrCode
         {
             InitializeComponent();
             materialSkinManager = MaterialSkinManager.Instance; 
-            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(
                 Primary.Cyan700,
                 Primary.Cyan900,
@@ -27,11 +27,6 @@ namespace OutliveUrCode
                 Accent.DeepOrange200,
                 TextShade.WHITE);
             materialSkinManager.AddFormToManage(this);
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

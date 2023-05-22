@@ -34,3 +34,4 @@ E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.exe
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.pdb
 E:\Codes\OutliveUrCode\OutliveUrCode\bin\Debug\MaterialSkin.dll
 E:\Codes\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.Pages.PageDrinking.resources
+E:\proj_wxr\OutliveUrCode\OutliveUrCode\bin\Debug\MaterialSkin.pdb

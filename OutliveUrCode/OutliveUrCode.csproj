@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net48\MaterialSkin.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="SunnyUI, Version=3.3.7.1, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb, processorArchitecture=MSIL">
@@ -107,6 +104,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\MaterialSkin.ZH\MaterialSkin\MaterialSkin.csproj">
+      <Project>{8eb7611b-68cd-4b8b-987a-11717e2b250c}</Project>
+      <Name>MaterialSkin</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WaveProgress\WaveProgress.csproj">
       <Project>{E9A289FC-1EBF-470E-B231-8C2F184AB912}</Project>
       <Name>WaveProgress</Name>

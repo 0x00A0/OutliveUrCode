@@ -59,7 +59,7 @@
             this.tbpgAbout = new System.Windows.Forms.TabPage();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.MaterialIcons = new System.Windows.Forms.ImageList(this.components);
-            this.tmrDrink = new System.Windows.Forms.Timer(this.components);
+            this.tmrMain = new System.Windows.Forms.Timer(this.components);
             this.materialTabControl1.SuspendLayout();
             this.tbPgDrinking.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -486,11 +486,11 @@
             this.MaterialIcons.Images.SetKeyName(61, "water.png");
             this.MaterialIcons.Images.SetKeyName(62, "wheelchair-accessibility.png");
             // 
-            // tmrDrink
+            // tmrMain
             // 
-            this.tmrDrink.Enabled = true;
-            this.tmrDrink.Interval = 60000;
-            this.tmrDrink.Tick += new System.EventHandler(this.tmrDrink_Tick);
+            this.tmrMain.Enabled = true;
+            this.tmrMain.Interval = 60000;
+            this.tmrMain.Tick += new System.EventHandler(this.tmrMain_Tick);
             // 
             // FrmMain
             // 
@@ -552,7 +552,7 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtDrinkingTimerInterval;
         private MaterialSkin.Controls.MaterialCheckbox chkDrinkingAlarm;
         private MaterialSkin.Controls.MaterialButton materialButton1;
-        private System.Windows.Forms.Timer tmrDrink;
+        private System.Windows.Forms.Timer tmrMain;
         private MaterialSkin.Controls.MaterialCard materialCard6;
         private MaterialSkin.Controls.MaterialCard materialCard5;
         private MaterialSkin.Controls.MaterialLabel lblDrinkingStatus;

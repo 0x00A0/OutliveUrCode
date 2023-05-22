@@ -11,55 +11,68 @@ using System.Windows.Input;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using OutliveUrCode.Properties;
+using Sunny.UI.Win32;
 
 namespace OutliveUrCode
 {
     public partial class FrmMain : MaterialForm
     {
         private readonly MaterialSkinManager materialSkinManager;
+        private DateTime lastAlarm;
 
+        /// <summary>
+        /// 加载设置
+        /// </summary>
         private void LoadFromSettings()
         {
-            #region 喝水相关
+            #region 喝水相关设置
             txtDrinkingTarget.Text = Properties.Settings.Default.DrinkingTarget.ToString();
             txtDrinkingTimerInterval.Text = Properties.Settings.Default.DrinkingAlarmInterval.ToString();
-            tmrDrink.Interval = Properties.Settings.Default.DrinkingAlarmInterval * 60 * 1000;
             if(Properties.Settings.Default.isDrinkingAlarmActive)
             {
                 chkDrinkingAlarm.Checked = true;
-                tmrDrink.Enabled = true;
+                tmrMain.Enabled = true;
             }
             else
             {
                 chkDrinkingAlarm.Checked = false;
-                tmrDrink.Enabled = false;
+                tmrMain.Enabled = false;
             }
 
             if (Properties.Settings.Default.SaveTime.Date == DateTime.Today)
             {
                 txtDrinkingToday.Text = Properties.Settings.Default.DrinkToday.ToString();
+                lastAlarm= Properties.Settings.Default.SaveTime;
             }
             else
             {
                 txtDrinkingToday.Text = "0";    // 重置每日饮水
+                lastAlarm=DateTime.Now;
             }
 
             RefreshWater();
 
             #endregion
         }
+
+        /// <summary>
+        /// 保存设置
+        /// </summary>
         private void SaveToSettings()
         {
-            #region 喝水相关
+            #region 喝水相关设置
             Properties.Settings.Default.DrinkingTarget = int.Parse(txtDrinkingTarget.Text);
-            Properties.Settings.Default.DrinkingAlarmInterval = tmrDrink.Interval / 60 / 1000;
+            Properties.Settings.Default.DrinkingAlarmInterval = int.Parse(txtDrinkingTimerInterval.Text);
             Properties.Settings.Default.isDrinkingAlarmActive = chkDrinkingAlarm.Checked;
             Properties.Settings.Default.DrinkToday = int.Parse(txtDrinkingToday.Text);
-            Properties.Settings.Default.SaveTime = DateTime.Today;
+            Properties.Settings.Default.SaveTime = lastAlarm;
             Properties.Settings.Default.Save();
             #endregion
         }
 
+        /// <summary>
+        /// 窗体的构造函数
+        /// </summary>
         public FrmMain()
         {
             InitializeComponent();
@@ -75,6 +88,16 @@ namespace OutliveUrCode
             materialSkinManager.AddFormToManage(this);
         }
 
+        /// <summary>
+        /// 主计时器Tick
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tmrMain_Tick(object sender, EventArgs e)
+        {
+            CheckDrinkingAlarm();
+        }
+        #region 喝水相关方法
         private void RefreshWater()
         {
             if (int.Parse(txtDrinkingTarget.Text) == 0)
@@ -130,11 +153,6 @@ namespace OutliveUrCode
             DoDrink(50);
         }
 
-        private void tmrDrink_Tick(object sender, EventArgs e)
-        {
-            //TODO 喝水提醒的代码
-        }
-
         private void txtDrinkingToday_TextChanged(object sender, EventArgs e)
         {
             if (txtDrinkingToday.Text == "")
@@ -154,5 +172,26 @@ namespace OutliveUrCode
             Properties.Settings.Default.Save();
             RefreshWater();
         }
+
+        private void CheckDrinkingAlarm()
+        {
+            //TODO 喝水提醒
+            if (chkDrinkingAlarm.Checked && (DateTime.Now-lastAlarm).TotalMinutes>=int.Parse(txtDrinkingTimerInterval.Text))
+            {
+                MessageBox.Show("喝水提醒");
+                lastAlarm = DateTime.Now;
+                Properties.Settings.Default.SaveTime = lastAlarm;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        #endregion
+
+        private void CheckSedentaryAlarm()
+        {
+            //TODO 久坐提醒
+            MessageBox.Show("久坐提醒");
+        }
+
     }
 }

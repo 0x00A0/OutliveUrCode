@@ -50,3 +50,5 @@ E:\proj_wxr\OutliveUrCode\OutliveUrCode\bin\Debug\System.Memory.xml
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\bin\Debug\System.Numerics.Vectors.xml
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\proj_wxr\OutliveUrCode\OutliveUrCode\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\Interop.IWshRuntimeLibrary.dll
+E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.csproj.ResolveComReference.cache

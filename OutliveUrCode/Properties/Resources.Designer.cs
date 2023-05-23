@@ -79,7 +79,7 @@ namespace OutliveUrCode.Properties {
         }
         
         /// <summary>
-        ///   查找类似  的本地化字符串。
+        ///   查找类似 下次喝水提醒时间： 的本地化字符串。
         /// </summary>
         internal static string FrmMain_DrinkingStatusNormal {
             get {

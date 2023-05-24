@@ -9,7 +9,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using System.Windows.Input;
+using System.Diagnostics;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using OutliveUrCode.Properties;
@@ -22,6 +24,9 @@ namespace OutliveUrCode
         private readonly MaterialSkinManager materialSkinManager;   // 窗体的Material设计样式管理器
         private ComponentResourceManager resources = new ComponentResourceManager(typeof(FrmMain)); //窗体的资源管理,用于多语言
         private DateTime lastDrinkingAlarm;
+        private DateTime lastSedentaryAlarm;
+        private DateTime totalSedentaryToday;
+        private Stopwatch stopwatchSedentary = new Stopwatch();
 
         /// <summary>
         /// 加载设置
@@ -31,34 +36,46 @@ namespace OutliveUrCode
             #region 喝水相关设置
             txtDrinkingTarget.Text = Properties.Settings.Default.DrinkingTarget.ToString();
             txtDrinkingTimerInterval.Text = Properties.Settings.Default.DrinkingAlarmInterval.ToString();
-            if(Properties.Settings.Default.isDrinkingAlarmActive)
-            {
-                chkDrinkingAlarm.Checked = true;
-                tmrMain.Enabled = true;
-            }
-            else
-            {
-                chkDrinkingAlarm.Checked = false;
-                tmrMain.Enabled = false;
-            }
+            chkDrinkingAlarm.Checked = Properties.Settings.Default.isDrinkingAlarmActive;
 
-            if (Properties.Settings.Default.lastDrinkingTime.Date == DateTime.Today)
+            if (Properties.Settings.Default.lastDrinkingTime.Date == DateTime.Today)    // 如果上次饮水是今天
             {
-                txtDrinkingToday.Text = Properties.Settings.Default.DrinkToday.ToString();
-                lastDrinkingAlarm= Properties.Settings.Default.lastDrinkingTime;
+                txtDrinkingToday.Text = Properties.Settings.Default.DrinkToday.ToString();  // 读取今日饮水
+                lastDrinkingAlarm= Properties.Settings.Default.lastDrinkingTime;    // 读取上次饮水时间
             }
             else
             {
                 txtDrinkingToday.Text = "0";    // 重置每日饮水
-                lastDrinkingAlarm=DateTime.Now;
+                lastDrinkingAlarm=DateTime.Now; // 重置上次饮水时间
             }
             RefreshWater();
             #endregion
 
+            #region 久坐相关设置
+
+            txtSedentaryTimerInterval.Text = Properties.Settings.Default.SedentaryAlarmInterval.ToString();
+            txtSedentaryTimeRest.Text = Properties.Settings.Default.SedentaryRestTime.ToString();
+            chkSedentaryStrongAlarm.Checked = Properties.Settings.Default.isSedentaryAlarmStrong;
+            chkSedentaryAlarm.Checked = Properties.Settings.Default.isSedentaryAlarmActive;
+            lastSedentaryAlarm = DateTime.Now;
+            if (Properties.Settings.Default.lastSedentaryAlarm.Date == DateTime.Today)   // 如果上次久坐提醒是今天
+            {
+                totalSedentaryToday = DateTime.Today + Properties.Settings.Default.SedentaryToday;   // 读取今日久坐时间
+                ledSedentary.Value = totalSedentaryToday; // 读取今日久坐时间
+            }
+            else
+            {
+                totalSedentaryToday = DateTime.Today;   // 重置今日久坐时间
+                ledSedentary.Value = DateTime.Today; // 重置今日久坐时间
+            }
+            RefreshSed();
+
+            #endregion  
+
             #region 应用设置
             chkStartup.Checked=Properties.Settings.Default.isStartup;
             chkTheme.Checked=Properties.Settings.Default.themeDark;
-            switch (Properties.Settings.Default.language)
+            switch (Properties.Settings.Default.language)   // 读取语言设置
             {
                 case "zh-cn":
                     lstLanguage.SelectedIndex = 0;
@@ -84,6 +101,17 @@ namespace OutliveUrCode
             Properties.Settings.Default.isDrinkingAlarmActive = chkDrinkingAlarm.Checked;
             Properties.Settings.Default.DrinkToday = int.Parse(txtDrinkingToday.Text);
             Properties.Settings.Default.lastDrinkingTime = lastDrinkingAlarm;
+            #endregion
+
+            #region 久坐相关设置
+
+            Properties.Settings.Default.SedentaryToday = ledSedentary.Value.TimeOfDay;
+            Properties.Settings.Default.SedentaryAlarmInterval = int.Parse(txtSedentaryTimerInterval.Text);
+            Properties.Settings.Default.SedentaryRestTime = int.Parse(txtSedentaryTimeRest.Text);
+            Properties.Settings.Default.isSedentaryAlarmActive = chkSedentaryAlarm.Checked;
+            Properties.Settings.Default.isSedentaryAlarmStrong = chkSedentaryStrongAlarm.Checked;
+            Properties.Settings.Default.lastSedentaryAlarm = DateTime.Now;
+
             #endregion
 
             #region 应用设置
@@ -112,6 +140,7 @@ namespace OutliveUrCode
             materialSkinManager.AddFormToManage(this);
             LoadFromSettings();
             ledSedentary.ForeColor = Color.Green;
+            stopwatchSedentary.Start();
         }
         /// <summary>
         /// 窗体缩小至托盘
@@ -237,24 +266,32 @@ namespace OutliveUrCode
         private void btnDrink150_Click(object sender, EventArgs e)
         {
             lastDrinkingAlarm = DateTime.Now;
+            Properties.Settings.Default.lastDrinkingTime = DateTime.Now;
+            Properties.Settings.Default.Save();
             DoDrink(150);
         }
 
         private void btnDrink500_Click(object sender, EventArgs e)
         {
             lastDrinkingAlarm = DateTime.Now;
+            Properties.Settings.Default.lastDrinkingTime = DateTime.Now;
+            Properties.Settings.Default.Save();
             DoDrink(500);
         }
 
         private void btnDrink250_Click(object sender, EventArgs e)
         {
             lastDrinkingAlarm = DateTime.Now;
+            Properties.Settings.Default.lastDrinkingTime = DateTime.Now;
+            Properties.Settings.Default.Save();
             DoDrink(250);
         }
 
         private void btnDrink50_Click(object sender, EventArgs e)
         {
             lastDrinkingAlarm = DateTime.Now;
+            Properties.Settings.Default.lastDrinkingTime = DateTime.Now;
+            Properties.Settings.Default.Save();
             DoDrink(50);
         }
 
@@ -290,9 +327,14 @@ namespace OutliveUrCode
             RefreshWater();
         }
 
+        private void chkDrinkingAlarm_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.isDrinkingAlarmActive = chkDrinkingAlarm.Checked;
+            Properties.Settings.Default.Save();
+        }
+
         private void CheckDrinkingAlarm()
         {
-            //TODO 喝水提醒
             if (chkDrinkingAlarm.Checked 
                 && (DateTime.Now-lastDrinkingAlarm).TotalMinutes>=int.Parse(txtDrinkingTimerInterval.Text)
                 && int.Parse(txtDrinkingToday.Text) < int.Parse(txtDrinkingTarget.Text)
@@ -304,22 +346,91 @@ namespace OutliveUrCode
                     "今日已喝："+txtDrinkingToday.Text+"\n"+"今日目标："+txtDrinkingTarget.Text,
                     ToolTipIcon.Info
                     );
-                Properties.Settings.Default.lastDrinkingTime = lastDrinkingAlarm;
-                Properties.Settings.Default.Save();
-                RefreshWater();
             }
         }
 
         #endregion
 
-        private void CheckSedentaryAlarm()
+        #region 久坐相关方法
+
+        private void RefreshSed()
         {
-            //TODO 久坐提醒
-            //MessageBox.Show("久坐提醒");
+            lblSedentaryNextAlarm.Text=(lastSedentaryAlarm+ new TimeSpan(0,int.Parse(txtSedentaryTimerInterval.Text),0)).ToString("HH:mm");
         }
 
+        private void tmrSedn_Tick(object sender, EventArgs e)
+        {
+            ledSedentary.Value = totalSedentaryToday + stopwatchSedentary.Elapsed;
+        }
+        private void chkSedentaryAlarm_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.isSedentaryAlarmActive = chkSedentaryAlarm.Checked;
+            Properties.Settings.Default.Save();
+        }
+
+        private void chkSedentaryStrongAlarm_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.isSedentaryAlarmStrong = chkSedentaryStrongAlarm.Checked;
+            Properties.Settings.Default.Save();
+        }
+
+        private void txtSedentaryTimerInterval_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSedentaryTimerInterval.Text == "")
+            {
+                txtSedentaryTimerInterval.Text = "1";
+            }
+            Properties.Settings.Default.SedentaryAlarmInterval = int.Parse(txtSedentaryTimerInterval.Text);
+            Properties.Settings.Default.Save();
+            RefreshSed();
+        }
+        private void txtSedentaryTimeRest_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSedentaryTimeRest.Text == "")
+            {
+                txtSedentaryTimeRest.Text = "1";
+            }
+            Properties.Settings.Default.SedentaryRestTime = int.Parse(txtSedentaryTimeRest.Text);
+            Properties.Settings.Default.Save();
+        }
+        private void btnResetSedentary_Click(object sender, EventArgs e)
+        {
+            lastSedentaryAlarm=DateTime.Now;
+            totalSedentaryToday += stopwatchSedentary.Elapsed;
+            RefreshSed();
+            stopwatchSedentary.Restart();
+        }
+
+        private void CheckSedentaryAlarm()
+        {
+            if (chkSedentaryAlarm.Checked
+                && DateTime.Now >= lastSedentaryAlarm + new TimeSpan(0, int.Parse(txtSedentaryTimerInterval.Text), 0)
+               )
+            {
+                if (chkSedentaryStrongAlarm.Checked)
+                {
+                    //TODO 久坐提醒(强)
+                    MessageBox.Show("还没写的强提醒");
+                }
+                else
+                {
+                    notifyMain.ShowBalloonTip(
+                        0,
+                        "该起来运动啦！",
+                        "今日久坐总时长：" + ledSedentary.Value.ToString("HH:mm") + "\n" 
+                        + "本次久坐时长：" + (new DateTime() + stopwatchSedentary.Elapsed).ToString("HH:mm"),
+                        ToolTipIcon.Info
+                    );
+                }
+            }
+        }
+
+
+        #endregion
+
+
         #region 应用设置相关
-        
+
         /// <summary>
         /// 主题切换
         /// </summary>
@@ -374,10 +485,15 @@ namespace OutliveUrCode
 
         #endregion
 
+        /// <summary>
+        /// 显示开源信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnShowOpenSource_Click(object sender, EventArgs e)
         {
             MaterialMessageBox.Show(resources.GetString("OpenSourceInfo"));
         }
-        
+
     }
 }

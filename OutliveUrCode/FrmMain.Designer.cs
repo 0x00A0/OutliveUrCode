@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem5 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem6 = new MaterialSkin.MaterialListBoxItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            MaterialSkin.MaterialListBoxItem materialListBoxItem3 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem4 = new MaterialSkin.MaterialListBoxItem();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tbPgDrinking = new System.Windows.Forms.TabPage();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
@@ -58,12 +58,27 @@
             this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.materialCard9 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
             this.ledSedentary = new HZH_Controls.Controls.UCLEDTime();
             this.materialCard10 = new MaterialSkin.Controls.MaterialCard();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.chkSedentaryAlarm = new MaterialSkin.Controls.MaterialCheckbox();
-            this.materialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkSedentaryStrongAlarm = new MaterialSkin.Controls.MaterialCheckbox();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard11 = new MaterialSkin.Controls.MaterialCard();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtSedentaryTimerInterval = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtSedentaryTimeRest = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialCard12 = new MaterialSkin.Controls.MaterialCard();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblSedentaryNextAlarm = new MaterialSkin.Controls.MaterialLabel();
+            this.btnResetSedentary = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard13 = new MaterialSkin.Controls.MaterialCard();
+            this.lblSedentaryStatus = new MaterialSkin.Controls.MaterialLabel();
             this.tbpgSetting = new System.Windows.Forms.TabPage();
             this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
             this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
@@ -90,16 +105,7 @@
             this.notifyMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.materialCard11 = new MaterialSkin.Controls.MaterialCard();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtSedentaryTimerInterval = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialCard12 = new MaterialSkin.Controls.MaterialCard();
-            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
-            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnResetSedentary = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
+            this.tmrSedn = new System.Windows.Forms.Timer(this.components);
             this.materialTabControl1.SuspendLayout();
             this.tbPgDrinking.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -113,6 +119,11 @@
             this.materialCard9.SuspendLayout();
             this.materialCard10.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            this.materialCard11.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.materialCard12.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
+            this.materialCard13.SuspendLayout();
             this.tbpgSetting.SuspendLayout();
             this.materialCard5.SuspendLayout();
             this.materialCard7.SuspendLayout();
@@ -121,10 +132,6 @@
             this.materialCard1.SuspendLayout();
             this.materialCard8.SuspendLayout();
             this.notifyMenu.SuspendLayout();
-            this.materialCard11.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.materialCard12.SuspendLayout();
-            this.flowLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -414,6 +421,7 @@
             this.chkDrinkingAlarm.ReadOnly = false;
             this.chkDrinkingAlarm.Ripple = true;
             this.chkDrinkingAlarm.UseVisualStyleBackColor = true;
+            this.chkDrinkingAlarm.CheckedChanged += new System.EventHandler(this.chkDrinkingAlarm_CheckedChanged);
             // 
             // btnShowDrinkData
             // 
@@ -453,6 +461,7 @@
             this.tableLayoutPanel2.Controls.Add(this.materialCard10, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.materialCard11, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.materialCard12, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.materialCard13, 0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // materialCard9
@@ -468,12 +477,21 @@
             this.materialCard9.Name = "materialCard9";
             this.tableLayoutPanel2.SetRowSpan(this.materialCard9, 2);
             // 
+            // materialLabel17
+            // 
+            resources.ApplyResources(this.materialLabel17, "materialLabel17");
+            this.materialLabel17.Depth = 0;
+            this.materialLabel17.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel17.HighEmphasis = true;
+            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel17.Name = "materialLabel17";
+            // 
             // ledSedentary
             // 
             resources.ApplyResources(this.ledSedentary, "ledSedentary");
             this.ledSedentary.BackColor = System.Drawing.Color.Transparent;
             this.ledSedentary.ForeColor = System.Drawing.Color.Green;
-            this.ledSedentary.LineWidth = 12;
+            this.ledSedentary.LineWidth = 9;
             this.ledSedentary.Name = "ledSedentary";
             this.ledSedentary.Value = new System.DateTime(2023, 5, 24, 10, 30, 43, 43);
             // 
@@ -492,7 +510,8 @@
             // 
             this.flowLayoutPanel3.Controls.Add(this.materialLabel13);
             this.flowLayoutPanel3.Controls.Add(this.chkSedentaryAlarm);
-            this.flowLayoutPanel3.Controls.Add(this.materialCheckbox1);
+            this.flowLayoutPanel3.Controls.Add(this.chkSedentaryStrongAlarm);
+            this.flowLayoutPanel3.Controls.Add(this.materialButton1);
             resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
@@ -500,6 +519,7 @@
             // 
             resources.ApplyResources(this.materialLabel13, "materialLabel13");
             this.materialLabel13.Depth = 0;
+            this.flowLayoutPanel3.SetFlowBreak(this.materialLabel13, true);
             this.materialLabel13.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             this.materialLabel13.HighEmphasis = true;
             this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
@@ -517,20 +537,200 @@
             this.chkSedentaryAlarm.ReadOnly = false;
             this.chkSedentaryAlarm.Ripple = true;
             this.chkSedentaryAlarm.UseVisualStyleBackColor = true;
+            this.chkSedentaryAlarm.CheckedChanged += new System.EventHandler(this.chkSedentaryAlarm_CheckedChanged);
             // 
-            // materialCheckbox1
+            // chkSedentaryStrongAlarm
             // 
-            resources.ApplyResources(this.materialCheckbox1, "materialCheckbox1");
-            this.materialCheckbox1.Checked = true;
-            this.materialCheckbox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.materialCheckbox1.Depth = 0;
-            this.flowLayoutPanel3.SetFlowBreak(this.materialCheckbox1, true);
-            this.materialCheckbox1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckbox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckbox1.Name = "materialCheckbox1";
-            this.materialCheckbox1.ReadOnly = false;
-            this.materialCheckbox1.Ripple = true;
-            this.materialCheckbox1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkSedentaryStrongAlarm, "chkSedentaryStrongAlarm");
+            this.chkSedentaryStrongAlarm.Checked = true;
+            this.chkSedentaryStrongAlarm.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkSedentaryStrongAlarm.Depth = 0;
+            this.flowLayoutPanel3.SetFlowBreak(this.chkSedentaryStrongAlarm, true);
+            this.chkSedentaryStrongAlarm.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkSedentaryStrongAlarm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkSedentaryStrongAlarm.Name = "chkSedentaryStrongAlarm";
+            this.chkSedentaryStrongAlarm.ReadOnly = false;
+            this.chkSedentaryStrongAlarm.Ripple = true;
+            this.chkSedentaryStrongAlarm.UseVisualStyleBackColor = true;
+            this.chkSedentaryStrongAlarm.CheckedChanged += new System.EventHandler(this.chkSedentaryStrongAlarm_CheckedChanged);
+            // 
+            // materialButton1
+            // 
+            resources.ApplyResources(this.materialButton1, "materialButton1");
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            // 
+            // materialCard11
+            // 
+            this.materialCard11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard11.Controls.Add(this.flowLayoutPanel4);
+            this.materialCard11.Depth = 0;
+            resources.ApplyResources(this.materialCard11, "materialCard11");
+            this.materialCard11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard11.Name = "materialCard11";
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Controls.Add(this.materialLabel14);
+            this.flowLayoutPanel4.Controls.Add(this.txtSedentaryTimerInterval);
+            this.flowLayoutPanel4.Controls.Add(this.materialLabel16);
+            this.flowLayoutPanel4.Controls.Add(this.txtSedentaryTimeRest);
+            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            // 
+            // materialLabel14
+            // 
+            resources.ApplyResources(this.materialLabel14, "materialLabel14");
+            this.materialLabel14.Depth = 0;
+            this.materialLabel14.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel14.HighEmphasis = true;
+            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel14.Name = "materialLabel14";
+            // 
+            // txtSedentaryTimerInterval
+            // 
+            this.txtSedentaryTimerInterval.AnimateReadOnly = false;
+            this.txtSedentaryTimerInterval.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtSedentaryTimerInterval.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            resources.ApplyResources(this.txtSedentaryTimerInterval, "txtSedentaryTimerInterval");
+            this.txtSedentaryTimerInterval.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSedentaryTimerInterval.Depth = 0;
+            this.flowLayoutPanel4.SetFlowBreak(this.txtSedentaryTimerInterval, true);
+            this.txtSedentaryTimerInterval.HideSelection = true;
+            this.txtSedentaryTimerInterval.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSedentaryTimerInterval.LeadingIcon")));
+            this.txtSedentaryTimerInterval.LeaveOnEnterKey = true;
+            this.txtSedentaryTimerInterval.MaxLength = 32767;
+            this.txtSedentaryTimerInterval.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSedentaryTimerInterval.Name = "txtSedentaryTimerInterval";
+            this.txtSedentaryTimerInterval.PasswordChar = '\0';
+            this.txtSedentaryTimerInterval.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Suffix;
+            this.txtSedentaryTimerInterval.ReadOnly = false;
+            this.txtSedentaryTimerInterval.SelectedText = "";
+            this.txtSedentaryTimerInterval.SelectionLength = 0;
+            this.txtSedentaryTimerInterval.SelectionStart = 0;
+            this.txtSedentaryTimerInterval.ShortcutsEnabled = true;
+            this.txtSedentaryTimerInterval.TabStop = false;
+            this.txtSedentaryTimerInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSedentaryTimerInterval.TrailingIcon = null;
+            this.txtSedentaryTimerInterval.UseSystemPasswordChar = false;
+            this.txtSedentaryTimerInterval.UseTallSize = false;
+            this.txtSedentaryTimerInterval.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckNumber);
+            this.txtSedentaryTimerInterval.TextChanged += new System.EventHandler(this.txtSedentaryTimerInterval_TextChanged);
+            // 
+            // materialLabel16
+            // 
+            resources.ApplyResources(this.materialLabel16, "materialLabel16");
+            this.materialLabel16.Depth = 0;
+            this.materialLabel16.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel16.HighEmphasis = true;
+            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel16.Name = "materialLabel16";
+            // 
+            // txtSedentaryTimeRest
+            // 
+            this.txtSedentaryTimeRest.AnimateReadOnly = false;
+            this.txtSedentaryTimeRest.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtSedentaryTimeRest.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            resources.ApplyResources(this.txtSedentaryTimeRest, "txtSedentaryTimeRest");
+            this.txtSedentaryTimeRest.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSedentaryTimeRest.Depth = 0;
+            this.flowLayoutPanel4.SetFlowBreak(this.txtSedentaryTimeRest, true);
+            this.txtSedentaryTimeRest.HideSelection = true;
+            this.txtSedentaryTimeRest.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSedentaryTimeRest.LeadingIcon")));
+            this.txtSedentaryTimeRest.LeaveOnEnterKey = true;
+            this.txtSedentaryTimeRest.MaxLength = 32767;
+            this.txtSedentaryTimeRest.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSedentaryTimeRest.Name = "txtSedentaryTimeRest";
+            this.txtSedentaryTimeRest.PasswordChar = '\0';
+            this.txtSedentaryTimeRest.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Suffix;
+            this.txtSedentaryTimeRest.ReadOnly = false;
+            this.txtSedentaryTimeRest.SelectedText = "";
+            this.txtSedentaryTimeRest.SelectionLength = 0;
+            this.txtSedentaryTimeRest.SelectionStart = 0;
+            this.txtSedentaryTimeRest.ShortcutsEnabled = true;
+            this.txtSedentaryTimeRest.TabStop = false;
+            this.txtSedentaryTimeRest.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSedentaryTimeRest.TrailingIcon = null;
+            this.txtSedentaryTimeRest.UseSystemPasswordChar = false;
+            this.txtSedentaryTimeRest.UseTallSize = false;
+            this.txtSedentaryTimeRest.TextChanged += new System.EventHandler(this.txtSedentaryTimeRest_TextChanged);
+            // 
+            // materialCard12
+            // 
+            this.materialCard12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard12.Controls.Add(this.flowLayoutPanel8);
+            this.materialCard12.Depth = 0;
+            resources.ApplyResources(this.materialCard12, "materialCard12");
+            this.materialCard12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard12.Name = "materialCard12";
+            // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.Controls.Add(this.materialLabel15);
+            this.flowLayoutPanel8.Controls.Add(this.lblSedentaryNextAlarm);
+            this.flowLayoutPanel8.Controls.Add(this.btnResetSedentary);
+            resources.ApplyResources(this.flowLayoutPanel8, "flowLayoutPanel8");
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            // 
+            // materialLabel15
+            // 
+            resources.ApplyResources(this.materialLabel15, "materialLabel15");
+            this.materialLabel15.Depth = 0;
+            this.materialLabel15.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel15.HighEmphasis = true;
+            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel15.Name = "materialLabel15";
+            // 
+            // lblSedentaryNextAlarm
+            // 
+            resources.ApplyResources(this.lblSedentaryNextAlarm, "lblSedentaryNextAlarm");
+            this.lblSedentaryNextAlarm.Depth = 0;
+            this.flowLayoutPanel8.SetFlowBreak(this.lblSedentaryNextAlarm, true);
+            this.lblSedentaryNextAlarm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblSedentaryNextAlarm.Name = "lblSedentaryNextAlarm";
+            // 
+            // btnResetSedentary
+            // 
+            resources.ApplyResources(this.btnResetSedentary, "btnResetSedentary");
+            this.btnResetSedentary.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.btnResetSedentary.Depth = 0;
+            this.btnResetSedentary.HighEmphasis = true;
+            this.btnResetSedentary.Icon = ((System.Drawing.Image)(resources.GetObject("btnResetSedentary.Icon")));
+            this.btnResetSedentary.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnResetSedentary.Name = "btnResetSedentary";
+            this.btnResetSedentary.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnResetSedentary.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnResetSedentary.UseAccentColor = false;
+            this.btnResetSedentary.UseVisualStyleBackColor = true;
+            this.btnResetSedentary.Click += new System.EventHandler(this.btnResetSedentary_Click);
+            // 
+            // materialCard13
+            // 
+            resources.ApplyResources(this.materialCard13, "materialCard13");
+            this.materialCard13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tableLayoutPanel2.SetColumnSpan(this.materialCard13, 2);
+            this.materialCard13.Controls.Add(this.lblSedentaryStatus);
+            this.materialCard13.Depth = 0;
+            this.materialCard13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard13.Name = "materialCard13";
+            // 
+            // lblSedentaryStatus
+            // 
+            resources.ApplyResources(this.lblSedentaryStatus, "lblSedentaryStatus");
+            this.lblSedentaryStatus.Depth = 0;
+            this.lblSedentaryStatus.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblSedentaryStatus.Name = "lblSedentaryStatus";
             // 
             // tbpgSetting
             // 
@@ -628,14 +828,14 @@
             this.lstLanguage.Density = MaterialSkin.Controls.MaterialListBox.MaterialItemDensity.Default;
             this.lstLanguage.Depth = 0;
             resources.ApplyResources(this.lstLanguage, "lstLanguage");
-            materialListBoxItem3.SecondaryText = "";
-            materialListBoxItem3.Tag = null;
-            materialListBoxItem3.Text = "中文(简体)";
-            materialListBoxItem4.SecondaryText = "";
-            materialListBoxItem4.Tag = null;
-            materialListBoxItem4.Text = "EN-US";
-            this.lstLanguage.Items.Add(materialListBoxItem3);
-            this.lstLanguage.Items.Add(materialListBoxItem4);
+            materialListBoxItem5.SecondaryText = "";
+            materialListBoxItem5.Tag = null;
+            materialListBoxItem5.Text = "中文(简体)";
+            materialListBoxItem6.SecondaryText = "";
+            materialListBoxItem6.Tag = null;
+            materialListBoxItem6.Text = "EN-US";
+            this.lstLanguage.Items.Add(materialListBoxItem5);
+            this.lstLanguage.Items.Add(materialListBoxItem6);
             this.lstLanguage.MouseState = MaterialSkin.MouseState.HOVER;
             this.lstLanguage.Name = "lstLanguage";
             this.lstLanguage.SelectedIndex = -1;
@@ -845,116 +1045,11 @@
             resources.ApplyResources(this.menuExit, "menuExit");
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
-            // materialCard11
+            // tmrSedn
             // 
-            this.materialCard11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard11.Controls.Add(this.flowLayoutPanel4);
-            this.materialCard11.Depth = 0;
-            resources.ApplyResources(this.materialCard11, "materialCard11");
-            this.materialCard11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard11.Name = "materialCard11";
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.Controls.Add(this.materialLabel14);
-            this.flowLayoutPanel4.Controls.Add(this.txtSedentaryTimerInterval);
-            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            // 
-            // materialLabel14
-            // 
-            resources.ApplyResources(this.materialLabel14, "materialLabel14");
-            this.materialLabel14.Depth = 0;
-            this.materialLabel14.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel14.HighEmphasis = true;
-            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel14.Name = "materialLabel14";
-            // 
-            // txtSedentaryTimerInterval
-            // 
-            this.txtSedentaryTimerInterval.AnimateReadOnly = false;
-            this.txtSedentaryTimerInterval.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtSedentaryTimerInterval.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            resources.ApplyResources(this.txtSedentaryTimerInterval, "txtSedentaryTimerInterval");
-            this.txtSedentaryTimerInterval.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtSedentaryTimerInterval.Depth = 0;
-            this.txtSedentaryTimerInterval.HideSelection = true;
-            this.txtSedentaryTimerInterval.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSedentaryTimerInterval.LeadingIcon")));
-            this.txtSedentaryTimerInterval.LeaveOnEnterKey = true;
-            this.txtSedentaryTimerInterval.MaxLength = 32767;
-            this.txtSedentaryTimerInterval.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtSedentaryTimerInterval.Name = "txtSedentaryTimerInterval";
-            this.txtSedentaryTimerInterval.PasswordChar = '\0';
-            this.txtSedentaryTimerInterval.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Suffix;
-            this.txtSedentaryTimerInterval.ReadOnly = false;
-            this.txtSedentaryTimerInterval.SelectedText = "";
-            this.txtSedentaryTimerInterval.SelectionLength = 0;
-            this.txtSedentaryTimerInterval.SelectionStart = 0;
-            this.txtSedentaryTimerInterval.ShortcutsEnabled = true;
-            this.txtSedentaryTimerInterval.TabStop = false;
-            this.txtSedentaryTimerInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtSedentaryTimerInterval.TrailingIcon = null;
-            this.txtSedentaryTimerInterval.UseSystemPasswordChar = false;
-            this.txtSedentaryTimerInterval.UseTallSize = false;
-            // 
-            // materialCard12
-            // 
-            this.materialCard12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard12.Controls.Add(this.flowLayoutPanel8);
-            this.materialCard12.Depth = 0;
-            resources.ApplyResources(this.materialCard12, "materialCard12");
-            this.materialCard12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard12.Name = "materialCard12";
-            // 
-            // flowLayoutPanel8
-            // 
-            this.flowLayoutPanel8.Controls.Add(this.materialLabel15);
-            this.flowLayoutPanel8.Controls.Add(this.materialLabel16);
-            this.flowLayoutPanel8.Controls.Add(this.btnResetSedentary);
-            resources.ApplyResources(this.flowLayoutPanel8, "flowLayoutPanel8");
-            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
-            // 
-            // materialLabel15
-            // 
-            resources.ApplyResources(this.materialLabel15, "materialLabel15");
-            this.materialLabel15.Depth = 0;
-            this.materialLabel15.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel15.HighEmphasis = true;
-            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel15.Name = "materialLabel15";
-            // 
-            // materialLabel16
-            // 
-            resources.ApplyResources(this.materialLabel16, "materialLabel16");
-            this.materialLabel16.Depth = 0;
-            this.flowLayoutPanel8.SetFlowBreak(this.materialLabel16, true);
-            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel16.Name = "materialLabel16";
-            // 
-            // btnResetSedentary
-            // 
-            resources.ApplyResources(this.btnResetSedentary, "btnResetSedentary");
-            this.btnResetSedentary.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
-            this.btnResetSedentary.Depth = 0;
-            this.btnResetSedentary.HighEmphasis = true;
-            this.btnResetSedentary.Icon = null;
-            this.btnResetSedentary.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnResetSedentary.Name = "btnResetSedentary";
-            this.btnResetSedentary.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnResetSedentary.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnResetSedentary.UseAccentColor = false;
-            this.btnResetSedentary.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel17
-            // 
-            resources.ApplyResources(this.materialLabel17, "materialLabel17");
-            this.materialLabel17.Depth = 0;
-            this.materialLabel17.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel17.HighEmphasis = true;
-            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel17.Name = "materialLabel17";
+            this.tmrSedn.Enabled = true;
+            this.tmrSedn.Interval = 1000;
+            this.tmrSedn.Tick += new System.EventHandler(this.tmrSedn_Tick);
             // 
             // FrmMain
             // 
@@ -988,10 +1083,16 @@
             this.materialCard6.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.materialCard9.ResumeLayout(false);
-            this.materialCard9.PerformLayout();
             this.materialCard10.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
+            this.materialCard11.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel4.PerformLayout();
+            this.materialCard12.ResumeLayout(false);
+            this.flowLayoutPanel8.ResumeLayout(false);
+            this.flowLayoutPanel8.PerformLayout();
+            this.materialCard13.ResumeLayout(false);
             this.tbpgSetting.ResumeLayout(false);
             this.materialCard5.ResumeLayout(false);
             this.materialCard7.ResumeLayout(false);
@@ -1002,12 +1103,6 @@
             this.materialCard8.ResumeLayout(false);
             this.materialCard8.PerformLayout();
             this.notifyMenu.ResumeLayout(false);
-            this.materialCard11.ResumeLayout(false);
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel4.PerformLayout();
-            this.materialCard12.ResumeLayout(false);
-            this.flowLayoutPanel8.ResumeLayout(false);
-            this.flowLayoutPanel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1070,7 +1165,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel13;
         private MaterialSkin.Controls.MaterialCheckbox chkSedentaryAlarm;
-        private MaterialSkin.Controls.MaterialCheckbox materialCheckbox1;
+        private MaterialSkin.Controls.MaterialCheckbox chkSedentaryStrongAlarm;
         private MaterialSkin.Controls.MaterialCard materialCard11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private MaterialSkin.Controls.MaterialLabel materialLabel14;
@@ -1078,9 +1173,15 @@
         private MaterialSkin.Controls.MaterialCard materialCard12;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private MaterialSkin.Controls.MaterialLabel materialLabel15;
-        private MaterialSkin.Controls.MaterialLabel materialLabel16;
+        private MaterialSkin.Controls.MaterialLabel lblSedentaryNextAlarm;
         private MaterialSkin.Controls.MaterialButton btnResetSedentary;
         private MaterialSkin.Controls.MaterialLabel materialLabel17;
+        private MaterialSkin.Controls.MaterialCard materialCard13;
+        private MaterialSkin.Controls.MaterialLabel lblSedentaryStatus;
+        private System.Windows.Forms.Timer tmrSedn;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel16;
+        private MaterialSkin.Controls.MaterialTextBox2 txtSedentaryTimeRest;
     }
 }
 

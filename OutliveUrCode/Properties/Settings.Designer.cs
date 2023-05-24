@@ -118,5 +118,77 @@ namespace OutliveUrCode.Properties {
                 this["language"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool isSedentaryAlarmActive {
+            get {
+                return ((bool)(this["isSedentaryAlarmActive"]));
+            }
+            set {
+                this["isSedentaryAlarmActive"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool isSedentaryAlarmStrong {
+            get {
+                return ((bool)(this["isSedentaryAlarmStrong"]));
+            }
+            set {
+                this["isSedentaryAlarmStrong"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        public int SedentaryAlarmInterval {
+            get {
+                return ((int)(this["SedentaryAlarmInterval"]));
+            }
+            set {
+                this["SedentaryAlarmInterval"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00:00:00")]
+        public global::System.TimeSpan SedentaryToday {
+            get {
+                return ((global::System.TimeSpan)(this["SedentaryToday"]));
+            }
+            set {
+                this["SedentaryToday"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int SedentaryRestTime {
+            get {
+                return ((int)(this["SedentaryRestTime"]));
+            }
+            set {
+                this["SedentaryRestTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("05/24/2023 15:46:00")]
+        public global::System.DateTime lastSedentaryAlarm {
+            get {
+                return ((global::System.DateTime)(this["lastSedentaryAlarm"]));
+            }
+            set {
+                this["lastSedentaryAlarm"] = value;
+            }
+        }
     }
 }

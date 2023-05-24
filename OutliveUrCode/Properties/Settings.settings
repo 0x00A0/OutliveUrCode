@@ -26,5 +26,23 @@
     <Setting Name="language" Type="System.String" Scope="User">
       <Value Profile="(Default)">zh-cn</Value>
     </Setting>
+    <Setting Name="isSedentaryAlarmActive" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="isSedentaryAlarmStrong" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SedentaryAlarmInterval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="SedentaryToday" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:00:00</Value>
+    </Setting>
+    <Setting Name="SedentaryRestTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="lastSedentaryAlarm" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">05/24/2023 15:46:00</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -120,6 +120,447 @@
   <metadata name="materialCard2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="materialCard3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="materialCard3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <metadata name="btnDrink50.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnDrink250.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="elementHost1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnDrink500.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnDrink150.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btnDrink50.Name" xml:space="preserve">
+    <value>btnDrink50</value>
+  </data>
+  <data name="&gt;&gt;btnDrink50.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnDrink50.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnDrink50.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnDrink250.Name" xml:space="preserve">
+    <value>btnDrink250</value>
+  </data>
+  <data name="&gt;&gt;btnDrink250.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnDrink250.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnDrink250.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;elementHost1.Name" xml:space="preserve">
+    <value>elementHost1</value>
+  </data>
+  <data name="&gt;&gt;elementHost1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Integration.ElementHost, WindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;elementHost1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;elementHost1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnDrink500.Name" xml:space="preserve">
+    <value>btnDrink500</value>
+  </data>
+  <data name="&gt;&gt;btnDrink500.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnDrink500.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnDrink500.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnDrink150.Name" xml:space="preserve">
+    <value>btnDrink150</value>
+  </data>
+  <data name="&gt;&gt;btnDrink150.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnDrink150.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnDrink150.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblDrinkingStatus.Name" xml:space="preserve">
+    <value>lblDrinkingStatus</value>
+  </data>
+  <data name="&gt;&gt;lblDrinkingStatus.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblDrinkingStatus.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;lblDrinkingStatus.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 14</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 409</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnDrink50" Row="3" RowSpan="1" Column="0" ColumnSpan="3" /&gt;&lt;Control Name="btnDrink250" Row="4" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="elementHost1" Row="1" RowSpan="2" Column="1" ColumnSpan="7" /&gt;&lt;Control Name="btnDrink500" Row="3" RowSpan="1" Column="6" ColumnSpan="3" /&gt;&lt;Control Name="btnDrink150" Row="4" RowSpan="1" Column="1" ColumnSpan="3" /&gt;&lt;Control Name="lblDrinkingStatus" Row="0" RowSpan="1" Column="1" ColumnSpan="7" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111" /&gt;&lt;Rows Styles="Percent,10,Percent,25,Percent,30,Percent,15,Percent,15,Percent,5" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="materialCard3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 14</value>
+  </data>
+  <data name="materialCard3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 437</value>
+  </data>
+  <data name="materialCard3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.Name" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="materialCard4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="materialCard4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Name" xml:space="preserve">
+    <value>materialLabel1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingTarget.Name" xml:space="preserve">
+    <value>txtDrinkingTarget</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingTarget.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingTarget.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingTarget.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Name" xml:space="preserve">
+    <value>materialLabel2</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingToday.Name" xml:space="preserve">
+    <value>txtDrinkingToday</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingToday.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingToday.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingToday.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Name" xml:space="preserve">
+    <value>materialLabel3</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingTimerInterval.Name" xml:space="preserve">
+    <value>txtDrinkingTimerInterval</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingTimerInterval.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingTimerInterval.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;txtDrinkingTimerInterval.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;chkDrinkingAlarm.Name" xml:space="preserve">
+    <value>chkDrinkingAlarm</value>
+  </data>
+  <data name="&gt;&gt;chkDrinkingAlarm.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckbox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;chkDrinkingAlarm.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;chkDrinkingAlarm.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="flowLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="flowLayoutPanel1.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 14</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 373</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="flowLayoutPanel1.WrapContents" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>materialCard4</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnShowDrinkData.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btnShowDrinkData.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnShowDrinkData.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="btnShowDrinkData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnShowDrinkData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 387</value>
+  </data>
+  <data name="btnShowDrinkData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="btnShowDrinkData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 36</value>
+  </data>
+  <data name="btnShowDrinkData.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnShowDrinkData.Text" xml:space="preserve">
+    <value>查看记录</value>
+  </data>
+  <data name="&gt;&gt;btnShowDrinkData.Name" xml:space="preserve">
+    <value>btnShowDrinkData</value>
+  </data>
+  <data name="&gt;&gt;btnShowDrinkData.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnShowDrinkData.Parent" xml:space="preserve">
+    <value>materialCard4</value>
+  </data>
+  <data name="&gt;&gt;btnShowDrinkData.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="materialCard4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 14</value>
+  </data>
+  <data name="materialCard4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 437</value>
+  </data>
+  <data name="materialCard4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;materialCard4.Name" xml:space="preserve">
+    <value>materialCard4</value>
+  </data>
+  <data name="&gt;&gt;materialCard4.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard4.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="&gt;&gt;materialCard4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="materialCard2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="materialCard2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="materialCard2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>789, 465</value>
+  </data>
+  <data name="materialCard2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;materialCard2.Name" xml:space="preserve">
     <value>materialCard2</value>
   </data>
@@ -135,18 +576,15 @@
   <data name="tbPgDrinking.ImageKey" xml:space="preserve">
     <value>water-percent.png</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tbPgDrinking.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tbPgDrinking.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tbPgDrinking.Size" type="System.Drawing.Size, System.Drawing">
     <value>795, 471</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tbPgDrinking.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -246,306 +684,6 @@
   <data name="&gt;&gt;tbpgSetting.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="materialCard8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="materialCard8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="btnShowOpenSource.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnShowOpenSource.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="btnShowOpenSource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnShowOpenSource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>538, 387</value>
-  </data>
-  <data name="btnShowOpenSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
-  </data>
-  <data name="btnShowOpenSource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 36</value>
-  </data>
-  <data name="btnShowOpenSource.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnShowOpenSource.Text" xml:space="preserve">
-    <value>开放源代码信息</value>
-  </data>
-  <data name="&gt;&gt;btnShowOpenSource.Name" xml:space="preserve">
-    <value>btnShowOpenSource</value>
-  </data>
-  <data name="&gt;&gt;btnShowOpenSource.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnShowOpenSource.Parent" xml:space="preserve">
-    <value>materialCard8</value>
-  </data>
-  <data name="&gt;&gt;btnShowOpenSource.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="materialLabel11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="materialLabel11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>思源黑体 CN Medium, 14px</value>
-  </data>
-  <data name="materialLabel11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="materialLabel11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 287</value>
-  </data>
-  <data name="materialLabel11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 30</value>
-  </data>
-  <data name="materialLabel11.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="materialLabel11.Text" xml:space="preserve">
-    <value>大数据201 万昕睿 &amp;&amp; 大数据202 万婷</value>
-  </data>
-  <data name="materialLabel11.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;materialLabel11.Name" xml:space="preserve">
-    <value>materialLabel11</value>
-  </data>
-  <data name="&gt;&gt;materialLabel11.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel11.Parent" xml:space="preserve">
-    <value>materialCard8</value>
-  </data>
-  <data name="&gt;&gt;materialLabel11.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="materialLabel10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="materialLabel10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>思源黑体 CN Medium, 14px</value>
-  </data>
-  <data name="materialLabel10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="materialLabel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 257</value>
-  </data>
-  <data name="materialLabel10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 30</value>
-  </data>
-  <data name="materialLabel10.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="materialLabel10.Text" xml:space="preserve">
-    <value>Windows开发基础 课程大作业</value>
-  </data>
-  <data name="materialLabel10.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;materialLabel10.Name" xml:space="preserve">
-    <value>materialLabel10</value>
-  </data>
-  <data name="&gt;&gt;materialLabel10.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel10.Parent" xml:space="preserve">
-    <value>materialCard8</value>
-  </data>
-  <data name="&gt;&gt;materialLabel10.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="materialLabel9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="materialLabel9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>思源黑体 CN Medium, 14px</value>
-  </data>
-  <data name="materialLabel9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="materialLabel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 227</value>
-  </data>
-  <data name="materialLabel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 30</value>
-  </data>
-  <data name="materialLabel9.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="materialLabel9.Text" xml:space="preserve">
-    <value>浙大宁波理工学院 计算机与数据工程学院20级</value>
-  </data>
-  <data name="materialLabel9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;materialLabel9.Name" xml:space="preserve">
-    <value>materialLabel9</value>
-  </data>
-  <data name="&gt;&gt;materialLabel9.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel9.Parent" xml:space="preserve">
-    <value>materialCard8</value>
-  </data>
-  <data name="&gt;&gt;materialLabel9.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="materialLabel8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="materialLabel8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>思源黑体 CN Medium, 16px</value>
-  </data>
-  <data name="materialLabel8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="materialLabel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 188</value>
-  </data>
-  <data name="materialLabel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 39</value>
-  </data>
-  <data name="materialLabel8.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="materialLabel8.Text" xml:space="preserve">
-    <value># 一个为程序员打造的健康管家 #</value>
-  </data>
-  <data name="materialLabel8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;materialLabel8.Name" xml:space="preserve">
-    <value>materialLabel8</value>
-  </data>
-  <data name="&gt;&gt;materialLabel8.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel8.Parent" xml:space="preserve">
-    <value>materialCard8</value>
-  </data>
-  <data name="&gt;&gt;materialLabel8.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="materialLabel7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="materialLabel7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>思源黑体 CN Regular, 60px</value>
-  </data>
-  <data name="materialLabel7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="materialLabel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 101</value>
-  </data>
-  <data name="materialLabel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 87</value>
-  </data>
-  <data name="materialLabel7.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="materialLabel7.Text" xml:space="preserve">
-    <value>OutliveUrCode</value>
-  </data>
-  <data name="materialLabel7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;materialLabel7.Name" xml:space="preserve">
-    <value>materialLabel7</value>
-  </data>
-  <data name="&gt;&gt;materialLabel7.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel7.Parent" xml:space="preserve">
-    <value>materialCard8</value>
-  </data>
-  <data name="&gt;&gt;materialLabel7.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="materialLabel12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="materialLabel12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>思源黑体 CN Regular, 60px</value>
-  </data>
-  <data name="materialLabel12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="materialLabel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 14</value>
-  </data>
-  <data name="materialLabel12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 87</value>
-  </data>
-  <data name="materialLabel12.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="materialLabel12.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;materialLabel12.Name" xml:space="preserve">
-    <value>materialLabel12</value>
-  </data>
-  <data name="&gt;&gt;materialLabel12.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel12.Parent" xml:space="preserve">
-    <value>materialCard8</value>
-  </data>
-  <data name="&gt;&gt;materialLabel12.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="materialCard8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 14</value>
-  </data>
-  <data name="materialCard8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 443</value>
-  </data>
-  <data name="materialCard8.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;materialCard8.Name" xml:space="preserve">
-    <value>materialCard8</value>
-  </data>
-  <data name="&gt;&gt;materialCard8.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard8.Parent" xml:space="preserve">
-    <value>materialCard1</value>
-  </data>
-  <data name="&gt;&gt;materialCard8.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="materialCard1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="materialCard1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="materialCard1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>795, 471</value>
-  </data>
-  <data name="materialCard1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;materialCard1.Name" xml:space="preserve">
     <value>materialCard1</value>
   </data>
@@ -596,7 +734,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAq
-        6wAAAk1TRnQBSQFMAgEBPwEAAUABAQFAAQEBGAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFg
+        6wAAAk1TRnQBSQFMAgEBPwEAAVABAQFQAQEBGAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFg
         AwABgAEBAgABAQEAASAGAAFAAQL/AOEAAf8DAAH/jwAB/wMAAf8DAAH/AwAB/7AAA1kBwAMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DSQGIBwAB/wMAAf8DVgGwhwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwYBCKsAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNWAbCHAAH/
@@ -623,7 +761,7 @@
         Af8DAAH/NwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/zwAA1kBwAMAAf8PAAH/AwAB/wMAAf8DAAH/
         AwAB/48AAf8DAAH/A0wBkCcAAf8DAAH/AwAB/wMAAf80AAM6AWADAAH/AwAB/wMAAf8DAAH/AwAB/wMG
         AQg/AAH/AwAB/wMAAf8IAANMAZADAAH/AwAB/wMAAf8DAAH/iwAB/wMAAf8DTAGQCwAB/wMAAf8DAAH/
-        A1sB2AQAA08B+AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf83AAH/AwAB/wMAAf8DAAH/AwAB/0MA
+        A1sB2AQAA1MB+AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf83AAH/AwAB/wMAAf8DAAH/AwAB/0MA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/4gAA1wB5wMAAf8DTAGQDwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DWQHvCwAB/z8AAf8DAAH/AwAB/0gAA1EB9wMAAf8DAAH/AwAB/wMA
         Af8DAAH/DwAB/wMAAf8DAAH/fAADRAF4HAADLgFHAwAB/wMdAShbAAH/UAADTAGQAwAB/wMAAf8QAAMM
@@ -669,7 +807,7 @@
         AwAB/wMAAf8DAAH/DwAB/wMAAf8DAAH/AwAB/wMAAf8vAAH/AwAB/wMAAf8fAAH/AwAB/wMAAf8DAAH/
         IwAB/wMAAf8DAAH/LwAB/wMAAf8DOgFgKAADPQFoAwAB/wMAAf8DAAH/AyoBQAsAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/JwAB/wMAAf8DAAH/FwAB/wMAAf8DAAH/NwAB/wMAAf8DAAH/AwAB/wNb
-        AdgEAANPAfgDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/IwAB/wMAAf8DAAH/A04BmBwAA2AB4AMA
+        AdgEAANTAfgDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/IwAB/wMAAf8DAAH/A04BmBwAA2AB4AMA
         Af8DAAH/AyEB+zgAAzoBYAMhATAIAANaAb8DWgG/A1oBvwNZAe8DAAH/A10BzwNaAb8DWgG/iwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DXQHfCwAB/ysAAf8DAAH/AwAB/wMAAf8DAAH/A1kBwAQA
         A2AB4AMAAf8DAAH/AwAB/wMAAf8DUAGfWAADWQHAAwAB/wMqAUCcAAM2AVcDAAH/Ax0BKEsAAf8DAAH/
@@ -897,7 +1035,7 @@
         AwAB/wMAAf8DTgGYCAADFQEcAwAB/wMhAfs8AANZAcADAAH/AyoBQDsAAf8DAAH/A1ABnwsAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AzoBYBcAAf8DAAH/AzMBUAMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
-        JwAB/wMAAf8DTwH4FAADSQGIAwAB/wMAAf83AAH/A1kBwAgAA1kBwAMAAf8DKgFANwAB/wMAAf8DSwGP
+        JwAB/wMAAf8DUwH4FAADSQGIAwAB/wMAAf83AAH/A1kBwAgAA1kBwAMAAf8DKgFANwAB/wMAAf8DSwGP
         CwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DIQH7HwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/y8AAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DIQEwMwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
@@ -1370,8 +1508,8 @@
         AwAB/wMAAf8fAAH/AwAB/wMAAf8gAAMSARgLAAH/AwAB/wMAAf8fAAH/AwAB/wMAAf84AAMoATwDAAH/
         AwAB/wMAAf8DAAH/AwAB/zAAA1kBwAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DQAFwAyoBQANb
         AdADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AyoBQBcAAf8DAAH/CwAB/wMAAf8DAAH/AwAB/wNb
-        AdgEAANPAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8XAAH/AwAB/wsAAf8DAAH/AwAB/wMAAf8DWwHY
-        BAADTwH4AwAB/wMAAf8DAAH/AwAB/wsAAf8DAAH/MwAB/wMAAf8DAAH/AwAB/wMAAf8wAANZAcADAAH/
+        AdgEAANTAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8XAAH/AwAB/wsAAf8DAAH/AwAB/wMAAf8DWwHY
+        BAADUwH4AwAB/wMAAf8DAAH/AwAB/wsAAf8DAAH/MwAB/wMAAf8DAAH/AwAB/wMAAf8wAANZAcADAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMqAUAXAAH/AwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNRAfcEAAMz
         AVADAAH/AwAB/wMhAfsXAAH/AwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNR
@@ -1393,19 +1531,19 @@
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/ysAAf8DAAH/AwAB/ycAAf8DAAH/
         JwAB/wMAAf8DAAH/LwAB/wMAAf8DRgGAHwAB/wMAAf8DAAH/LwAB/wMAAf8DRgGAFwAB/wMAAf8PAAH/
         AwAB/wMAAf8fAAH/AwAB/wMAAf8jAAH/AwAB/wMAAf8gAAMdASgDAAH/AwAB/ysAAf8DAAH/JwAB/wMA
-        Af8LAAH/AwAB/x8AAf8DAAH/EwAB/wNPAfgfAAH/AwAB/xcAAf8DAAH/DwAB/wMAAf8nAAH/AwAB/yMA
+        Af8LAAH/AwAB/x8AAf8DAAH/EwAB/wNTAfgfAAH/AwAB/xcAAf8DAAH/DwAB/wMAAf8nAAH/AwAB/yMA
         Af8DAAH/JwAB/wMAAf8PAAH/HwAB/wMAAf8fAAH/AwAB/wMAAf8PAAH/AwAB/x8AAf8DAAH/DAADYAHz
-        AwAB/wMAAf8DTwH4GwAB/wMAAf8QAAMzAVADAAH/A10B1AsAAf8DAAH/LwAB/wMAAf8fAAH/AwAB/xwA
+        AwAB/wMAAf8DUwH4GwAB/wMAAf8QAAMzAVADAAH/A10B1AsAAf8DAAH/LwAB/wMAAf8fAAH/AwAB/xwA
         Ax0BKAMAAf8DAAH/DwAB/wMAAf8YAAM6AWADAAH/A1kBwBQAAzYBWAMAAf8DAAH/FwAB/wMAAf8YAAM6
-        AWADAAH/A1kBwAsAAf8DAAH/A1ABnwNMAZADAAH/A08B+BcAAf8DAAH/EAADWQHAAwAB/wMqAUALAAH/
+        AWADAAH/A1kBwAsAAf8DAAH/A1ABnwNMAZADAAH/A1MB+BcAAf8DAAH/EAADWQHAAwAB/wMqAUALAAH/
         AwAB/x8AAf8DAAH/CwAB/wMAAf8YAAM6AWADAAH/A1kBwB8AAf8DAAH/EwAB/wMAAf8YAANZAcADAAH/
         AyoBQBQAA1kBwAMAAf8YAANZAcADAAH/AyoBQBQAA1kBwAMAAf8DKgFACwAB/wNLAY8IAANMAZADAAH/
-        A08B+BAAA1kBwAMAAf8DKgFADAADOwFkAwAB/wNSAaAEAAMzAVADAAH/A1sB2BAAAzoBYAMAAf8DAAH/
+        A1MB+BAAA1kBwAMAAf8DKgFADAADOwFkAwAB/wNSAaAEAAMzAVADAAH/A1sB2BAAAzoBYAMAAf8DAAH/
         AwAB/w8AAf8DAAH/GAADWQHAAwAB/wMqAUAUAAMdASgDAAH/AwAB/xQAA1kBwAMAAf8DKgFAFAADPQFo
-        AwAB/wNSAagUAANZAcADAAH/GwAB/wMAAf8YAAM9AWgDAAH/A1IBqBwAA1IBqAMAAf8DTwH4DwAB/wMA
+        AwAB/wNSAagUAANZAcADAAH/GwAB/wMAAf8YAAM9AWgDAAH/A1IBqBwAA1IBqAMAAf8DUwH4DwAB/wMA
         Af8XAAH/AyoBQAQAA1kBwAMAAf8DKgFAEwAB/wMAAf8UAANZAcADAAH/AyoBQBQAAz0BaAMAAf8DWAG4
         FwAB/wMAAf8bAAH/AwAB/x8AAf8DAAH/FAADWQHAAwAB/xsAAf8DAAH/HwAB/wMAAf8gAANWAbADAAH/
-        A08B+AsAAf8DAAH/FwAB/wNJAYgEAAM6AWADAAH/A1wByBMAAf8DAAH/FwAB/wMAAf8fAAH/AwAB/wwA
+        A1MB+AsAAf8DAAH/FwAB/wNJAYgEAAM6AWADAAH/A1wByBMAAf8DAAH/FwAB/wMAAf8fAAH/AwAB/wwA
         Ax0BKAMAAf8DAAH/HwAB/wMAAf8fAAH/AwAB/xQAA1kBwAMAAf8bAAH/AwAB/x8AAf8DAAH/JAADVgGw
         DwAB/wMAAf8UAANAAXADAAH/CwAB/wMAAf8TAAH/AwAB/xcAAf8DAAH/HwAB/wMAAf8PAAH/AwAB/yMA
         Af8DAAH/HwAB/wMAAf8DAAH/EAADWQHAAwAB/xcAAf8DAAH/A10B3x8AAf8DAAH/AwAB/y8AAf8DAAH/
@@ -1414,10 +1552,10 @@
         Af8DAAH/KAADOgFgAwAB/wMAAf8PAAH/AwAB/xMAAf8DAAH/JwAB/wMAAf8DAAH/AwAB/yMAAf8DAAH/
         AwAB/xwAAxIBGAsAAf8DAAH/AwAB/x8AAf8DAAH/AwAB/yAAAxIBGAsAAf8DAAH/AwAB/x8AAf8DAAH/
         AwAB/zMAAf8DAAH/AwAB/x8AAf8DAAH/AwAB/xwAAygBPAQAAxIBGAMAAf8DAAH/IwAB/wMAAf8DAAH/
-        IwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/A1sB2AQAA08B+AMAAf8DAAH/AwAB/wMAAf8LAAH/AwAB/xcA
-        Af8DAAH/CwAB/wMAAf8DAAH/AwAB/wNbAdgEAANPAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8fAAH/
+        IwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/A1sB2AQAA1MB+AMAAf8DAAH/AwAB/wMAAf8LAAH/AwAB/xcA
+        Af8DAAH/CwAB/wMAAf8DAAH/AwAB/wNbAdgEAANTAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8fAAH/
         CwAB/wMAAf8DAAH/AwAB/wMAAf8HAAH/AwAB/wMAAf8DAAH/AwAB/wQAA1YBsAMAAf8QAAMMARADAAH/
-        AwAB/wMAAf8DAAH/DwAB/wNeAfAEAANPAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8XAAH/AwAB/wMA
+        AwAB/wMAAf8DAAH/DwAB/wNeAfAEAANTAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8XAAH/AwAB/wMA
         Af8LAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNRAfcEAAMzAVADAAH/AwAB/wMhAfsXAAH/
         AwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNRAfcEAAMzAVADAAH/AwAB/wMh
         AfsfAAH/AwAB/wNgAfMEAANCAXQDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/Ax0BKAcAAf8DAAH/
@@ -1623,228 +1761,6 @@
   <data name="&gt;&gt;materialTabControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="materialCard2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="materialCard3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="materialCard4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;materialCard3.Name" xml:space="preserve">
-    <value>materialCard3</value>
-  </data>
-  <data name="&gt;&gt;materialCard3.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard3.Parent" xml:space="preserve">
-    <value>materialCard2</value>
-  </data>
-  <data name="&gt;&gt;materialCard3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;materialCard4.Name" xml:space="preserve">
-    <value>materialCard4</value>
-  </data>
-  <data name="&gt;&gt;materialCard4.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard4.Parent" xml:space="preserve">
-    <value>materialCard2</value>
-  </data>
-  <data name="&gt;&gt;materialCard4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="materialCard2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="materialCard2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="materialCard2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>789, 465</value>
-  </data>
-  <data name="materialCard2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;materialCard2.Name" xml:space="preserve">
-    <value>materialCard2</value>
-  </data>
-  <data name="&gt;&gt;materialCard2.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard2.Parent" xml:space="preserve">
-    <value>tbPgDrinking</value>
-  </data>
-  <data name="&gt;&gt;materialCard2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="materialCard3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="materialCard3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <metadata name="btnDrink50.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnDrink250.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="elementHost1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnDrink500.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnDrink150.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="tableLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tableLayoutPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btnDrink50.Name" xml:space="preserve">
-    <value>btnDrink50</value>
-  </data>
-  <data name="&gt;&gt;btnDrink50.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnDrink50.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnDrink50.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnDrink250.Name" xml:space="preserve">
-    <value>btnDrink250</value>
-  </data>
-  <data name="&gt;&gt;btnDrink250.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnDrink250.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnDrink250.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;elementHost1.Name" xml:space="preserve">
-    <value>elementHost1</value>
-  </data>
-  <data name="&gt;&gt;elementHost1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Integration.ElementHost, WindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;elementHost1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;elementHost1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnDrink500.Name" xml:space="preserve">
-    <value>btnDrink500</value>
-  </data>
-  <data name="&gt;&gt;btnDrink500.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnDrink500.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnDrink500.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btnDrink150.Name" xml:space="preserve">
-    <value>btnDrink150</value>
-  </data>
-  <data name="&gt;&gt;btnDrink150.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnDrink150.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnDrink150.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblDrinkingStatus.Name" xml:space="preserve">
-    <value>lblDrinkingStatus</value>
-  </data>
-  <data name="&gt;&gt;lblDrinkingStatus.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;lblDrinkingStatus.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;lblDrinkingStatus.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 14</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>421, 409</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>materialCard3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnDrink50" Row="3" RowSpan="1" Column="0" ColumnSpan="3" /&gt;&lt;Control Name="btnDrink250" Row="4" RowSpan="1" Column="5" ColumnSpan="3" /&gt;&lt;Control Name="elementHost1" Row="1" RowSpan="2" Column="1" ColumnSpan="7" /&gt;&lt;Control Name="btnDrink500" Row="3" RowSpan="1" Column="6" ColumnSpan="3" /&gt;&lt;Control Name="btnDrink150" Row="4" RowSpan="1" Column="1" ColumnSpan="3" /&gt;&lt;Control Name="lblDrinkingStatus" Row="0" RowSpan="1" Column="1" ColumnSpan="7" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111" /&gt;&lt;Rows Styles="Percent,10,Percent,25,Percent,30,Percent,15,Percent,15,Percent,5" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="materialCard3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 14</value>
-  </data>
-  <data name="materialCard3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>449, 437</value>
-  </data>
-  <data name="materialCard3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;materialCard3.Name" xml:space="preserve">
-    <value>materialCard3</value>
-  </data>
-  <data name="&gt;&gt;materialCard3.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard3.Parent" xml:space="preserve">
-    <value>materialCard2</value>
-  </data>
-  <data name="&gt;&gt;materialCard3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="btnDrink50.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2027,39 +1943,6 @@
   </data>
   <data name="&gt;&gt;btnDrink250.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <metadata name="elementHost1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="elementHost1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="elementHost1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="elementHost1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 43</value>
-  </data>
-  <data name="elementHost1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 218</value>
-  </data>
-  <data name="elementHost1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="elementHost1.Text" xml:space="preserve">
-    <value>elementHost1</value>
-  </data>
-  <data name="&gt;&gt;elementHost1.Name" xml:space="preserve">
-    <value>elementHost1</value>
-  </data>
-  <data name="&gt;&gt;elementHost1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Integration.ElementHost, WindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;elementHost1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;elementHost1.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <metadata name="btnDrink500.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2258,177 +2141,6 @@
   </data>
   <data name="&gt;&gt;lblDrinkingStatus.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <metadata name="materialCard4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="materialCard4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>materialCard4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnShowDrinkData.Name" xml:space="preserve">
-    <value>btnShowDrinkData</value>
-  </data>
-  <data name="&gt;&gt;btnShowDrinkData.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnShowDrinkData.Parent" xml:space="preserve">
-    <value>materialCard4</value>
-  </data>
-  <data name="&gt;&gt;btnShowDrinkData.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="materialCard4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 14</value>
-  </data>
-  <data name="materialCard4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 437</value>
-  </data>
-  <data name="materialCard4.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;materialCard4.Name" xml:space="preserve">
-    <value>materialCard4</value>
-  </data>
-  <data name="&gt;&gt;materialCard4.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard4.Parent" xml:space="preserve">
-    <value>materialCard2</value>
-  </data>
-  <data name="&gt;&gt;materialCard4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;materialLabel1.Name" xml:space="preserve">
-    <value>materialLabel1</value>
-  </data>
-  <data name="&gt;&gt;materialLabel1.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel1.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;materialLabel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingTarget.Name" xml:space="preserve">
-    <value>txtDrinkingTarget</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingTarget.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingTarget.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingTarget.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;materialLabel2.Name" xml:space="preserve">
-    <value>materialLabel2</value>
-  </data>
-  <data name="&gt;&gt;materialLabel2.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel2.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;materialLabel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingToday.Name" xml:space="preserve">
-    <value>txtDrinkingToday</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingToday.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingToday.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingToday.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;materialLabel3.Name" xml:space="preserve">
-    <value>materialLabel3</value>
-  </data>
-  <data name="&gt;&gt;materialLabel3.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel3.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;materialLabel3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingTimerInterval.Name" xml:space="preserve">
-    <value>txtDrinkingTimerInterval</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingTimerInterval.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingTimerInterval.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;txtDrinkingTimerInterval.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;chkDrinkingAlarm.Name" xml:space="preserve">
-    <value>chkDrinkingAlarm</value>
-  </data>
-  <data name="&gt;&gt;chkDrinkingAlarm.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckbox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;chkDrinkingAlarm.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;chkDrinkingAlarm.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="flowLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flowLayoutPanel1.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 14</value>
-  </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 373</value>
-  </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="flowLayoutPanel1.WrapContents" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>materialCard4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="materialLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2767,120 +2479,6 @@
   <data name="&gt;&gt;chkDrinkingAlarm.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="btnShowDrinkData.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="btnShowDrinkData.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="btnShowDrinkData.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="btnShowDrinkData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnShowDrinkData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 387</value>
-  </data>
-  <data name="btnShowDrinkData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
-  </data>
-  <data name="btnShowDrinkData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 36</value>
-  </data>
-  <data name="btnShowDrinkData.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnShowDrinkData.Text" xml:space="preserve">
-    <value>查看记录</value>
-  </data>
-  <data name="&gt;&gt;btnShowDrinkData.Name" xml:space="preserve">
-    <value>btnShowDrinkData</value>
-  </data>
-  <data name="&gt;&gt;btnShowDrinkData.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btnShowDrinkData.Parent" xml:space="preserve">
-    <value>materialCard4</value>
-  </data>
-  <data name="&gt;&gt;btnShowDrinkData.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
@@ -2928,6 +2526,96 @@
   </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialCard9.Name" xml:space="preserve">
+    <value>materialCard9</value>
+  </data>
+  <data name="&gt;&gt;materialCard9.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard9.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialCard10.Name" xml:space="preserve">
+    <value>materialCard10</value>
+  </data>
+  <data name="&gt;&gt;materialCard10.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard10.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;materialCard11.Name" xml:space="preserve">
+    <value>materialCard11</value>
+  </data>
+  <data name="&gt;&gt;materialCard11.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard11.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard11.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialCard12.Name" xml:space="preserve">
+    <value>materialCard12</value>
+  </data>
+  <data name="&gt;&gt;materialCard12.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard12.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard12.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;materialCard13.Name" xml:space="preserve">
+    <value>materialCard13</value>
+  </data>
+  <data name="&gt;&gt;materialCard13.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard13.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard13.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 14</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>688, 437</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>materialCard6</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="materialCard9" Row="1" RowSpan="2" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="materialCard10" Row="3" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="materialCard11" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="materialCard12" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="materialCard13" Row="0" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,10,Percent,10,Percent,15,Percent,35,Percent,30" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="materialCard9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom</value>
@@ -2982,204 +2670,6 @@
   </data>
   <data name="&gt;&gt;materialCard9.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Name" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Parent" xml:space="preserve">
-    <value>materialCard10</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="materialCard10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="materialCard10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 155</value>
-  </data>
-  <data name="materialCard10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="materialCard10.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 144</value>
-  </data>
-  <data name="materialCard10.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;materialCard10.Name" xml:space="preserve">
-    <value>materialCard10</value>
-  </data>
-  <data name="&gt;&gt;materialCard10.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard10.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;materialCard10.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel4.Name" xml:space="preserve">
-    <value>flowLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel4.Parent" xml:space="preserve">
-    <value>materialCard11</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="materialCard11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="materialCard11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 307</value>
-  </data>
-  <data name="materialCard11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="materialCard11.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>336, 126</value>
-  </data>
-  <data name="materialCard11.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;materialCard11.Name" xml:space="preserve">
-    <value>materialCard11</value>
-  </data>
-  <data name="&gt;&gt;materialCard11.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard11.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;materialCard11.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel8.Name" xml:space="preserve">
-    <value>flowLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel8.Parent" xml:space="preserve">
-    <value>materialCard12</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel8.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="materialCard12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="materialCard12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 307</value>
-  </data>
-  <data name="materialCard12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="materialCard12.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>336, 126</value>
-  </data>
-  <data name="materialCard12.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;materialCard12.Name" xml:space="preserve">
-    <value>materialCard12</value>
-  </data>
-  <data name="&gt;&gt;materialCard12.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard12.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;materialCard12.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="materialCard13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom</value>
-  </data>
-  <data name="&gt;&gt;lblSedentaryStatus.Name" xml:space="preserve">
-    <value>lblSedentaryStatus</value>
-  </data>
-  <data name="&gt;&gt;lblSedentaryStatus.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;lblSedentaryStatus.Parent" xml:space="preserve">
-    <value>materialCard13</value>
-  </data>
-  <data name="&gt;&gt;lblSedentaryStatus.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="materialCard13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 4</value>
-  </data>
-  <data name="materialCard13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="materialCard13.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
-  </data>
-  <data name="materialCard13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>521, 35</value>
-  </data>
-  <data name="materialCard13.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;materialCard13.Name" xml:space="preserve">
-    <value>materialCard13</value>
-  </data>
-  <data name="&gt;&gt;materialCard13.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialCard13.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;materialCard13.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 14</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>688, 437</value>
-  </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>materialCard6</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="materialCard9" Row="1" RowSpan="2" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="materialCard10" Row="3" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="materialCard11" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="materialCard12" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="materialCard13" Row="0" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,10,Percent,10,Percent,15,Percent,35,Percent,30" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="materialLabel17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -3244,6 +2734,48 @@
   <data name="&gt;&gt;ledSedentary.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;flowLayoutPanel3.Name" xml:space="preserve">
+    <value>flowLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel3.Parent" xml:space="preserve">
+    <value>materialCard10</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialCard10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="materialCard10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 155</value>
+  </data>
+  <data name="materialCard10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="materialCard10.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 144</value>
+  </data>
+  <data name="materialCard10.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;materialCard10.Name" xml:space="preserve">
+    <value>materialCard10</value>
+  </data>
+  <data name="&gt;&gt;materialCard10.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard10.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;materialLabel13.Name" xml:space="preserve">
     <value>materialLabel13</value>
   </data>
@@ -3280,16 +2812,16 @@
   <data name="&gt;&gt;chkSedentaryStrongAlarm.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;materialButton1.Name" xml:space="preserve">
-    <value>materialButton1</value>
+  <data name="&gt;&gt;btnShowSedentaryData.Name" xml:space="preserve">
+    <value>btnShowSedentaryData</value>
   </data>
-  <data name="&gt;&gt;materialButton1.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnShowSedentaryData.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;materialButton1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnShowSedentaryData.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;materialButton1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnShowSedentaryData.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="flowLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -3418,13 +2950,13 @@
   <data name="&gt;&gt;chkSedentaryStrongAlarm.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="materialButton1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="btnShowSedentaryData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
-  <data name="materialButton1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+  <data name="btnShowSedentaryData.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="materialButton1.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnShowSedentaryData.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAABGdBTUEAALGPC/xhBQAAEPVJREFUeF7t
         nYutJEkRRccETMAETMAEPAAPFg8GDxYPFg8WD8AD8AA8AA+gQk+teVN7+72u7siIzJvnSEdaaVc7fXPq
@@ -3502,35 +3034,77 @@
         AAAAAAAAAABm5suX/wPEEKy6g/5wlwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="materialButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnShowSedentaryData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="materialButton1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnShowSedentaryData.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 80</value>
   </data>
-  <data name="materialButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnShowSedentaryData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 6, 4, 6</value>
   </data>
-  <data name="materialButton1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnShowSedentaryData.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 36</value>
   </data>
-  <data name="materialButton1.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnShowSedentaryData.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="materialButton1.Text" xml:space="preserve">
+  <data name="btnShowSedentaryData.Text" xml:space="preserve">
     <value>查看记录</value>
   </data>
-  <data name="&gt;&gt;materialButton1.Name" xml:space="preserve">
-    <value>materialButton1</value>
+  <data name="&gt;&gt;btnShowSedentaryData.Name" xml:space="preserve">
+    <value>btnShowSedentaryData</value>
   </data>
-  <data name="&gt;&gt;materialButton1.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnShowSedentaryData.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;materialButton1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnShowSedentaryData.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;materialButton1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnShowSedentaryData.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel4.Name" xml:space="preserve">
+    <value>flowLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel4.Parent" xml:space="preserve">
+    <value>materialCard11</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialCard11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="materialCard11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 307</value>
+  </data>
+  <data name="materialCard11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="materialCard11.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 126</value>
+  </data>
+  <data name="materialCard11.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;materialCard11.Name" xml:space="preserve">
+    <value>materialCard11</value>
+  </data>
+  <data name="&gt;&gt;materialCard11.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard11.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard11.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;materialLabel14.Name" xml:space="preserve">
     <value>materialLabel14</value>
@@ -3912,6 +3486,48 @@
   <data name="&gt;&gt;txtSedentaryTimeRest.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;flowLayoutPanel8.Name" xml:space="preserve">
+    <value>flowLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.Parent" xml:space="preserve">
+    <value>materialCard12</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialCard12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="materialCard12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 307</value>
+  </data>
+  <data name="materialCard12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="materialCard12.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 126</value>
+  </data>
+  <data name="materialCard12.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;materialCard12.Name" xml:space="preserve">
+    <value>materialCard12</value>
+  </data>
+  <data name="&gt;&gt;materialCard12.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard12.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard12.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;materialLabel15.Name" xml:space="preserve">
     <value>materialLabel15</value>
   </data>
@@ -4167,6 +3783,48 @@
   </data>
   <data name="&gt;&gt;btnResetSedentary.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="materialCard13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="&gt;&gt;lblSedentaryStatus.Name" xml:space="preserve">
+    <value>lblSedentaryStatus</value>
+  </data>
+  <data name="&gt;&gt;lblSedentaryStatus.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblSedentaryStatus.Parent" xml:space="preserve">
+    <value>materialCard13</value>
+  </data>
+  <data name="&gt;&gt;lblSedentaryStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialCard13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 4</value>
+  </data>
+  <data name="materialCard13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="materialCard13.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>521, 35</value>
+  </data>
+  <data name="materialCard13.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;materialCard13.Name" xml:space="preserve">
+    <value>materialCard13</value>
+  </data>
+  <data name="&gt;&gt;materialCard13.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard13.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard13.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="lblSedentaryStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom</value>
@@ -4590,6 +4248,417 @@
   </data>
   <data name="&gt;&gt;lstLanguage.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <metadata name="materialCard8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="&gt;&gt;materialCard8.Name" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialCard8.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard8.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialCard8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialCard1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="materialCard1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="materialCard1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>795, 471</value>
+  </data>
+  <data name="materialCard1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.Name" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.Parent" xml:space="preserve">
+    <value>tbpgAbout</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="materialCard8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="materialCard8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;btnShowOpenSource.Name" xml:space="preserve">
+    <value>btnShowOpenSource</value>
+  </data>
+  <data name="&gt;&gt;btnShowOpenSource.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnShowOpenSource.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;btnShowOpenSource.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Name" xml:space="preserve">
+    <value>materialLabel11</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Name" xml:space="preserve">
+    <value>materialLabel10</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Name" xml:space="preserve">
+    <value>materialLabel9</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Name" xml:space="preserve">
+    <value>materialLabel8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Name" xml:space="preserve">
+    <value>materialLabel7</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Name" xml:space="preserve">
+    <value>materialLabel12</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="materialCard8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 14</value>
+  </data>
+  <data name="materialCard8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 443</value>
+  </data>
+  <data name="materialCard8.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialCard8.Name" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialCard8.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard8.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialCard8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnShowOpenSource.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnShowOpenSource.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btnShowOpenSource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnShowOpenSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 379</value>
+  </data>
+  <data name="btnShowOpenSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="btnShowOpenSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 36</value>
+  </data>
+  <data name="btnShowOpenSource.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnShowOpenSource.Text" xml:space="preserve">
+    <value>开放源代码信息</value>
+  </data>
+  <data name="&gt;&gt;btnShowOpenSource.Name" xml:space="preserve">
+    <value>btnShowOpenSource</value>
+  </data>
+  <data name="&gt;&gt;btnShowOpenSource.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnShowOpenSource.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;btnShowOpenSource.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialLabel11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="materialLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>思源黑体 CN Medium, 14px</value>
+  </data>
+  <data name="materialLabel11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="materialLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 287</value>
+  </data>
+  <data name="materialLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 30</value>
+  </data>
+  <data name="materialLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="materialLabel11.Text" xml:space="preserve">
+    <value>大数据201 万昕睿 &amp;&amp; 大数据202 万婷</value>
+  </data>
+  <data name="materialLabel11.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Name" xml:space="preserve">
+    <value>materialLabel11</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="materialLabel10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="materialLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>思源黑体 CN Medium, 14px</value>
+  </data>
+  <data name="materialLabel10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="materialLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 257</value>
+  </data>
+  <data name="materialLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 30</value>
+  </data>
+  <data name="materialLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="materialLabel10.Text" xml:space="preserve">
+    <value>Windows开发基础 课程大作业</value>
+  </data>
+  <data name="materialLabel10.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Name" xml:space="preserve">
+    <value>materialLabel10</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="materialLabel9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="materialLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>思源黑体 CN Medium, 14px</value>
+  </data>
+  <data name="materialLabel9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="materialLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 227</value>
+  </data>
+  <data name="materialLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 30</value>
+  </data>
+  <data name="materialLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="materialLabel9.Text" xml:space="preserve">
+    <value>浙大宁波理工学院 计算机与数据工程学院20级</value>
+  </data>
+  <data name="materialLabel9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Name" xml:space="preserve">
+    <value>materialLabel9</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="materialLabel8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="materialLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>思源黑体 CN Medium, 16px</value>
+  </data>
+  <data name="materialLabel8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="materialLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 188</value>
+  </data>
+  <data name="materialLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 39</value>
+  </data>
+  <data name="materialLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="materialLabel8.Text" xml:space="preserve">
+    <value># 一个为程序员打造的健康管家 #</value>
+  </data>
+  <data name="materialLabel8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Name" xml:space="preserve">
+    <value>materialLabel8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="materialLabel7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="materialLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>思源黑体 CN Regular, 60px</value>
+  </data>
+  <data name="materialLabel7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="materialLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 101</value>
+  </data>
+  <data name="materialLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 87</value>
+  </data>
+  <data name="materialLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="materialLabel7.Text" xml:space="preserve">
+    <value>OutliveUrCode</value>
+  </data>
+  <data name="materialLabel7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Name" xml:space="preserve">
+    <value>materialLabel7</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="materialLabel12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="materialLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>思源黑体 CN Regular, 60px</value>
+  </data>
+  <data name="materialLabel12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="materialLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 14</value>
+  </data>
+  <data name="materialLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 87</value>
+  </data>
+  <data name="materialLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="materialLabel12.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Name" xml:space="preserve">
+    <value>materialLabel12</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Parent" xml:space="preserve">
+    <value>materialCard8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <metadata name="tmrMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>203, 16</value>
@@ -9141,6 +9210,39 @@
   <metadata name="tmrSedn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>535, 16</value>
   </metadata>
+  <metadata name="elementHost1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="elementHost1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="elementHost1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="elementHost1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="elementHost1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 218</value>
+  </data>
+  <data name="elementHost1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="elementHost1.Text" xml:space="preserve">
+    <value>elementHost1</value>
+  </data>
+  <data name="&gt;&gt;elementHost1.Name" xml:space="preserve">
+    <value>elementHost1</value>
+  </data>
+  <data name="&gt;&gt;elementHost1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Integration.ElementHost, WindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;elementHost1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;elementHost1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -13667,17 +13769,14 @@
         AAH///////////gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/////8=
 </value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 72, 3, 3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>OutliveUrCode</value>
-  </data>
-  <data name="&gt;&gt;progrsWater.Name" xml:space="preserve">
-    <value>progrsWater</value>
-  </data>
-  <data name="&gt;&gt;progrsWater.Type" xml:space="preserve">
-    <value>WindowsFormsIntegration.Design.HostedComponent, WindowsFormsIntegration.Design, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;MaterialIcons.Name" xml:space="preserve">
     <value>MaterialIcons</value>
@@ -13715,13 +13814,16 @@
   <data name="&gt;&gt;tmrSedn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;progrsWater.Name" xml:space="preserve">
+    <value>progrsWater</value>
+  </data>
+  <data name="&gt;&gt;progrsWater.Type" xml:space="preserve">
+    <value>WindowsFormsIntegration.Design.HostedComponent, WindowsFormsIntegration.Design, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmMain</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialForm, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="OpenSourceInfo" xml:space="preserve">
-    <value>OpenSourceInfo</value>
   </data>
 </root>

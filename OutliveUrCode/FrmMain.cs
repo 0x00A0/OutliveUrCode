@@ -193,6 +193,21 @@ namespace OutliveUrCode
         /// <param name="e"></param>
         private void tmrMain_Tick(object sender, EventArgs e)
         {
+            if (DateTime.Now.Date>lastDrinkingAlarm.Date) // 判断是否跨天
+            {
+                lastDrinkingAlarm = DateTime.Today;
+                txtDrinkingToday.Text = "0";
+                RefreshWater();
+            }
+
+            if (DateTime.Now.Date>lastSedentaryAlarm.Date)
+            {
+                ledSedentary.Value=DateTime.Today;
+                totalSedentaryToday=DateTime.Today;
+                lastSedentaryAlarm=DateTime.Today;
+                stopwatchSedentary.Restart();
+                RefreshSed();
+            }
             CheckDrinkingAlarm();
             CheckSedentaryAlarm();
         }
@@ -333,6 +348,11 @@ namespace OutliveUrCode
             Properties.Settings.Default.Save();
         }
 
+        private void btnShowDrinkData_Click(object sender, EventArgs e)
+        {
+            //TODO 查看喝水数据
+        }
+
         private void CheckDrinkingAlarm()
         {
             if (chkDrinkingAlarm.Checked 
@@ -400,7 +420,10 @@ namespace OutliveUrCode
             RefreshSed();
             stopwatchSedentary.Restart();
         }
-
+        private void btnShowSedentaryData_Click(object sender, EventArgs e)
+        {
+            //TODO 查看久坐数据
+        }
         private void CheckSedentaryAlarm()
         {
             if (chkSedentaryAlarm.Checked
@@ -410,7 +433,10 @@ namespace OutliveUrCode
                 if (chkSedentaryStrongAlarm.Checked)
                 {
                     //TODO 久坐提醒(强)
+                    stopwatchSedentary.Reset();
                     MessageBox.Show("还没写的强提醒");
+                    lastSedentaryAlarm=DateTime.Now;
+                    stopwatchSedentary.Start();
                 }
                 else
                 {

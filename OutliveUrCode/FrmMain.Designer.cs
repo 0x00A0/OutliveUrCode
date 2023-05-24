@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem5 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem6 = new MaterialSkin.MaterialListBoxItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
+            MaterialSkin.MaterialListBoxItem materialListBoxItem3 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem4 = new MaterialSkin.MaterialListBoxItem();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tbPgDrinking = new System.Windows.Forms.TabPage();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
@@ -39,8 +39,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDrink50 = new MaterialSkin.Controls.MaterialButton();
             this.btnDrink250 = new MaterialSkin.Controls.MaterialButton();
-            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
-            this.progrsWater = new OutliveYourCode.UserControls.WaveProgress();
             this.btnDrink500 = new MaterialSkin.Controls.MaterialButton();
             this.btnDrink150 = new MaterialSkin.Controls.MaterialButton();
             this.lblDrinkingStatus = new MaterialSkin.Controls.MaterialLabel();
@@ -65,7 +63,7 @@
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.chkSedentaryAlarm = new MaterialSkin.Controls.MaterialCheckbox();
             this.chkSedentaryStrongAlarm = new MaterialSkin.Controls.MaterialCheckbox();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.btnShowSedentaryData = new MaterialSkin.Controls.MaterialButton();
             this.materialCard11 = new MaterialSkin.Controls.MaterialCard();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
@@ -106,6 +104,8 @@
             this.menuOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrSedn = new System.Windows.Forms.Timer(this.components);
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.progrsWater = new OutliveYourCode.UserControls.WaveProgress();
             this.materialTabControl1.SuspendLayout();
             this.tbPgDrinking.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -221,14 +221,6 @@
             this.btnDrink250.UseAccentColor = false;
             this.btnDrink250.UseVisualStyleBackColor = true;
             this.btnDrink250.Click += new System.EventHandler(this.btnDrink250_Click);
-            // 
-            // elementHost1
-            // 
-            resources.ApplyResources(this.elementHost1, "elementHost1");
-            this.tableLayoutPanel1.SetColumnSpan(this.elementHost1, 7);
-            this.elementHost1.Name = "elementHost1";
-            this.tableLayoutPanel1.SetRowSpan(this.elementHost1, 2);
-            this.elementHost1.Child = this.progrsWater;
             // 
             // btnDrink500
             // 
@@ -436,6 +428,7 @@
             this.btnShowDrinkData.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnShowDrinkData.UseAccentColor = false;
             this.btnShowDrinkData.UseVisualStyleBackColor = true;
+            this.btnShowDrinkData.Click += new System.EventHandler(this.btnShowDrinkData_Click);
             // 
             // tbPgSedentary
             // 
@@ -511,7 +504,7 @@
             this.flowLayoutPanel3.Controls.Add(this.materialLabel13);
             this.flowLayoutPanel3.Controls.Add(this.chkSedentaryAlarm);
             this.flowLayoutPanel3.Controls.Add(this.chkSedentaryStrongAlarm);
-            this.flowLayoutPanel3.Controls.Add(this.materialButton1);
+            this.flowLayoutPanel3.Controls.Add(this.btnShowSedentaryData);
             resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
@@ -554,19 +547,20 @@
             this.chkSedentaryStrongAlarm.UseVisualStyleBackColor = true;
             this.chkSedentaryStrongAlarm.CheckedChanged += new System.EventHandler(this.chkSedentaryStrongAlarm_CheckedChanged);
             // 
-            // materialButton1
+            // btnShowSedentaryData
             // 
-            resources.ApplyResources(this.materialButton1, "materialButton1");
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnShowSedentaryData, "btnShowSedentaryData");
+            this.btnShowSedentaryData.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnShowSedentaryData.Depth = 0;
+            this.btnShowSedentaryData.HighEmphasis = true;
+            this.btnShowSedentaryData.Icon = ((System.Drawing.Image)(resources.GetObject("btnShowSedentaryData.Icon")));
+            this.btnShowSedentaryData.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnShowSedentaryData.Name = "btnShowSedentaryData";
+            this.btnShowSedentaryData.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnShowSedentaryData.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnShowSedentaryData.UseAccentColor = false;
+            this.btnShowSedentaryData.UseVisualStyleBackColor = true;
+            this.btnShowSedentaryData.Click += new System.EventHandler(this.btnShowSedentaryData_Click);
             // 
             // materialCard11
             // 
@@ -828,14 +822,14 @@
             this.lstLanguage.Density = MaterialSkin.Controls.MaterialListBox.MaterialItemDensity.Default;
             this.lstLanguage.Depth = 0;
             resources.ApplyResources(this.lstLanguage, "lstLanguage");
-            materialListBoxItem5.SecondaryText = "";
-            materialListBoxItem5.Tag = null;
-            materialListBoxItem5.Text = "中文(简体)";
-            materialListBoxItem6.SecondaryText = "";
-            materialListBoxItem6.Tag = null;
-            materialListBoxItem6.Text = "EN-US";
-            this.lstLanguage.Items.Add(materialListBoxItem5);
-            this.lstLanguage.Items.Add(materialListBoxItem6);
+            materialListBoxItem3.SecondaryText = "";
+            materialListBoxItem3.Tag = null;
+            materialListBoxItem3.Text = "中文(简体)";
+            materialListBoxItem4.SecondaryText = "";
+            materialListBoxItem4.Tag = null;
+            materialListBoxItem4.Text = "EN-US";
+            this.lstLanguage.Items.Add(materialListBoxItem3);
+            this.lstLanguage.Items.Add(materialListBoxItem4);
             this.lstLanguage.MouseState = MaterialSkin.MouseState.HOVER;
             this.lstLanguage.Name = "lstLanguage";
             this.lstLanguage.SelectedIndex = -1;
@@ -1051,6 +1045,14 @@
             this.tmrSedn.Interval = 1000;
             this.tmrSedn.Tick += new System.EventHandler(this.tmrSedn_Tick);
             // 
+            // elementHost1
+            // 
+            resources.ApplyResources(this.elementHost1, "elementHost1");
+            this.tableLayoutPanel1.SetColumnSpan(this.elementHost1, 7);
+            this.elementHost1.Name = "elementHost1";
+            this.tableLayoutPanel1.SetRowSpan(this.elementHost1, 2);
+            this.elementHost1.Child = this.progrsWater;
+            // 
             // FrmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -1179,7 +1181,7 @@
         private MaterialSkin.Controls.MaterialCard materialCard13;
         private MaterialSkin.Controls.MaterialLabel lblSedentaryStatus;
         private System.Windows.Forms.Timer tmrSedn;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton btnShowSedentaryData;
         private MaterialSkin.Controls.MaterialLabel materialLabel16;
         private MaterialSkin.Controls.MaterialTextBox2 txtSedentaryTimeRest;
     }

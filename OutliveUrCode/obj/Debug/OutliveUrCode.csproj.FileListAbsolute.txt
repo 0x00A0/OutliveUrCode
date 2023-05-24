@@ -68,3 +68,4 @@ E:\Codes\OutliveUrCode\OutliveUrCode\bin\Debug\System.Runtime.CompilerServices.U
 E:\Codes\OutliveUrCode\OutliveUrCode\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\Codes\OutliveUrCode\OutliveUrCode\obj\Debug\Interop.IWshRuntimeLibrary.dll
 E:\Codes\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.csproj.ResolveComReference.cache
+E:\proj_wxr\OutliveUrCode\OutliveUrCode\obj\Debug\OutliveUrCode.FrmLock.resources

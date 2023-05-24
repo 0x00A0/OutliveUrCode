@@ -128,6 +128,11 @@ namespace OutliveUrCode
         /// </summary>
         public FrmMain()
         {
+
+            FrmLock frmlock = new FrmLock(1);
+            frmlock.ShowDialog(this);
+            frmlock.Close();
+
             InitializeComponent();
             materialSkinManager = MaterialSkinManager.Instance; 
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -363,7 +368,7 @@ namespace OutliveUrCode
                 notifyMain.ShowBalloonTip(
                     0,
                     "该喝水啦！",
-                    "今日已喝："+txtDrinkingToday.Text+"\n"+"今日目标："+txtDrinkingTarget.Text,
+                    "今日已喝："+txtDrinkingToday.Text+"mL\n"+"今日目标："+txtDrinkingTarget.Text + "mL",
                     ToolTipIcon.Info
                     );
             }
@@ -432,10 +437,11 @@ namespace OutliveUrCode
             {
                 if (chkSedentaryStrongAlarm.Checked)
                 {
-                    //TODO 久坐提醒(强)
                     stopwatchSedentary.Reset();
-                    MessageBox.Show("还没写的强提醒");
-                    lastSedentaryAlarm=DateTime.Now;
+                    FrmLock frmlock = new FrmLock(1);
+                    frmlock.ShowDialog(this);
+                    frmlock.Close();
+                    lastSedentaryAlarm =DateTime.Now;
                     stopwatchSedentary.Start();
                 }
                 else

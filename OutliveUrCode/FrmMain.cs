@@ -378,6 +378,6 @@ namespace OutliveUrCode
         {
             MaterialMessageBox.Show(resources.GetString("OpenSourceInfo"));
         }
-
+        
     }
 }

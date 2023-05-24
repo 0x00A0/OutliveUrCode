@@ -1184,7 +1184,467 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="flowLayoutPanel10.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 324</value>
+  </data>
+  <data name="flowLayoutPanel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 100</value>
+  </data>
+  <data name="flowLayoutPanel10.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel10.Name" xml:space="preserve">
+    <value>flowLayoutPanel10</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel10.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="flowLayoutPanel9.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 324</value>
+  </data>
+  <data name="flowLayoutPanel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 100</value>
+  </data>
+  <data name="flowLayoutPanel9.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel9.Name" xml:space="preserve">
+    <value>flowLayoutPanel9</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel9.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flowLayoutPanel8.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 324</value>
+  </data>
+  <data name="flowLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 100</value>
+  </data>
+  <data name="flowLayoutPanel8.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.Name" xml:space="preserve">
+    <value>flowLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="flowLayoutPanel7.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 324</value>
+  </data>
+  <data name="flowLayoutPanel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 100</value>
+  </data>
+  <data name="flowLayoutPanel7.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel7.Name" xml:space="preserve">
+    <value>flowLayoutPanel7</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel7.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="flowLayoutPanel6.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 209</value>
+  </data>
+  <data name="flowLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 100</value>
+  </data>
+  <data name="flowLayoutPanel6.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel6.Name" xml:space="preserve">
+    <value>flowLayoutPanel6</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel6.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="flowLayoutPanel5.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 209</value>
+  </data>
+  <data name="flowLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 100</value>
+  </data>
+  <data name="flowLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel5.Name" xml:space="preserve">
+    <value>flowLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel5.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel5.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="materialLabel13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>思源黑体 CN Regular, 20px</value>
+  </data>
+  <data name="materialLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="materialLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 28</value>
+  </data>
+  <data name="materialLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="materialLabel13.Text" xml:space="preserve">
+    <value>久坐提醒：</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.Name" xml:space="preserve">
+    <value>materialLabel13</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.Parent" xml:space="preserve">
+    <value>flowLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkSedentaryAlarm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSedentaryAlarm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
+  </data>
+  <data name="chkSedentaryAlarm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="chkSedentaryAlarm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 37</value>
+  </data>
+  <data name="chkSedentaryAlarm.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkSedentaryAlarm.Text" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="&gt;&gt;chkSedentaryAlarm.Name" xml:space="preserve">
+    <value>chkSedentaryAlarm</value>
+  </data>
+  <data name="&gt;&gt;chkSedentaryAlarm.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckbox, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;chkSedentaryAlarm.Parent" xml:space="preserve">
+    <value>flowLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;chkSedentaryAlarm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flowLayoutPanel3.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 209</value>
+  </data>
+  <data name="flowLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 100</value>
+  </data>
+  <data name="flowLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel3.Name" xml:space="preserve">
+    <value>flowLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel3.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="materialLabel14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>思源黑体 CN Regular, 20px</value>
+  </data>
+  <data name="materialLabel14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="materialLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="materialLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 28</value>
+  </data>
+  <data name="materialLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="materialLabel14.Text" xml:space="preserve">
+    <value>提醒时间：</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.Name" xml:space="preserve">
+    <value>materialLabel14</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.Parent" xml:space="preserve">
+    <value>flowLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.LeadingIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAABGdBTUEAALGPC/xhBQAAEH9JREFUeF7t
+        3W2Z7UjVBuCRgAQk4IDXATgAB+BgcAAOwAE4GByAA3AADl7yMAR6+lSfzt47WbWS3Pd1Pf9mTnfnY6Vq
+        pZJ8AwAAAAAAAAAAAAAAAABAa/+35FvZlGwrYKLfLPl/2ZRsK2AiBWt7FCyYTMHaHgULJlOwtkfBgskU
+        rO1RsGAyBWt7FCyYTMHaHgULJlOwtkfBgskUrO1RsGAyBWt7FCyYTMHaHgULJlOwtkfBgskUrO1RsGAy
+        BWt7FCyYTMHaHgULJlOwtkfBgskUrO1RsGAyBWt7FCyYTMHaHgULJlOwtkfBgskUrO1RsGAyBWt7FCyY
+        TMHaHgULJlOwtkfBgsnycdCciPJ5fEgVAAAAAAAAAAAAAAAAAABO7CdLfrrkV0u+/U/+uOS7Nxm9GeFt
+        3v63a/JvrP/ez5bkZ/xoCcBXpVCkYKR4/H5JCso/loyKT0X+siS/w1rQFDO4qbfFaXZhejR/W5KCmtFe
+        Rn7AxaRAZcr12yUZuYwKwZmzjsTyNxqFwQll9LGOoEYn+ZWT3tgvlihe0FiKVEZRmTaNTuQ7JgU708cf
+        LwEmU6S2J9NhxQuKZaqTE++K/aiqZNqYntdZ/XJJbj5AW/mAQg7S0QkozyUj0/T6ztTvSrFaf39Fi3bS
+        QDaaOj45+bt/VedtsVqTPp0bDEyVAzBXfr2p+mSb/3xJN6NitSYXNEWLcmuhOtNizqsmI5cuI66vFas1
+        ihZlFKq+mV24thSrNTl+PAHAoRSqc2RG4XqkWK1RtDhE+iR6VOdLClfFWq5nitUaRYvd5EDKQT860OQ8
+        ycj4KK8UqzWKFi9Jnyqr0kcHl5wzGSHvPU3co1itUbR4iunftZM1XHvcoduzWK1RtNgsvY48BjI6kORa
+        SWHIIt9nHVGs1uRiackDX5VRVQ7i0QEk180zTfkji9Ua67QYykFhVHXv5EK1dbV8RbFao2jxA2nA6lXJ
+        mtxk+ZrKYrVG0eLfcpt7dIDIvZMCMZoizihWa7zl4cZMAeWzvJ8izixWaxStG8rtYlNA2ZpMETsUqzW/
+        XsJN5MC7y13Afy7585I/LfnNf5J+3ZotPZH8N2//n/Xfyb+Zfzs/Y/Sz5Zj8dYle1k1cuV+V4vG7JSnI
+        KSzV8jPzs/M75HcZ/Y7yWhSrG8ncf3QQnDEZ1WSEk6lB59XQ+d3yO+Z3NRJ7LYrVTWQn547P6CA4U3LA
+        Zip25sc18rvnb8jfMvobZRzF6ibOXqxyoGaEcsVPXOVvyt+meH09itVN5IQ4Y7H6+5KrFqmPrMUrf/to
+        m9w1itVNZOpxtjuBf1gyo1neTbZBtsVoG90pitVNnKlYpRGdns6dRlNbZZtk29yxWa9Y3cRZilWmPlkC
+        4KD8XLZRttVdpouK1U2coVithYrnZNtdecSlWN1EdnLnBvs69XMwvi7b8IpTRcXqJroXq6z8diDuL9s0
+        23a0zc8WxeomOherPJ6SaSrHyjY+86NAitWNdHw9TKYq+lT1so7rbNNExepGOj4bmGfmHIDzZNtnH4z2
+        TbcoVjeSEczoIJiVXNm3vguc42VfdB5tKVY3kpXQo4NgVtI/sfCzn+yTjr0txepGchB2WmuV2+v0ln00
+        2nez4uJ2I13uCGa64bm/8+g0RcyNIm6gS5M9Q3pXyfPJPsu+G+3T6uSOJhfWpcnuLuC5dbqLaI3eRXXp
+        W+WVJ1xDh9fXpL3h4ndBHfpWFoJeT4dRu28MXkyHOzyK1XV1KFqOr4vIHH+0gyvjYLq+2UUr7Q43cS5g
+        9peZr7ByvWKEeoW1aLOL1ndLOLHZU8GrjKwUrO1mFy2j+ZPK8Hi0Q6typQNHwXrMzKKVqaG7hieU4fFo
+        h1bkalc5BetxM4tWXkjIicw8WK524oWC9ZyK7fZRPPJ1EhkOz1ogetVFoQrW82YtLs26Q05g1lUtz5dd
+        lYL1mlnPHnrWsLlZjfZ8duvKjU4F6zU5NmZ8D9HarOZmvJs9rxu5+gOoCtbrZi1g9uxqU7PeIHq1O4Ij
+        CtY+Zt0MMspqaMYyhrtcvRSs/cxowhtlNTNjdHX1vtVbCtZ+ZvWzjLIamTG6utOL0xSsfc3oZxllNTFj
+        dHWnkysUrP1VbNP3McpqoHp0deX1Vh9RsI5RvT7LKGuyGUPrO00FVwrWMWbMDoyyJqq+43LXh0oVrOPk
+        mBptj6NilDVJrhSjHXJUskD0LncF31OwjpNjqvJbh14/M0nFSfQ2d1gg+hEF61jVC0rvfCxPU/lGhj8v
+        uTMF63iVDfi8NpxC1Veku79bSME6XnUD/u7HdKnKpQx3H12FglUjx9po2xwRzfci1c12t4EVrCrVy3Q0
+        3wtUnDxrXIW+p2DVqVyq4wV/BSq/M2h09T0Fq07lDELz/WCVQ+Y/LeF7Clatyl7WHZ/cKFO5KthdlP9R
+        sGpV3jG03Q9UNR284wPOX6Ng1atal+XrOgepnA5aCfxDCla9yrWGerUHqJoO5rkufkjBmqPqGUN3Cw9Q
+        NR30me8vKVhzVF2kLY7eWeWtXsPjLylYc1S2QSwi3VHVfF6zfUzBmqeq+a5vu6OsiRpt5L1jLj+mYM2T
+        Y3K0vfaOdYc7qnqVjOngmII1T1U7JOcYO6iax5sOfkzBmqtqWuiCvYOqIbHp4McUrLmqzgF9rB1U9a9c
+        XT6mYM1VNS20pGcHFeuv8ulwPqZgzVfxeXuP6bzIlaUHBWu+qkWkvODnS0Ybde/k5/AxBWu+qnPBW0pe
+        UHGiJFb5fp2CNV+O0dF22zv2wwsqGu6WM3xOweqhYnmDBaQvqGi46199TsHqoeJ9716b/ILRBt071p58
+        TsHqoeqZWp5Q9ZpY77T+nILVQ9VTH9YkPqHqrgifU7D6GG27veNO4RMqThIvLttGweqjovGuTfKEioVy
+        PpS6jYLVR0Xj3b54QsW32eyYbRSsPir2haUNT8hzTaONuWescN9GweqjorerVfKE0YbcO5qL2yhYfVTc
+        PfcyvyeMNuTe8UjONgpWH1WP6PAAO6UXBauX0fbbOzygYtjrHVjbKVi9VLwbS7vkARUFS2NxOwWrl4o7
+        6ArWAxSsXhSsXhSsZipeum+tyXYKVi8KVjNOkF7sj14q9oeC9QAnSC/2Ry8V+8Oi6gc4QXqxP3qxP5qx
+        Q3qxP3qxP5qxQ3qxP3qxP5qxQ3qxP3qxP5qxQ3qxP3qxP5qxQ3qxP3qxP5qxQ3qxP3qxP5qx0r0XJ0gv
+        FSvdrcN6gGcJe1GwevFoTjMKVi8KVi8KVjMVBcsnubdTsHrJsTvahntGwXqAN472omD1Mtp+e8frwx80
+        2oh7x07ZRsHqw8W8qdFG3DuGvdsoWH1UtEsSHlTxSW63brdRsPqo+C5hzj0eVHEnxEnC2VRcPNxBf8Lv
+        low25p75wxI4kxyzo2N5z+Tc40GuJPClvywZHct7xszjCRVz9QTOZHQM7x293SdU3Q35yRI4gxyro2N4
+        77h7/qTRxtw7v1wCZ5BjdXQM7x2eVPFJbg1GzqKi4Z5zjiflFTCjjbpn0sSEM6houLsR9YKKO4WJR3To
+        ruqRHHcIX1B1p9BdEbpzLpzAj5eMNure0ceiu4qF1EnOOV5Q0Xj3biy6q3gH1j+X8KKKxnviykJXVTMN
+        3znYQcUHKZL8HOjIOXAiVat7LW+gq4rlDIkV7jvJ3Hq0gfeOaSHdVE0HE3ZS1ccyJKabqumg/tWOqp6h
+        Mi2km6rpoIv1jiqHxaaFdFHVv028tWRnFeuxEotI6aJqsagHng9QtfP+sQQ6yLE4Okb3jleFH6ByeOwd
+        WcxW1bdNPD94kKppoeY7s1U12z2Oc6CqaWFiER2zVL0ePDEdPFDltNC6FGb5bsnomDwipoMHq5oWJpY4
+        UK1yCY/pYIGqt5AmhstUq3hv+xrHd4HKK1BiQR1VKntXiWO7SNWzhUn6CVChsnf11yUUqVyjkrhjyNGq
+        R1fWGhareuVMYpTF0arWXSU5d3wpqlhl8z1xReIo1TMGzfYJqpvvea7LVYm95ZiqemZwjeU6k1TeAk68
+        yYG9VT69kfiy80SVK9/XaMCzl+pGe+L4nSxXjNGOOSoejGYvlY32xFKGBmZcpdLwh1dU3zRK3DhqonqU
+        lVglzLNmXGS9VbSRGQdAPh3uriGPyjFT8dn59zG6ambGKOv3S+AROWZGx9KR0btqaMYoK3HlYqvqBaJr
+        3BlsqvKh6LfRz+IzM5bgJNZdNVa9+n2NfhZfM6tvlRhdNTfjdnFifRYfqV5vtcYzgyeQq1nlmxzeRhOe
+        92Y02RNvZDiRWc3NxKJSVrNG+4nj8GRmLHNY484hMy+aFome0KwG/BpF675mFqtEo/2kZg7JE0XrfmYX
+        K69AOrnK7xiOomjdx+xilWNdo/3kZi3YextF6/pmF6vEV5wvYvbUMFG0rqtDsTIVvJiZdw3XKFrX06FY
+        5eFmU8GLyV3DWQtK38bi0uuYtSj0fTzLelEdrobJH5e4Ip5X9l324WjfVscC0Yur/tLOR8nzZT63dD7Z
+        Z7OeDXyfvJ2EG8icf3QAVCffo3Nn5zyyr6q/IfhRLGG4kS79rDXfLqG37KPRvpuRHLv6Vjcz6w2lH+W7
+        JaaI/WSfZN+M9tmsuNt8U12a8GtMEXvJ8dFlCrjGequb69KEfxt3EefqdBfwbbyQj3/rWLRyZf/VEmpl
+        m3cbVSUWh/JfORC63Dl8n/RPNFiPl23crVe1xh1BvtC5aCW/XeKg3V+2aZcV66O4I8iHuhetTFVye13h
+        el22YbZlx+nfGsWKT+UA6bRGa5ScZL9YwnOy7ToXqkSxYrMzFK0k37rLyWfE9blsozTUZ30f8JEoVjzs
+        LEUrWaeKFp5+Kduk+9TvbRQrnnamorUmDWQfIfh+G3Rupo+iWPGy7o34j5KpT6ZAdxp1raOpM0z73kex
+        YjdnLVpr8jqUqxav/E3527q88uWZKFbsLkWrw2uWX01O7IxCznyC5HfP33DmIrUmF0I3TThMx8d4nk0a
+        0XlmLiOUzgXsp0vyO+Z3PUvzfEtyAVSsOFyHr/AclTyeklX1KRApFNXW4pTfoeujMnvEg8yUyqtHznYH
+        8dlkVJPikRFOpmJJCsuaLb2x/Ddv/5/138m/mX/7SiOnz/LrJVAu06jZX5aW8yQXOEtOmCo9iHwMYHSA
+        iqxJc/2Kd2k5qSv3teS16FfRUob7poiyJlNAr7ymtUwRr7T0QZ5LliyYAnIaubLe5S6i/DC+xswpacjf
+        KxlVecSG08toS2/ruslI2toqLiWjrXxTbnTAy3mTEbReFZeVKcMVHqK+ezJitgiU2zBNPGdM/7i13FFy
+        N/EcyZTe2xW4vZwEClffZF2dPhW8o3D1ikIFG6yFS4+rPrlYZOqnUMET8t6tM79P/izJxSHNdD0q2EFu
+        oXtGcf9kHVUuCsABMgIw6notGU1lym3aB4WyCDX9Fr2uz5PeVEaoXvcCDSheX0aRghNI8UoD+Y6PAGWq
+        nMLtsRk4ofS8MsLISXzFvldGlBlFpa+nJwUXlNFHms4ZgZ1pkWp+1/zOKb4pwpYgwA3lxE8RyzQyo5XZ
+        hWwtTFlykMKa383oCfhU+mFrMUvxSFJIUlDWjIrOKG//n7UYrcnPyM8CAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAIBZvvnmX8JVFk1ABReIAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 38</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 10, 3, 0</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.PrefixSuffixText" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 36</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtSedentaryTimerInterval.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtSedentaryTimerInterval.Name" xml:space="preserve">
+    <value>txtSedentaryTimerInterval</value>
+  </data>
+  <data name="&gt;&gt;txtSedentaryTimerInterval.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtSedentaryTimerInterval.Parent" xml:space="preserve">
+    <value>flowLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;txtSedentaryTimerInterval.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flowLayoutPanel4.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 209</value>
+  </data>
+  <data name="flowLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 100</value>
+  </data>
+  <data name="flowLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel4.Name" xml:space="preserve">
+    <value>flowLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel4.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="materialCard9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="ledSedentary.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="ledSedentary.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="ledSedentary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="ledSedentary.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="ledSedentary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 85</value>
+  </data>
+  <data name="ledSedentary.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ledSedentary.Name" xml:space="preserve">
+    <value>ledSedentary</value>
+  </data>
+  <data name="&gt;&gt;ledSedentary.Type" xml:space="preserve">
+    <value>HZH_Controls.Controls.UCLEDTime, HZH_Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ledSedentary.Parent" xml:space="preserve">
+    <value>materialCard9</value>
+  </data>
+  <data name="&gt;&gt;ledSedentary.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialCard9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 82</value>
+  </data>
+  <data name="materialCard9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialCard9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 110</value>
+  </data>
+  <data name="materialCard9.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;materialCard9.Name" xml:space="preserve">
+    <value>materialCard9</value>
+  </data>
+  <data name="&gt;&gt;materialCard9.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialCard9.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;materialCard9.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -1214,7 +1674,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flowLayoutPanel10" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel9" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel8" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel7" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel6" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel5" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel3" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel4" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="materialCard9" Row="1" RowSpan="2" Column="0" ColumnSpan="4" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,15.78913,Percent,15.78954,Percent,15.78953,Percent,26.3159,Percent,26.3159" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="materialCard6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1586,7 +2046,7 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="btnShowOpenSource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>538, 379</value>
+    <value>538, 367</value>
   </data>
   <data name="btnShowOpenSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 6, 4, 6</value>
@@ -1917,7 +2377,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAq
-        6wAAAk1TRnQBSQFMAgEBPwEAAewBAAHsAQABGAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFg
+        6wAAAk1TRnQBSQFMAgEBPwEAAQgBAQEIAQEBGAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFg
         AwABgAEBAgABAQEAASAGAAFAAQL/AOEAAf8DAAH/jwAB/wMAAf8DAAH/AwAB/7AAA1kBwAMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DSQGIBwAB/wMAAf8DVgGwhwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwYBCKsAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNWAbCHAAH/
@@ -1944,7 +2404,7 @@
         Af8DAAH/NwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/zwAA1kBwAMAAf8PAAH/AwAB/wMAAf8DAAH/
         AwAB/48AAf8DAAH/A0wBkCcAAf8DAAH/AwAB/wMAAf80AAM6AWADAAH/AwAB/wMAAf8DAAH/AwAB/wMG
         AQg/AAH/AwAB/wMAAf8IAANMAZADAAH/AwAB/wMAAf8DAAH/iwAB/wMAAf8DTAGQCwAB/wMAAf8DAAH/
-        A1sB2AQAA0IB+AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf83AAH/AwAB/wMAAf8DAAH/AwAB/0MA
+        A1sB2AQAA0UB+AMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf83AAH/AwAB/wMAAf8DAAH/AwAB/0MA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/4gAA1wB5wMAAf8DTAGQDwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DWQHvCwAB/z8AAf8DAAH/AwAB/0gAA1EB9wMAAf8DAAH/AwAB/wMA
         Af8DAAH/DwAB/wMAAf8DAAH/fAADRAF4HAADLgFHAwAB/wMdAShbAAH/UAADTAGQAwAB/wMAAf8QAAMM
@@ -1990,7 +2450,7 @@
         AwAB/wMAAf8DAAH/DwAB/wMAAf8DAAH/AwAB/wMAAf8vAAH/AwAB/wMAAf8fAAH/AwAB/wMAAf8DAAH/
         IwAB/wMAAf8DAAH/LwAB/wMAAf8DOgFgKAADPQFoAwAB/wMAAf8DAAH/AyoBQAsAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/JwAB/wMAAf8DAAH/FwAB/wMAAf8DAAH/NwAB/wMAAf8DAAH/AwAB/wNb
-        AdgEAANCAfgDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/IwAB/wMAAf8DAAH/A04BmBwAA2AB4AMA
+        AdgEAANFAfgDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/IwAB/wMAAf8DAAH/A04BmBwAA2AB4AMA
         Af8DAAH/AyEB+zgAAzoBYAMhATAIAANaAb8DWgG/A1oBvwNZAe8DAAH/A10BzwNaAb8DWgG/iwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DXQHfCwAB/ysAAf8DAAH/AwAB/wMAAf8DAAH/A1kBwAQA
         A2AB4AMAAf8DAAH/AwAB/wMAAf8DUAGfWAADWQHAAwAB/wMqAUCcAAM2AVcDAAH/Ax0BKEsAAf8DAAH/
@@ -1999,7 +2459,7 @@
         Af8DAAH/AyoBQP8AZQADTAGQA1oBvwNaAb8DWgG/A1oBvwNaAb8DIQEw/wD/AP8A/wDIAANbAdADAAH/
         AwAB/wMAAf8DAAH/AwAB/wNOAZhQAAMqAUCgAAMqAUADKgFAAyoBQAMqAUADKgFAAyoBQAMqAUADKgFA
         AyoBQAMqAUADKgFAAyoBQAMqAUADKgFAAyoBQDMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
-        AwAB/zwAA1oB8AMAAf8DAAH/AwAB/wMAAf8DAAH/mwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        AwAB/zwAA10B8AMAAf8DAAH/AwAB/wMAAf8DAAH/mwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8kAAMhATADAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/zcAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf9UAAMh
         ATADKgFAAwwBEDQAA1kBwAMAAf8DXQHPA1oBvwNaAb8DWgG/A1oBvwNaAb8DWgG/A1oBvwNaAb8DWgG/
@@ -2029,7 +2489,7 @@
         Ab8DWgG/A1kB7wMAAf8DXQHPA1oBvwNaAb8DWgG/A1oBvwNaAb8DIQEwHAADWQHAAwAB/wMqAUAEAANM
         AZADWgG/A1oBvwNaAb8DWQHvAwAB/wNdAc8DWgG/A1oBvwNaAb8DIQEwBAADWQHAAwAB/wMqAUAfAAH/
         AwAB/wMAAf8nAAH/AwAB/wMAAf8jAAH/A1gBuAsAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
-        A1oB8AsAAf8DAAH/OAADWQHAAwAB/wMqAUA0AANZAcADAAH/AyoBQBQAA1kBwAMAAf8DKgFAFAADWQHA
+        A10B8AsAAf8DAAH/OAADWQHAAwAB/wMqAUA0AANZAcADAAH/AyoBQBQAA1kBwAMAAf8DKgFAFAADWQHA
         AwAB/wMqAUAjAAH/AwAB/wMAAf8fAAH/AwAB/wMAAf8nAAH/AwAB/wNYAbgDWwHkAwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/A1cBvANgAegDAAH/AwAB/zgAA1kBwAMAAf8DKgFANAADWQHA
         AwAB/wMqAUAUAANZAcADAAH/AyoBQBQAA1kBwAMAAf8DKgFAJwAB/wMAAf8DAAH/FwAB/wMAAf8DAAH/
@@ -2037,7 +2497,7 @@
         AwAB/wMAAf84AANZAcADAAH/AyoBQDQAA1kBwAMAAf8DKgFAFAADWQHAAwAB/wMqAUAUAANZAcADAAH/
         AyoBQCsAAf8DAAH/AwAB/w8AAf8DAAH/AwAB/zMAAf8DAAH/AwAB/wMAAf8LAAH/AwAB/wNgAeMLAAH/
         AwAB/wMAAf8DAAH/PAADWQHAAwAB/wMqAUA0AANZAcADAAH/AyoBQBQAA0wBkANaAb8DIQEwFAADWQHA
-        AwAB/wMqAUAvAAH/AwAB/wMAAf8HAAH/AwAB/wMAAf87AAH/AwAB/wNaAfALAAH/AwAB/wNYAbgLAAH/
+        AwAB/wMqAUAvAAH/AwAB/wMAAf8HAAH/AwAB/wMAAf87AAH/AwAB/wNdAfALAAH/AwAB/wNYAbgLAAH/
         AwAB/wMAAf8DTgGYPAADWQHAAwAB/wMqAUA0AANZAcADAAH/AyoBQDQAA1kBwAMAAf8DKgFAMwAB/wMA
         Af8DAAH/AwAB/wMAAf9DAAH/AwAB/wNXAbwDYAHoAwAB/wMAAf8DAAH/A1gBuANbAeQDAAH/AwAB/wMz
         AVBAAANMAZADWgG/AyEBMDQAA1kBwAMAAf8DQAFwAyoBQAMqAUADKgFAAyoBQAMqAUADKgFAAyoBQAMq
@@ -2148,7 +2608,7 @@
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/GwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wM6AWAjAAH/AwAB/wMAAf8DAAH/AwAB/yMAAf8DAAH/GwAB/wMAAf8EAANZ
-        AcADAAH/AyoBQAMAAf8DAAH/HwAB/wMAAf8DAAH/A1oB8BcAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
+        AcADAAH/AyoBQAMAAf8DAAH/HwAB/wMAAf8DAAH/A10B8BcAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/HwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DIQH7MwAB/wMA
         Af8jAAH/AwAB/xsAAf8DAAH/BAADWQHAAwAB/wMqAUADAAH/AwAB/yAAA1ABnwMAAf8DAAH/AyEBMBMA
@@ -2174,7 +2634,7 @@
         Af8DXQHfBwAB/wNaAb8/AAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/JwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNL
         AY8LAAH/FwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
-        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8fAAH/BwAB/wMYASAHAAH/BwAB/wMAAf8EAANWAfMDAAH/
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8fAAH/BwAB/wMYASAHAAH/BwAB/wMAAf8EAANbAfMDAAH/
         AwAB/wMAAf8DAAH/JAADWQHvAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/AwAB/wNGAYAfAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DAAH/A1ABnwsAAf8DAAH/AwAB/xMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
@@ -2218,7 +2678,7 @@
         AwAB/wMAAf8DTgGYCAADFQEcAwAB/wMhAfs8AANZAcADAAH/AyoBQDsAAf8DAAH/A1ABnwsAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AzoBYBcAAf8DAAH/AzMBUAMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
-        JwAB/wMAAf8DQgH4FAADSQGIAwAB/wMAAf83AAH/A1kBwAgAA1kBwAMAAf8DKgFANwAB/wMAAf8DSwGP
+        JwAB/wMAAf8DRQH4FAADSQGIAwAB/wMAAf83AAH/A1kBwAgAA1kBwAMAAf8DKgFANwAB/wMAAf8DSwGP
         CwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DIQH7HwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/y8AAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DIQEwMwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
@@ -2691,8 +3151,8 @@
         AwAB/wMAAf8fAAH/AwAB/wMAAf8gAAMSARgLAAH/AwAB/wMAAf8fAAH/AwAB/wMAAf84AAMoATwDAAH/
         AwAB/wMAAf8DAAH/AwAB/zAAA1kBwAMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DQAFwAyoBQANb
         AdADAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AyoBQBcAAf8DAAH/CwAB/wMAAf8DAAH/AwAB/wNb
-        AdgEAANCAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8XAAH/AwAB/wsAAf8DAAH/AwAB/wMAAf8DWwHY
-        BAADQgH4AwAB/wMAAf8DAAH/AwAB/wsAAf8DAAH/MwAB/wMAAf8DAAH/AwAB/wMAAf8wAANZAcADAAH/
+        AdgEAANFAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8XAAH/AwAB/wsAAf8DAAH/AwAB/wMAAf8DWwHY
+        BAADRQH4AwAB/wMAAf8DAAH/AwAB/wsAAf8DAAH/MwAB/wMAAf8DAAH/AwAB/wMAAf8wAANZAcADAAH/
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         AwAB/wMqAUAXAAH/AwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNRAfcEAAMz
         AVADAAH/AwAB/wMhAfsXAAH/AwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNR
@@ -2714,19 +3174,19 @@
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/ysAAf8DAAH/AwAB/ycAAf8DAAH/
         JwAB/wMAAf8DAAH/LwAB/wMAAf8DRgGAHwAB/wMAAf8DAAH/LwAB/wMAAf8DRgGAFwAB/wMAAf8PAAH/
         AwAB/wMAAf8fAAH/AwAB/wMAAf8jAAH/AwAB/wMAAf8gAAMdASgDAAH/AwAB/ysAAf8DAAH/JwAB/wMA
-        Af8LAAH/AwAB/x8AAf8DAAH/EwAB/wNCAfgfAAH/AwAB/xcAAf8DAAH/DwAB/wMAAf8nAAH/AwAB/yMA
-        Af8DAAH/JwAB/wMAAf8PAAH/HwAB/wMAAf8fAAH/AwAB/wMAAf8PAAH/AwAB/x8AAf8DAAH/DAADVgHz
-        AwAB/wMAAf8DQgH4GwAB/wMAAf8QAAMzAVADAAH/A10B1AsAAf8DAAH/LwAB/wMAAf8fAAH/AwAB/xwA
+        Af8LAAH/AwAB/x8AAf8DAAH/EwAB/wNFAfgfAAH/AwAB/xcAAf8DAAH/DwAB/wMAAf8nAAH/AwAB/yMA
+        Af8DAAH/JwAB/wMAAf8PAAH/HwAB/wMAAf8fAAH/AwAB/wMAAf8PAAH/AwAB/x8AAf8DAAH/DAADWwHz
+        AwAB/wMAAf8DRQH4GwAB/wMAAf8QAAMzAVADAAH/A10B1AsAAf8DAAH/LwAB/wMAAf8fAAH/AwAB/xwA
         Ax0BKAMAAf8DAAH/DwAB/wMAAf8YAAM6AWADAAH/A1kBwBQAAzYBWAMAAf8DAAH/FwAB/wMAAf8YAAM6
-        AWADAAH/A1kBwAsAAf8DAAH/A1ABnwNMAZADAAH/A0IB+BcAAf8DAAH/EAADWQHAAwAB/wMqAUALAAH/
+        AWADAAH/A1kBwAsAAf8DAAH/A1ABnwNMAZADAAH/A0UB+BcAAf8DAAH/EAADWQHAAwAB/wMqAUALAAH/
         AwAB/x8AAf8DAAH/CwAB/wMAAf8YAAM6AWADAAH/A1kBwB8AAf8DAAH/EwAB/wMAAf8YAANZAcADAAH/
         AyoBQBQAA1kBwAMAAf8YAANZAcADAAH/AyoBQBQAA1kBwAMAAf8DKgFACwAB/wNLAY8IAANMAZADAAH/
-        A0IB+BAAA1kBwAMAAf8DKgFADAADOwFkAwAB/wNSAaAEAAMzAVADAAH/A1sB2BAAAzoBYAMAAf8DAAH/
+        A0UB+BAAA1kBwAMAAf8DKgFADAADOwFkAwAB/wNSAaAEAAMzAVADAAH/A1sB2BAAAzoBYAMAAf8DAAH/
         AwAB/w8AAf8DAAH/GAADWQHAAwAB/wMqAUAUAAMdASgDAAH/AwAB/xQAA1kBwAMAAf8DKgFAFAADPQFo
-        AwAB/wNSAagUAANZAcADAAH/GwAB/wMAAf8YAAM9AWgDAAH/A1IBqBwAA1IBqAMAAf8DQgH4DwAB/wMA
+        AwAB/wNSAagUAANZAcADAAH/GwAB/wMAAf8YAAM9AWgDAAH/A1IBqBwAA1IBqAMAAf8DRQH4DwAB/wMA
         Af8XAAH/AyoBQAQAA1kBwAMAAf8DKgFAEwAB/wMAAf8UAANZAcADAAH/AyoBQBQAAz0BaAMAAf8DWAG4
         FwAB/wMAAf8bAAH/AwAB/x8AAf8DAAH/FAADWQHAAwAB/xsAAf8DAAH/HwAB/wMAAf8gAANWAbADAAH/
-        A0IB+AsAAf8DAAH/FwAB/wNJAYgEAAM6AWADAAH/A1wByBMAAf8DAAH/FwAB/wMAAf8fAAH/AwAB/wwA
+        A0UB+AsAAf8DAAH/FwAB/wNJAYgEAAM6AWADAAH/A1wByBMAAf8DAAH/FwAB/wMAAf8fAAH/AwAB/wwA
         Ax0BKAMAAf8DAAH/HwAB/wMAAf8fAAH/AwAB/xQAA1kBwAMAAf8bAAH/AwAB/x8AAf8DAAH/JAADVgGw
         DwAB/wMAAf8UAANAAXADAAH/CwAB/wMAAf8TAAH/AwAB/xcAAf8DAAH/HwAB/wMAAf8PAAH/AwAB/yMA
         Af8DAAH/HwAB/wMAAf8DAAH/EAADWQHAAwAB/xcAAf8DAAH/A10B3x8AAf8DAAH/AwAB/y8AAf8DAAH/
@@ -2735,13 +3195,13 @@
         Af8DAAH/KAADOgFgAwAB/wMAAf8PAAH/AwAB/xMAAf8DAAH/JwAB/wMAAf8DAAH/AwAB/yMAAf8DAAH/
         AwAB/xwAAxIBGAsAAf8DAAH/AwAB/x8AAf8DAAH/AwAB/yAAAxIBGAsAAf8DAAH/AwAB/x8AAf8DAAH/
         AwAB/zMAAf8DAAH/AwAB/x8AAf8DAAH/AwAB/xwAAygBPAQAAxIBGAMAAf8DAAH/IwAB/wMAAf8DAAH/
-        IwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/A1sB2AQAA0IB+AMAAf8DAAH/AwAB/wMAAf8LAAH/AwAB/xcA
-        Af8DAAH/CwAB/wMAAf8DAAH/AwAB/wNbAdgEAANCAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8fAAH/
+        IwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/A1sB2AQAA0UB+AMAAf8DAAH/AwAB/wMAAf8LAAH/AwAB/xcA
+        Af8DAAH/CwAB/wMAAf8DAAH/AwAB/wNbAdgEAANFAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8fAAH/
         CwAB/wMAAf8DAAH/AwAB/wMAAf8HAAH/AwAB/wMAAf8DAAH/AwAB/wQAA1YBsAMAAf8QAAMMARADAAH/
-        AwAB/wMAAf8DAAH/DwAB/wNaAfAEAANCAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8XAAH/AwAB/wMA
+        AwAB/wMAAf8DAAH/DwAB/wNdAfAEAANFAfgDAAH/AwAB/wMAAf8DAAH/CwAB/wMAAf8XAAH/AwAB/wMA
         Af8LAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNRAfcEAAMzAVADAAH/AwAB/wMhAfsXAAH/
         AwAB/wMAAf8LAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNRAfcEAAMzAVADAAH/AwAB/wMh
-        AfsfAAH/AwAB/wNWAfMEAANCAXQDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/Ax0BKAcAAf8DAAH/
+        AfsfAAH/AwAB/wNbAfMEAANCAXQDAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/Ax0BKAcAAf8DAAH/
         AwAB/xcAAf8DAAH/AwAB/w8AAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DUQH3BAADMwFQAwAB/wMA
         Af8DIQH7GAADXQHfAwAB/wMAAf8DYAHgDAADNgFXAwAB/wMmATgPAAH/AwAB/wMAAf8DGAEgHAADXQHf
         AwAB/wMAAf8DYAHgDAADNgFXAwAB/wMmATgPAAH/AwAB/wMAAf8DGAEgJwAB/wMAAf8DAAH/DAADKgE/
@@ -2762,7 +3222,7 @@
         AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf9HAAH/AwAB/wMAAf8DAAH/
         AwAB/wMAAf8DAAH/HwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DKgFABAADWQHAAwAB/wMA
         Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8nAAH/AwAB/wMAAf8LAAH/AwAB/wsAAf8DAAH/KwAB/wMA
-        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNd
+        Af8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNe
         AfA/AAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/IwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMA
         Af8DKgFABAADWQHAAwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8jAAH/AwAB/wMAAf8DAAH/
         AwAB/wsAAf8DAAH/AwAB/wMAAf8DAAH/IAADMwFQAwAB/wMAAf8DAAH/AwAB/wcAAf8DAAH/AwAB/wMA

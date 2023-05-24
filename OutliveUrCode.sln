@@ -6,8 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveProgress", "WaveProgress\WaveProgress.csproj", "{E9A289FC-1EBF-470E-B231-8C2F184AB912}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutliveUrCode", "OutliveUrCode\OutliveUrCode.csproj", "{E3986F1C-52E5-4846-BAD6-83C3A822711F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8EB7611B-68CD-4B8B-987A-11717E2B250C} = {8EB7611B-68CD-4B8B-987A-11717E2B250C}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialSkin", "..\MaterialSkin.ZH\MaterialSkin\MaterialSkin.csproj", "{8EB7611B-68CD-4B8B-987A-11717E2B250C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialSkin", "MaterialSkin\MaterialSkin.csproj", "{8EB7611B-68CD-4B8B-987A-11717E2B250C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

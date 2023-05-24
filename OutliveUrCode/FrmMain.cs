@@ -13,7 +13,6 @@ using System.Windows.Input;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using OutliveUrCode.Properties;
-using Sunny.UI.Win32;
 using MouseEventArgs = System.Windows.Forms.MouseEventArgs;
 
 namespace OutliveUrCode
@@ -112,6 +111,7 @@ namespace OutliveUrCode
                 TextShade.WHITE);
             materialSkinManager.AddFormToManage(this);
             LoadFromSettings();
+            ledSedentary.ForeColor = Color.Green;
         }
         /// <summary>
         /// 窗体缩小至托盘
@@ -206,15 +206,15 @@ namespace OutliveUrCode
             this.progrsWater.Progress = int.Parse(txtDrinkingToday.Text) * 100 / int.Parse(txtDrinkingTarget.Text);
             if (int.Parse(progrsWater.Percent)>=100)
             {
-                lblDrinkingStatus.Text = Resources.FrmMain_DrinkingStatus100;
+                lblDrinkingStatus.Text = resources.GetString("FrmMain_DrinkingStatus100");
             }
             else if(int.Parse(progrsWater.Percent) == 0)
             {
-                lblDrinkingStatus.Text = Resources.FrmMain_DrinkingStatus0;
+                lblDrinkingStatus.Text = resources.GetString("FrmMain_DrinkingStatus0");
             }
             else
             {
-                lblDrinkingStatus.Text = Resources.FrmMain_DrinkingStatusNormal 
+                lblDrinkingStatus.Text = resources.GetString("FrmMain_DrinkingStatusNormal") 
                                          + (lastDrinkingAlarm
                                              + new TimeSpan(0,int.Parse(txtDrinkingTimerInterval.Text),0)
                                            ).ToString("HH:mm");
@@ -298,7 +298,6 @@ namespace OutliveUrCode
                 && int.Parse(txtDrinkingToday.Text) < int.Parse(txtDrinkingTarget.Text)
                 )
             {
-                //MessageBox.Show("喝水提醒");
                 notifyMain.ShowBalloonTip(
                     0,
                     "该喝水啦！",
@@ -329,6 +328,7 @@ namespace OutliveUrCode
         private void chkTheme_CheckedChanged(object sender, EventArgs e)
         {
             materialSkinManager.Theme = chkTheme.Checked ? MaterialSkinManager.Themes.DARK : MaterialSkinManager.Themes.LIGHT;
+            ledSedentary.ForeColor = chkTheme.Checked ? Color.LimeGreen : Color.Green;
             Properties.Settings.Default.themeDark = chkTheme.Checked;
             Properties.Settings.Default.Save();
         }
@@ -376,7 +376,7 @@ namespace OutliveUrCode
 
         private void btnShowOpenSource_Click(object sender, EventArgs e)
         {
-
+            MaterialMessageBox.Show(resources.GetString("OpenSourceInfo"));
         }
 
     }

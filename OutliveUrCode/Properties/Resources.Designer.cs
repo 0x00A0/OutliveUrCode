@@ -59,32 +59,5 @@ namespace OutliveUrCode.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   查找类似 今天还没有喝水呢，快去喝水吧！ 的本地化字符串。
-        /// </summary>
-        internal static string FrmMain_DrinkingStatus0 {
-            get {
-                return ResourceManager.GetString("FrmMain_DrinkingStatus0", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 今天的喝水目标完成了哦！ 的本地化字符串。
-        /// </summary>
-        internal static string FrmMain_DrinkingStatus100 {
-            get {
-                return ResourceManager.GetString("FrmMain_DrinkingStatus100", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 下次喝水提醒时间： 的本地化字符串。
-        /// </summary>
-        internal static string FrmMain_DrinkingStatusNormal {
-            get {
-                return ResourceManager.GetString("FrmMain_DrinkingStatusNormal", resourceCulture);
-            }
-        }
     }
 }

@@ -57,6 +57,7 @@
             this.tbPgSedentary = new System.Windows.Forms.TabPage();
             this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.ledSedentary = new HZH_Controls.Controls.UCLEDTime();
             this.tbpgSetting = new System.Windows.Forms.TabPage();
             this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
             this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
@@ -83,6 +84,19 @@
             this.notifyMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
+            this.chkSedentaryAlarm = new MaterialSkin.Controls.MaterialCheckbox();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
+            this.materialCard9 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtSedentaryTimerInterval = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialTabControl1.SuspendLayout();
             this.tbPgDrinking.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -92,6 +106,7 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.tbPgSedentary.SuspendLayout();
             this.materialCard6.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.tbpgSetting.SuspendLayout();
             this.materialCard5.SuspendLayout();
             this.materialCard7.SuspendLayout();
@@ -100,6 +115,9 @@
             this.materialCard1.SuspendLayout();
             this.materialCard8.SuspendLayout();
             this.notifyMenu.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.materialCard9.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -424,7 +442,25 @@
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel10, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel9, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel8, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel7, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel6, 3, 3);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel5, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel3, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel4, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.materialCard9, 0, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // ledSedentary
+            // 
+            resources.ApplyResources(this.ledSedentary, "ledSedentary");
+            this.ledSedentary.BackColor = System.Drawing.Color.Transparent;
+            this.ledSedentary.ForeColor = System.Drawing.Color.Green;
+            this.ledSedentary.LineWidth = 12;
+            this.ledSedentary.Name = "ledSedentary";
+            this.ledSedentary.Value = new System.DateTime(2023, 5, 24, 10, 30, 43, 43);
             // 
             // tbpgSetting
             // 
@@ -739,6 +775,118 @@
             resources.ApplyResources(this.menuExit, "menuExit");
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
+            // materialLabel13
+            // 
+            resources.ApplyResources(this.materialLabel13, "materialLabel13");
+            this.materialLabel13.Depth = 0;
+            this.materialLabel13.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel13.HighEmphasis = true;
+            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel13.Name = "materialLabel13";
+            // 
+            // chkSedentaryAlarm
+            // 
+            resources.ApplyResources(this.chkSedentaryAlarm, "chkSedentaryAlarm");
+            this.chkSedentaryAlarm.Depth = 0;
+            this.chkSedentaryAlarm.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkSedentaryAlarm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkSedentaryAlarm.Name = "chkSedentaryAlarm";
+            this.chkSedentaryAlarm.ReadOnly = false;
+            this.chkSedentaryAlarm.Ripple = true;
+            this.chkSedentaryAlarm.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.materialLabel13);
+            this.flowLayoutPanel3.Controls.Add(this.chkSedentaryAlarm);
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Controls.Add(this.materialLabel14);
+            this.flowLayoutPanel4.Controls.Add(this.txtSedentaryTimerInterval);
+            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            // 
+            // flowLayoutPanel5
+            // 
+            resources.ApplyResources(this.flowLayoutPanel5, "flowLayoutPanel5");
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            // 
+            // flowLayoutPanel6
+            // 
+            resources.ApplyResources(this.flowLayoutPanel6, "flowLayoutPanel6");
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            // 
+            // flowLayoutPanel7
+            // 
+            resources.ApplyResources(this.flowLayoutPanel7, "flowLayoutPanel7");
+            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            // 
+            // flowLayoutPanel8
+            // 
+            resources.ApplyResources(this.flowLayoutPanel8, "flowLayoutPanel8");
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            // 
+            // flowLayoutPanel9
+            // 
+            resources.ApplyResources(this.flowLayoutPanel9, "flowLayoutPanel9");
+            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            // 
+            // flowLayoutPanel10
+            // 
+            resources.ApplyResources(this.flowLayoutPanel10, "flowLayoutPanel10");
+            this.flowLayoutPanel10.Name = "flowLayoutPanel10";
+            // 
+            // materialCard9
+            // 
+            resources.ApplyResources(this.materialCard9, "materialCard9");
+            this.materialCard9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tableLayoutPanel2.SetColumnSpan(this.materialCard9, 4);
+            this.materialCard9.Controls.Add(this.ledSedentary);
+            this.materialCard9.Depth = 0;
+            this.materialCard9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard9.Name = "materialCard9";
+            this.tableLayoutPanel2.SetRowSpan(this.materialCard9, 2);
+            // 
+            // materialLabel14
+            // 
+            resources.ApplyResources(this.materialLabel14, "materialLabel14");
+            this.materialLabel14.Depth = 0;
+            this.materialLabel14.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel14.HighEmphasis = true;
+            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel14.Name = "materialLabel14";
+            // 
+            // txtSedentaryTimerInterval
+            // 
+            this.txtSedentaryTimerInterval.AnimateReadOnly = false;
+            this.txtSedentaryTimerInterval.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtSedentaryTimerInterval.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            resources.ApplyResources(this.txtSedentaryTimerInterval, "txtSedentaryTimerInterval");
+            this.txtSedentaryTimerInterval.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSedentaryTimerInterval.Depth = 0;
+            this.txtSedentaryTimerInterval.HideSelection = true;
+            this.txtSedentaryTimerInterval.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSedentaryTimerInterval.LeadingIcon")));
+            this.txtSedentaryTimerInterval.LeaveOnEnterKey = true;
+            this.txtSedentaryTimerInterval.MaxLength = 32767;
+            this.txtSedentaryTimerInterval.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSedentaryTimerInterval.Name = "txtSedentaryTimerInterval";
+            this.txtSedentaryTimerInterval.PasswordChar = '\0';
+            this.txtSedentaryTimerInterval.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Suffix;
+            this.txtSedentaryTimerInterval.ReadOnly = false;
+            this.txtSedentaryTimerInterval.SelectedText = "";
+            this.txtSedentaryTimerInterval.SelectionLength = 0;
+            this.txtSedentaryTimerInterval.SelectionStart = 0;
+            this.txtSedentaryTimerInterval.ShortcutsEnabled = true;
+            this.txtSedentaryTimerInterval.TabStop = false;
+            this.txtSedentaryTimerInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSedentaryTimerInterval.TrailingIcon = null;
+            this.txtSedentaryTimerInterval.UseSystemPasswordChar = false;
+            this.txtSedentaryTimerInterval.UseTallSize = false;
+            // 
             // FrmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -769,6 +917,7 @@
             this.flowLayoutPanel1.PerformLayout();
             this.tbPgSedentary.ResumeLayout(false);
             this.materialCard6.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.tbpgSetting.ResumeLayout(false);
             this.materialCard5.ResumeLayout(false);
             this.materialCard7.ResumeLayout(false);
@@ -779,6 +928,11 @@
             this.materialCard8.ResumeLayout(false);
             this.materialCard8.PerformLayout();
             this.notifyMenu.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel4.PerformLayout();
+            this.materialCard9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -835,6 +989,20 @@
         private System.Windows.Forms.ContextMenuStrip notifyMenu;
         private System.Windows.Forms.ToolStripMenuItem menuOpen;
         private System.Windows.Forms.ToolStripMenuItem menuExit;
+        private HZH_Controls.Controls.UCLEDTime ledSedentary;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel13;
+        private MaterialSkin.Controls.MaterialCheckbox chkSedentaryAlarm;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private MaterialSkin.Controls.MaterialCard materialCard9;
+        private MaterialSkin.Controls.MaterialLabel materialLabel14;
+        private MaterialSkin.Controls.MaterialTextBox2 txtSedentaryTimerInterval;
     }
 }
 

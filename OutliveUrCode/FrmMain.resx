@@ -13826,4 +13826,16 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialForm, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="FrmMain_DrinkingStatus100" xml:space="preserve">
+    <value>今日目标已完成</value>
+  </data>
+  <data name="FrmMain_DrinkingStatus0" xml:space="preserve">
+    <value>今天还没有喝水哦</value>
+  </data>
+  <data name="FrmMain_DrinkingStatusNormal" xml:space="preserve">
+    <value>下次提醒时间:</value>
+  </data>
+  <data name="OpenSourceInfo" xml:space="preserve">
+    <value>懒,还没写完</value>
+  </data>
 </root>

@@ -20,6 +20,7 @@ namespace OutliveUrCode
         public static extern bool SetForegroundWindow(IntPtr hWnd);//设置此窗体为活动窗体
         //定义变量,句柄类型
         public IntPtr myHandle;
+        private HookKeyBoard hkb=null;
 
         private Stopwatch sw = new Stopwatch();
 
@@ -35,6 +36,7 @@ namespace OutliveUrCode
             this.restTime = restTime;
             sw.Start();
             tmrLock.Enabled = true;
+            DisabledMouseKey();
         }
         
 
@@ -51,6 +53,7 @@ namespace OutliveUrCode
             SetForegroundWindow(myHandle);
             if (new TimeSpan(0, restTime, 0) - sw.Elapsed <= new TimeSpan(0, 0, 1))
             {
+                EnableMouseKey();
                 this.DialogResult = DialogResult.OK;
                 tmrLock.Enabled = false;
                 sw.Reset();
@@ -61,6 +64,31 @@ namespace OutliveUrCode
         private void materialButton1_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK ;
+        }
+
+        private void DisabledMouseKey()
+        {
+            hkb = new HookKeyBoard();
+            hkb.keyeventhandler += new KeyEventHandler(keyhandler);
+            hkb.InstallHook(this);
+            HookKeyBoard.tagMSG Msgs;
+            while (HookKeyBoard.GetMessage(out Msgs, IntPtr.Zero, 0, 0) > 0)
+            {
+                HookKeyBoard.TranslateMessage(ref Msgs);
+                HookKeyBoard.DispatchMessage(ref Msgs);
+            }
+        }
+
+        private void EnableMouseKey()
+        {
+            hkb.Hook_Clear();
+        }
+        private void keyhandler(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            if (e.Alt == true && (e.KeyData.ToString() == "a" || e.KeyData.ToString() == "A"))
+            {
+                hkb.Hook_Clear();
+            }
         }
     }
 }

@@ -128,11 +128,6 @@ namespace OutliveUrCode
         /// </summary>
         public FrmMain()
         {
-
-            FrmLock frmlock = new FrmLock(1);
-            frmlock.ShowDialog(this);
-            frmlock.Close();
-
             InitializeComponent();
             materialSkinManager = MaterialSkinManager.Instance; 
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -482,6 +477,7 @@ namespace OutliveUrCode
         /// <param name="selectedItem"></param>
         private void lstLanguage_SelectedIndexChanged(object sender, MaterialListBoxItem selectedItem)
         {
+            MessageBox.Show("这个装逼的功能还没写");
             switch (lstLanguage.SelectedIndex)
             {
                 case 0:

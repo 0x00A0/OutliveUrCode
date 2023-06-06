@@ -47,6 +47,7 @@ namespace OutliveUrCode
             {
                 txtDrinkingToday.Text = "0";    // 重置每日饮水
                 lastDrinkingAlarm=DateTime.Now; // 重置上次饮水时间
+                //TODO: 把前一天的数据写入数据库
             }
             RefreshWater();
             #endregion
@@ -455,7 +456,6 @@ namespace OutliveUrCode
 
         #endregion
 
-
         #region 应用设置相关
 
         /// <summary>
@@ -525,3 +525,4 @@ namespace OutliveUrCode
 
     }
 }
+//TODO 加入坐姿提醒之类的

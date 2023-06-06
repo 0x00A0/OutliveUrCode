@@ -60,11 +60,12 @@ namespace OutliveUrCode
             }
             ledTime.Value = new DateTime() + (new TimeSpan(0,restTime,0) - sw.Elapsed);
         }
-
-        private void materialButton1_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.OK ;
-        }
+        
+        // 解锁按钮(仅供测试)
+        //private void materialButton1_Click(object sender, EventArgs e)
+        //{
+        //    this.DialogResult = DialogResult.OK ;
+        //}
 
         private void DisabledMouseKey()
         {
@@ -83,6 +84,7 @@ namespace OutliveUrCode
         {
             hkb.Hook_Clear();
         }
+
         private void keyhandler(object sender, System.Windows.Forms.KeyEventArgs e)
         {
             if (e.Alt == true && (e.KeyData.ToString() == "a" || e.KeyData.ToString() == "A"))

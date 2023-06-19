@@ -38,7 +38,7 @@ namespace OutliveUrCode
             this.restTime = restTime;
             sw.Start();
             tmrLock.Enabled = true;
-            //DisabledMouseKey();
+            DisabledMouseKey();
         }
         
 
@@ -55,7 +55,7 @@ namespace OutliveUrCode
             SetForegroundWindow(myHandle);
             if (new TimeSpan(0, restTime, 0) - sw.Elapsed <= new TimeSpan(0, 0, 1))
             {
-                //EnableMouseKey();
+                EnableMouseKey();
                 this.DialogResult = DialogResult.OK;
                 tmrLock.Enabled = false;
                 sw.Reset();

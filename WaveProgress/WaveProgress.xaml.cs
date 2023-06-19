@@ -8,18 +8,12 @@ using System.Windows.Shapes;
 
 namespace OutliveYourCode.UserControls
 {
-    /// <summary>
-    /// WaveProgress.xaml の相互作用ロジック
-    /// </summary>
     public partial class WaveProgress : UserControl, INotifyPropertyChanged
     {
-        /// <summary>波のイメージ</summary>
         private Grid waveGrid1 = WaveImage(10);
         private Grid waveGrid2 = WaveImage(20);
-
-        /// <summary>塗りつぶし割合(-0.5～+0.5)</summary>
+        
         public double Filling { get; set; } = 0.5;
-        /// <summary>進捗値(0～100%)</summary>
         public double Progress
         {
             get { return 50.0 - Filling * 100.0; }
@@ -43,22 +37,15 @@ namespace OutliveYourCode.UserControls
         }
         public static readonly DependencyProperty ProgressProperty = 
             DependencyProperty.Register("Progress", typeof(double), typeof(WaveProgress));
-
-        /// <summary>波の高さ調整(0～20%,80～100%は波の高さを小さく)</summary>
+        
         public Grid WaveDraw { get { return Progress < 20.0 || 80 < Progress ? waveGrid1 : waveGrid2; } }
-        /// <summary>進捗文字列(0～100)</summary>
         public string Percent { get { return $"{Progress:F0}"; } }
-
-        /// <summary>バインディング更新ハンドラ</summary>
+        
         public event PropertyChangedEventHandler PropertyChanged = (s, e) => { };
-        /// <summary>プロパティの更新イベント</summary>
         public void OnPropertyChanged(string name)
         {
             PropertyChanged(this, new PropertyChangedEventArgs(name));
         }
-        /// <summary>
-        /// コンストラクタ
-        /// </summary>
         public WaveProgress()
         {
             InitializeComponent();
@@ -66,11 +53,6 @@ namespace OutliveYourCode.UserControls
 
             DataContext = this;
         }
-        /// <summary>
-        /// ロードイベント
-        /// </summary>
-        /// <param name="sender">送信元</param>
-        /// <param name="e">イベント情報</param>
         private void WaveProgress_Loaded(object sender, RoutedEventArgs e)
         {
             var sb = new Storyboard();
@@ -86,13 +68,8 @@ namespace OutliveYourCode.UserControls
             sb.Children.Add(an);
             sb.Begin();
         }
-        /// <summary>
-        /// 波の描画
-        /// </summary>
-        /// <param name="h">波の高さ</param>
         private static Grid WaveImage(double h)
         {
-            // 背景を設定
             var grid = new Grid();
             grid.Width = 160;
             grid.Height = 377;

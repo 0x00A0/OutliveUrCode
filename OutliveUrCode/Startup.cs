@@ -31,7 +31,7 @@ namespace OutliveUrCode
         private static string DesktopPath { get { return Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory); } }
 
         /// <summary>
-        /// 设置开机自动启动-只需要调用改方法就可以了参数里面的bool变量是控制开机启动的开关的，默认为开启自启启动
+        /// 设置开机自动启动
         /// </summary>
         /// <param name="onOff">自启开关</param>
         public static void SetMeAutoStart(bool onOff = true)
@@ -66,7 +66,6 @@ namespace OutliveUrCode
                     }
                 }
             }
-            //创建桌面快捷方式-如果需要可以取消注释
             //CreateDesktopQuick(desktopPath, QuickName, appAllPath);
         }
 

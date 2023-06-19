@@ -54,20 +54,17 @@ namespace OutliveUrCode
         //设置钩子 
         [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         private static extern int SetWindowsHookEx(int idHook, HookProc lpfn, IntPtr hInstance, int threadId);// 钩子类型  回调函数地址  实例句柄 线程ID
-
         //卸载钩子 
         [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         private static extern bool UnhookWindowsHookEx(int idHook); //要移除的钩子的句柄。此参数是由以前对 SetWindowsHookEx 的调用获取的挂钩句柄。
-
         [DllImport("kernel32.dll")]
         public static extern IntPtr GetModuleHandle(string name); //获取进程句柄
-
         [DllImport("user32", EntryPoint = "GetMessage")]
-        public static extern int GetMessage(  //调用线程的消息队列里取得一个消息并将其放于指定的结构.此函数可取得与指定窗口联系的消息和由PostThreadMessage寄送的线程消息
-                        out tagMSG lpMsg,//指向MSG结构的指针，该结构从线程的消息队列里接收消息信息。
-                        IntPtr hwnd,//取得其消息的窗口的句柄。当其值取NULL时，GetMessage为任何属于调用线程的窗口检索消息，线程消息通过PostThreadMessage寄送给调用线程。
-                        int wMsgFilterMin,//指定被检索的最小消息值的整数。
-                        int wMsgFilterMax//指定被检索的最大消息值的整数。
+        public static extern int GetMessage(  
+                        out tagMSG lpMsg,
+                        IntPtr hwnd,
+                        int wMsgFilterMin,
+                        int wMsgFilterMax
         );
         [DllImport("user32", EntryPoint = "DispatchMessage")]
         public static extern int DispatchMessage(ref tagMSG lpMsg); //函数将键盘消息转化
@@ -83,7 +80,6 @@ namespace OutliveUrCode
             public uint time;
             public int pt;
         }
-
 
         public void InstallHook(Form form)
         {

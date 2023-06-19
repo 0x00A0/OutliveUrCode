@@ -15,6 +15,8 @@ using System.Diagnostics;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using OutliveUrCode.Properties;
+using System.Data.SQLite;
+using System.Windows.Media.Media3D;
 using MouseEventArgs = System.Windows.Forms.MouseEventArgs;
 
 namespace OutliveUrCode
@@ -47,7 +49,10 @@ namespace OutliveUrCode
             {
                 txtDrinkingToday.Text = "0";    // 重置每日饮水
                 lastDrinkingAlarm=DateTime.Now; // 重置上次饮水时间
-                //TODO: 把前一天的数据写入数据库
+                SQLHelper.saveSQL(
+                    Properties.Settings.Default.lastDrinkingTime.Date, 
+                    Properties.Settings.Default.DrinkToday,
+                    (int)Properties.Settings.Default.SedentaryToday.TotalSeconds);  // 将昨天喝水的记录存到数据库
             }
             RefreshWater();
             #endregion
@@ -76,18 +81,19 @@ namespace OutliveUrCode
             #region 应用设置
             chkStartup.Checked=Properties.Settings.Default.isStartup;
             chkTheme.Checked=Properties.Settings.Default.themeDark;
-            switch (Properties.Settings.Default.language)   // 读取语言设置
+            if(Properties.Settings.Default.language.ToLower().Contains("en"))
             {
-                case "zh-cn":
-                    lstLanguage.SelectedIndex = 0;
-                    break;
-                case "en-us":
-                    lstLanguage.SelectedIndex = 1;
-                    break;
-                default:
-                    lstLanguage.SelectedIndex = 0;
-                    break;
+                lstLanguage.SelectedIndex = 1;
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
             }
+            else
+            {
+                lstLanguage.SelectedIndex = 0;
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CN");
+                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("zh-CN");
+            }
+            AppLang(this,resources);
             #endregion
         }
 
@@ -241,6 +247,7 @@ namespace OutliveUrCode
         }
 
         #region 喝水相关方法
+
         private void RefreshWater()
         {
             if (int.Parse(txtDrinkingTarget.Text) == 0)
@@ -248,21 +255,44 @@ namespace OutliveUrCode
                 this.progrsWater.Progress = 0;
                 return;
             }
+
             this.progrsWater.Progress = int.Parse(txtDrinkingToday.Text) * 100 / int.Parse(txtDrinkingTarget.Text);
-            if (int.Parse(progrsWater.Percent)>=100)
+
+            if (Thread.CurrentThread.CurrentUICulture.Name.ToLower().Contains("en"))
             {
-                lblDrinkingStatus.Text = resources.GetString("FrmMain_DrinkingStatus100");
-            }
-            else if(int.Parse(progrsWater.Percent) == 0)
-            {
-                lblDrinkingStatus.Text = resources.GetString("FrmMain_DrinkingStatus0");
+                if (int.Parse(progrsWater.Percent) >= 100)
+                {
+                    lblDrinkingStatus.Text = "Well done! You've achieved goal today!";
+                }
+                else if (int.Parse(progrsWater.Percent) == 0)
+                {
+                    lblDrinkingStatus.Text = "Go for drinking now!";
+                }
+                else
+                {
+                    lblDrinkingStatus.Text = "Next alarm for drinking:"
+                                             + (lastDrinkingAlarm
+                                                + new TimeSpan(0, int.Parse(txtDrinkingTimerInterval.Text), 0)
+                                             ).ToString("HH:mm");
+                }
             }
             else
             {
-                lblDrinkingStatus.Text = resources.GetString("FrmMain_DrinkingStatusNormal") 
-                                         + (lastDrinkingAlarm
-                                             + new TimeSpan(0,int.Parse(txtDrinkingTimerInterval.Text),0)
-                                           ).ToString("HH:mm");
+                if (int.Parse(progrsWater.Percent) >= 100)
+                {
+                    lblDrinkingStatus.Text = "今天的喝水目标完成了!";
+                }
+                else if (int.Parse(progrsWater.Percent) == 0)
+                {
+                    lblDrinkingStatus.Text = "今天还没开始喝水呢,快去喝吧";
+                }
+                else
+                {
+                    lblDrinkingStatus.Text = "下一次喝水提醒:"
+                                             + (lastDrinkingAlarm
+                                                + new TimeSpan(0, int.Parse(txtDrinkingTimerInterval.Text), 0)
+                                             ).ToString("HH:mm");
+                }
             }
         }
 
@@ -351,7 +381,8 @@ namespace OutliveUrCode
 
         private void btnShowDrinkData_Click(object sender, EventArgs e)
         {
-            //TODO 查看喝水数据
+            FrmData frmData = new FrmData();
+            frmData.ShowDialog();
         }
 
         private void CheckDrinkingAlarm()
@@ -423,7 +454,8 @@ namespace OutliveUrCode
         }
         private void btnShowSedentaryData_Click(object sender, EventArgs e)
         {
-            //TODO 查看久坐数据
+            FrmData frmData = new FrmData();
+            frmData.ShowDialog();
         }
         private void CheckSedentaryAlarm()
         {
@@ -434,11 +466,13 @@ namespace OutliveUrCode
                 if (chkSedentaryStrongAlarm.Checked)
                 {
                     stopwatchSedentary.Reset();
+                    tmrMain.Enabled = false;
                     FrmLock frmlock = new FrmLock(1);
                     frmlock.ShowDialog(this);
                     frmlock.Close();
                     lastSedentaryAlarm =DateTime.Now;
                     stopwatchSedentary.Start();
+                    tmrMain.Enabled = true;
                 }
                 else
                 {
@@ -477,27 +511,42 @@ namespace OutliveUrCode
         /// <param name="selectedItem"></param>
         private void lstLanguage_SelectedIndexChanged(object sender, MaterialListBoxItem selectedItem)
         {
-            MessageBox.Show("这个装逼的功能还没写");
             switch (lstLanguage.SelectedIndex)
             {
                 case 0:
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-cn");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CN");
+                    Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("zh-CN");
                     break;
                 case 1:
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-us");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                    Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
                     break;
             }
-            foreach (Control ctl in this.Controls)
-            {
-                resources.ApplyResources(ctl, ctl.Name);
-            }
-            this.ResumeLayout(false);
+            AppLang(this, resources);
+            //this.ResumeLayout(false);
             this.PerformLayout();
             resources.ApplyResources(this, "$this");
             Properties.Settings.Default.language = Thread.CurrentThread.CurrentUICulture.Name;
             Properties.Settings.Default.Save();
         }
+        private static void AppLang(Control control, System.ComponentModel.ComponentResourceManager resources)
+        {
+            foreach (Control c in control.Controls)
+            {
+                if (c is MaterialLabel || c is MaterialButton || c is MaterialCheckbox || c is MaterialSwitch || c is TabPage)
+                {
+                    c.Text = resources.GetString(c.Name + ".Text"); // 从资源文件读取控件的多语言Text属性值
+                }
 
+                if (c is MaterialTextBox2)
+                {
+                    ((MaterialTextBox2)c).PrefixSuffixText = resources.GetString(c.Name + ".PrefixSuffixText");
+                }
+                
+                AppLang(c, resources);
+            }
+        }
+        
         private void chkStartup_CheckedChanged(object sender, EventArgs e)
         {
             if (chkStartup.Checked)
@@ -520,9 +569,17 @@ namespace OutliveUrCode
         /// <param name="e"></param>
         private void btnShowOpenSource_Click(object sender, EventArgs e)
         {
-            MaterialMessageBox.Show(resources.GetString("OpenSourceInfo"));
+            if(Thread.CurrentThread.CurrentUICulture.Name.ToLower().Contains("en"))
+                MaterialMessageBox.Show("Referenced open-source project:\r\nMaterialSkin(Application UI)\r\nHZH_Controls(Timer Control)\r\nMicrosoft.Data.Sqlite(SQLite Database IO)\r\n\r\nThis open-source project has been uploaded to GITHUB:\r\nhttp://github.com/0x00A0/OutliveUrCode");
+            else
+                MaterialMessageBox.Show("引用的开源项目:\r\nMaterialSkin(提供应用程序UI)\r\nHZH_Controls(提供数码管计时控件)\r\nMicrosoft.Data.Sqlite(提供SQLite数据库读写)\r\n本项目已开源至GITHUB:\r\nhttp://github.com/0x00A0/OutliveUrCode");
+
         }
 
+        private void lblSedentaryStatus_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 //TODO 加入坐姿提醒之类的

@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            MaterialSkin.MaterialListBoxItem materialListBoxItem3 = new MaterialSkin.MaterialListBoxItem();
-            MaterialSkin.MaterialListBoxItem materialListBoxItem4 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem1 = new MaterialSkin.MaterialListBoxItem();
+            MaterialSkin.MaterialListBoxItem materialListBoxItem2 = new MaterialSkin.MaterialListBoxItem();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tbPgDrinking = new System.Windows.Forms.TabPage();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
@@ -39,6 +39,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDrink50 = new MaterialSkin.Controls.MaterialButton();
             this.btnDrink250 = new MaterialSkin.Controls.MaterialButton();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.progrsWater = new OutliveYourCode.UserControls.WaveProgress();
             this.btnDrink500 = new MaterialSkin.Controls.MaterialButton();
             this.btnDrink150 = new MaterialSkin.Controls.MaterialButton();
             this.lblDrinkingStatus = new MaterialSkin.Controls.MaterialLabel();
@@ -104,8 +106,6 @@
             this.menuOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrSedn = new System.Windows.Forms.Timer(this.components);
-            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
-            this.progrsWater = new OutliveYourCode.UserControls.WaveProgress();
             this.materialTabControl1.SuspendLayout();
             this.tbPgDrinking.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -136,12 +136,12 @@
             // 
             // materialTabControl1
             // 
+            resources.ApplyResources(this.materialTabControl1, "materialTabControl1");
             this.materialTabControl1.Controls.Add(this.tbPgDrinking);
             this.materialTabControl1.Controls.Add(this.tbPgSedentary);
             this.materialTabControl1.Controls.Add(this.tbpgSetting);
             this.materialTabControl1.Controls.Add(this.tbpgAbout);
             this.materialTabControl1.Depth = 0;
-            resources.ApplyResources(this.materialTabControl1, "materialTabControl1");
             this.materialTabControl1.ImageList = this.MaterialIcons;
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
@@ -150,18 +150,18 @@
             // 
             // tbPgDrinking
             // 
+            resources.ApplyResources(this.tbPgDrinking, "tbPgDrinking");
             this.tbPgDrinking.BackColor = System.Drawing.Color.White;
             this.tbPgDrinking.Controls.Add(this.materialCard2);
-            resources.ApplyResources(this.tbPgDrinking, "tbPgDrinking");
             this.tbPgDrinking.Name = "tbPgDrinking";
             // 
             // materialCard2
             // 
+            resources.ApplyResources(this.materialCard2, "materialCard2");
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard2.Controls.Add(this.materialCard3);
             this.materialCard2.Controls.Add(this.materialCard4);
             this.materialCard2.Depth = 0;
-            resources.ApplyResources(this.materialCard2, "materialCard2");
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
@@ -222,6 +222,14 @@
             this.btnDrink250.UseVisualStyleBackColor = true;
             this.btnDrink250.Click += new System.EventHandler(this.btnDrink250_Click);
             // 
+            // elementHost1
+            // 
+            resources.ApplyResources(this.elementHost1, "elementHost1");
+            this.tableLayoutPanel1.SetColumnSpan(this.elementHost1, 7);
+            this.elementHost1.Name = "elementHost1";
+            this.tableLayoutPanel1.SetRowSpan(this.elementHost1, 2);
+            this.elementHost1.Child = this.progrsWater;
+            // 
             // btnDrink500
             // 
             resources.ApplyResources(this.btnDrink500, "btnDrink500");
@@ -277,6 +285,7 @@
             // 
             // flowLayoutPanel1
             // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Controls.Add(this.materialLabel1);
             this.flowLayoutPanel1.Controls.Add(this.txtDrinkingTarget);
             this.flowLayoutPanel1.Controls.Add(this.materialLabel2);
@@ -284,7 +293,6 @@
             this.flowLayoutPanel1.Controls.Add(this.materialLabel3);
             this.flowLayoutPanel1.Controls.Add(this.txtDrinkingTimerInterval);
             this.flowLayoutPanel1.Controls.Add(this.chkDrinkingAlarm);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // materialLabel1
@@ -298,10 +306,10 @@
             // 
             // txtDrinkingTarget
             // 
+            resources.ApplyResources(this.txtDrinkingTarget, "txtDrinkingTarget");
             this.txtDrinkingTarget.AnimateReadOnly = false;
             this.txtDrinkingTarget.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtDrinkingTarget.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            resources.ApplyResources(this.txtDrinkingTarget, "txtDrinkingTarget");
             this.txtDrinkingTarget.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtDrinkingTarget.Depth = 0;
             this.txtDrinkingTarget.HideSelection = true;
@@ -336,10 +344,10 @@
             // 
             // txtDrinkingToday
             // 
+            resources.ApplyResources(this.txtDrinkingToday, "txtDrinkingToday");
             this.txtDrinkingToday.AnimateReadOnly = false;
             this.txtDrinkingToday.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtDrinkingToday.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            resources.ApplyResources(this.txtDrinkingToday, "txtDrinkingToday");
             this.txtDrinkingToday.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtDrinkingToday.Depth = 0;
             this.txtDrinkingToday.HideSelection = true;
@@ -374,10 +382,10 @@
             // 
             // txtDrinkingTimerInterval
             // 
+            resources.ApplyResources(this.txtDrinkingTimerInterval, "txtDrinkingTimerInterval");
             this.txtDrinkingTimerInterval.AnimateReadOnly = false;
             this.txtDrinkingTimerInterval.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtDrinkingTimerInterval.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            resources.ApplyResources(this.txtDrinkingTimerInterval, "txtDrinkingTimerInterval");
             this.txtDrinkingTimerInterval.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtDrinkingTimerInterval.Depth = 0;
             this.txtDrinkingTimerInterval.HideSelection = true;
@@ -432,17 +440,17 @@
             // 
             // tbPgSedentary
             // 
+            resources.ApplyResources(this.tbPgSedentary, "tbPgSedentary");
             this.tbPgSedentary.BackColor = System.Drawing.Color.White;
             this.tbPgSedentary.Controls.Add(this.materialCard6);
-            resources.ApplyResources(this.tbPgSedentary, "tbPgSedentary");
             this.tbPgSedentary.Name = "tbPgSedentary";
             // 
             // materialCard6
             // 
+            resources.ApplyResources(this.materialCard6, "materialCard6");
             this.materialCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard6.Controls.Add(this.tableLayoutPanel2);
             this.materialCard6.Depth = 0;
-            resources.ApplyResources(this.materialCard6, "materialCard6");
             this.materialCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard6.Name = "materialCard6";
@@ -490,22 +498,22 @@
             // 
             // materialCard10
             // 
+            resources.ApplyResources(this.materialCard10, "materialCard10");
             this.materialCard10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.tableLayoutPanel2.SetColumnSpan(this.materialCard10, 2);
             this.materialCard10.Controls.Add(this.flowLayoutPanel3);
             this.materialCard10.Depth = 0;
-            resources.ApplyResources(this.materialCard10, "materialCard10");
             this.materialCard10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard10.Name = "materialCard10";
             // 
             // flowLayoutPanel3
             // 
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
             this.flowLayoutPanel3.Controls.Add(this.materialLabel13);
             this.flowLayoutPanel3.Controls.Add(this.chkSedentaryAlarm);
             this.flowLayoutPanel3.Controls.Add(this.chkSedentaryStrongAlarm);
             this.flowLayoutPanel3.Controls.Add(this.btnShowSedentaryData);
-            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
             // materialLabel13
@@ -564,21 +572,21 @@
             // 
             // materialCard11
             // 
+            resources.ApplyResources(this.materialCard11, "materialCard11");
             this.materialCard11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard11.Controls.Add(this.flowLayoutPanel4);
             this.materialCard11.Depth = 0;
-            resources.ApplyResources(this.materialCard11, "materialCard11");
             this.materialCard11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard11.Name = "materialCard11";
             // 
             // flowLayoutPanel4
             // 
+            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
             this.flowLayoutPanel4.Controls.Add(this.materialLabel14);
             this.flowLayoutPanel4.Controls.Add(this.txtSedentaryTimerInterval);
             this.flowLayoutPanel4.Controls.Add(this.materialLabel16);
             this.flowLayoutPanel4.Controls.Add(this.txtSedentaryTimeRest);
-            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             // 
             // materialLabel14
@@ -592,10 +600,10 @@
             // 
             // txtSedentaryTimerInterval
             // 
+            resources.ApplyResources(this.txtSedentaryTimerInterval, "txtSedentaryTimerInterval");
             this.txtSedentaryTimerInterval.AnimateReadOnly = false;
             this.txtSedentaryTimerInterval.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtSedentaryTimerInterval.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            resources.ApplyResources(this.txtSedentaryTimerInterval, "txtSedentaryTimerInterval");
             this.txtSedentaryTimerInterval.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtSedentaryTimerInterval.Depth = 0;
             this.flowLayoutPanel4.SetFlowBreak(this.txtSedentaryTimerInterval, true);
@@ -631,10 +639,10 @@
             // 
             // txtSedentaryTimeRest
             // 
+            resources.ApplyResources(this.txtSedentaryTimeRest, "txtSedentaryTimeRest");
             this.txtSedentaryTimeRest.AnimateReadOnly = false;
             this.txtSedentaryTimeRest.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtSedentaryTimeRest.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            resources.ApplyResources(this.txtSedentaryTimeRest, "txtSedentaryTimeRest");
             this.txtSedentaryTimeRest.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtSedentaryTimeRest.Depth = 0;
             this.flowLayoutPanel4.SetFlowBreak(this.txtSedentaryTimeRest, true);
@@ -660,20 +668,20 @@
             // 
             // materialCard12
             // 
+            resources.ApplyResources(this.materialCard12, "materialCard12");
             this.materialCard12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard12.Controls.Add(this.flowLayoutPanel8);
             this.materialCard12.Depth = 0;
-            resources.ApplyResources(this.materialCard12, "materialCard12");
             this.materialCard12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard12.Name = "materialCard12";
             // 
             // flowLayoutPanel8
             // 
+            resources.ApplyResources(this.flowLayoutPanel8, "flowLayoutPanel8");
             this.flowLayoutPanel8.Controls.Add(this.materialLabel15);
             this.flowLayoutPanel8.Controls.Add(this.lblSedentaryNextAlarm);
             this.flowLayoutPanel8.Controls.Add(this.btnResetSedentary);
-            resources.ApplyResources(this.flowLayoutPanel8, "flowLayoutPanel8");
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             // 
             // materialLabel15
@@ -725,20 +733,21 @@
             this.lblSedentaryStatus.Depth = 0;
             this.lblSedentaryStatus.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblSedentaryStatus.Name = "lblSedentaryStatus";
+            this.lblSedentaryStatus.Click += new System.EventHandler(this.lblSedentaryStatus_Click);
             // 
             // tbpgSetting
             // 
+            resources.ApplyResources(this.tbpgSetting, "tbpgSetting");
             this.tbpgSetting.BackColor = System.Drawing.Color.White;
             this.tbpgSetting.Controls.Add(this.materialCard5);
-            resources.ApplyResources(this.tbpgSetting, "tbpgSetting");
             this.tbpgSetting.Name = "tbpgSetting";
             // 
             // materialCard5
             // 
+            resources.ApplyResources(this.materialCard5, "materialCard5");
             this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard5.Controls.Add(this.materialCard7);
             this.materialCard5.Depth = 0;
-            resources.ApplyResources(this.materialCard5, "materialCard5");
             this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard5.Name = "materialCard5";
@@ -817,19 +826,19 @@
             // 
             // lstLanguage
             // 
+            resources.ApplyResources(this.lstLanguage, "lstLanguage");
             this.lstLanguage.BackColor = System.Drawing.Color.White;
             this.lstLanguage.BorderColor = System.Drawing.Color.LightGray;
             this.lstLanguage.Density = MaterialSkin.Controls.MaterialListBox.MaterialItemDensity.Default;
             this.lstLanguage.Depth = 0;
-            resources.ApplyResources(this.lstLanguage, "lstLanguage");
-            materialListBoxItem3.SecondaryText = "";
-            materialListBoxItem3.Tag = null;
-            materialListBoxItem3.Text = "中文(简体)";
-            materialListBoxItem4.SecondaryText = "";
-            materialListBoxItem4.Tag = null;
-            materialListBoxItem4.Text = "EN-US";
-            this.lstLanguage.Items.Add(materialListBoxItem3);
-            this.lstLanguage.Items.Add(materialListBoxItem4);
+            materialListBoxItem1.SecondaryText = "";
+            materialListBoxItem1.Tag = null;
+            materialListBoxItem1.Text = "中文(简体)";
+            materialListBoxItem2.SecondaryText = "";
+            materialListBoxItem2.Tag = null;
+            materialListBoxItem2.Text = "EN-US";
+            this.lstLanguage.Items.Add(materialListBoxItem1);
+            this.lstLanguage.Items.Add(materialListBoxItem2);
             this.lstLanguage.MouseState = MaterialSkin.MouseState.HOVER;
             this.lstLanguage.Name = "lstLanguage";
             this.lstLanguage.SelectedIndex = -1;
@@ -840,17 +849,17 @@
             // 
             // tbpgAbout
             // 
+            resources.ApplyResources(this.tbpgAbout, "tbpgAbout");
             this.tbpgAbout.BackColor = System.Drawing.Color.White;
             this.tbpgAbout.Controls.Add(this.materialCard1);
-            resources.ApplyResources(this.tbpgAbout, "tbpgAbout");
             this.tbpgAbout.Name = "tbpgAbout";
             // 
             // materialCard1
             // 
+            resources.ApplyResources(this.materialCard1, "materialCard1");
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard1.Controls.Add(this.materialCard8);
             this.materialCard1.Depth = 0;
-            resources.ApplyResources(this.materialCard1, "materialCard1");
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
@@ -889,8 +898,8 @@
             // 
             // materialLabel11
             // 
-            this.materialLabel11.Depth = 0;
             resources.ApplyResources(this.materialLabel11, "materialLabel11");
+            this.materialLabel11.Depth = 0;
             this.materialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
@@ -898,32 +907,32 @@
             // 
             // materialLabel10
             // 
-            this.materialLabel10.Depth = 0;
             resources.ApplyResources(this.materialLabel10, "materialLabel10");
+            this.materialLabel10.Depth = 0;
             this.materialLabel10.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             // 
             // materialLabel9
             // 
-            this.materialLabel9.Depth = 0;
             resources.ApplyResources(this.materialLabel9, "materialLabel9");
+            this.materialLabel9.Depth = 0;
             this.materialLabel9.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             // 
             // materialLabel8
             // 
-            this.materialLabel8.Depth = 0;
             resources.ApplyResources(this.materialLabel8, "materialLabel8");
+            this.materialLabel8.Depth = 0;
             this.materialLabel8.HighEmphasis = true;
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             // 
             // materialLabel7
             // 
-            this.materialLabel7.Depth = 0;
             resources.ApplyResources(this.materialLabel7, "materialLabel7");
+            this.materialLabel7.Depth = 0;
             this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H2;
             this.materialLabel7.HighEmphasis = true;
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
@@ -931,8 +940,8 @@
             // 
             // materialLabel12
             // 
-            this.materialLabel12.Depth = 0;
             resources.ApplyResources(this.materialLabel12, "materialLabel12");
+            this.materialLabel12.Depth = 0;
             this.materialLabel12.FontType = MaterialSkin.MaterialSkinManager.fontType.H2;
             this.materialLabel12.HighEmphasis = true;
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1015,28 +1024,28 @@
             // notifyMain
             // 
             this.notifyMain.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.notifyMain.ContextMenuStrip = this.notifyMenu;
             resources.ApplyResources(this.notifyMain, "notifyMain");
+            this.notifyMain.ContextMenuStrip = this.notifyMenu;
             this.notifyMain.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyMain_MouseDoubleClick);
             // 
             // notifyMenu
             // 
+            resources.ApplyResources(this.notifyMenu, "notifyMenu");
             this.notifyMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuOpen,
             this.menuExit});
             this.notifyMenu.Name = "notifyMenu";
-            resources.ApplyResources(this.notifyMenu, "notifyMenu");
             // 
             // menuOpen
             // 
-            this.menuOpen.Name = "menuOpen";
             resources.ApplyResources(this.menuOpen, "menuOpen");
+            this.menuOpen.Name = "menuOpen";
             this.menuOpen.Click += new System.EventHandler(this.menuOpen_Click);
             // 
             // menuExit
             // 
-            this.menuExit.Name = "menuExit";
             resources.ApplyResources(this.menuExit, "menuExit");
+            this.menuExit.Name = "menuExit";
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
             // tmrSedn
@@ -1044,14 +1053,6 @@
             this.tmrSedn.Enabled = true;
             this.tmrSedn.Interval = 1000;
             this.tmrSedn.Tick += new System.EventHandler(this.tmrSedn_Tick);
-            // 
-            // elementHost1
-            // 
-            resources.ApplyResources(this.elementHost1, "elementHost1");
-            this.tableLayoutPanel1.SetColumnSpan(this.elementHost1, 7);
-            this.elementHost1.Name = "elementHost1";
-            this.tableLayoutPanel1.SetRowSpan(this.elementHost1, 2);
-            this.elementHost1.Child = this.progrsWater;
             // 
             // FrmMain
             // 

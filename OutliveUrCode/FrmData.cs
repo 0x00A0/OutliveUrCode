@@ -17,13 +17,14 @@ namespace OutliveUrCode
         public FrmData()
         {
             InitializeComponent();
+            DealData(SQLHelper.readSQL());
         }
         private void DealData(DataTable data)
         {
             for (int j = 0; j < data.Rows.Count; j++)
             {
-                chartMain.Series[0].Points.AddXY(data.Rows[j]["Time"].ToString(), data.Rows[j]["Drinking"].ToString());
-                chartMain.Series[1].Points.AddXY(data.Rows[j]["Time"].ToString(), data.Rows[j]["Sedentary"].ToString());
+                chartMain.Series[0].Points.AddXY(data.Rows[j]["date"].ToString(), data.Rows[j]["drinking"].ToString());
+                chartMain.Series[1].Points.AddXY(data.Rows[j]["date"].ToString(), data.Rows[j]["sedentary"].ToString());
             }
         }
     }

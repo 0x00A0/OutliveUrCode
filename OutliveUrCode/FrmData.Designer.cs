@@ -62,7 +62,7 @@
             series1.Legend = "Legend1";
             series1.LegendText = "喝水量";
             series1.Name = "SeriesDrinking";
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime;
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
             series1.YValuesPerPoint = 4;
             series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
             series2.ChartArea = "ChartArea";
@@ -70,7 +70,7 @@
             series2.Legend = "Legend1";
             series2.LegendText = "久坐时长";
             series2.Name = "SeriesSed";
-            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime;
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
             series2.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
             series2.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
             this.chartMain.Series.Add(series1);
@@ -99,7 +99,7 @@
             title4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title4.IsDockedInsideChartArea = false;
             title4.Name = "Title4";
-            title4.Text = "时间";
+            title4.Text = "日期";
             this.chartMain.Titles.Add(title1);
             this.chartMain.Titles.Add(title2);
             this.chartMain.Titles.Add(title3);

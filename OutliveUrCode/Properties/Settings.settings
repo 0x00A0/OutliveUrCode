@@ -24,7 +24,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="language" Type="System.String" Scope="User">
-      <Value Profile="(Default)">zh-cn</Value>
+      <Value Profile="(Default)">zh</Value>
     </Setting>
     <Setting Name="isSedentaryAlarmActive" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
